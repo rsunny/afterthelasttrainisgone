@@ -1,0 +1,591 @@
+fileFormatVersion: 2
+guid: 2a9643ba63e62b14f9c167879560f098
+timeCreated: 1478221832
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: isometricassets_0
+    21300002: isometricassets_1
+    21300004: isometricassets_2
+    21300006: isometricassets_3
+    21300008: isometricassets_4
+    21300010: isometricassets_5
+    21300012: isometricassets_6
+    21300014: isometricassets_7
+    21300016: isometricassets_8
+    21300018: isometricassets_9
+    21300020: isometricassets_10
+    21300022: isometricassets_11
+    21300024: isometricassets_12
+    21300026: isometricassets_13
+    21300028: isometricassets_14
+    21300030: isometricassets_15
+    21300032: isometricassets_16
+    21300034: isometricassets_17
+    21300036: isometricassets_18
+    21300038: isometricassets_19
+    21300040: isometricassets_20
+    21300042: isometricassets_21
+    21300044: isometricassets_22
+    21300046: isometricassets_23
+    21300048: isometricassets_24
+    21300050: isometricassets_25
+    21300052: isometricassets_26
+    21300054: isometricassets_27
+    21300056: isometricassets_28
+    21300058: isometricassets_29
+    21300060: isometricassets_30
+    21300062: isometricassets_31
+    21300064: isometricassets_32
+    21300066: isometricassets_33
+    21300068: isometricassets_34
+    21300070: isometricassets_35
+    21300072: isometricassets_36
+    21300074: isometricassets_37
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 830, y: 11, z: 521, w: 683}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: isometricassets_0
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 900
+        width: 132
+        height: 94
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_1
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 898
+        width: 132
+        height: 89
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_2
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 908
+        width: 122
+        height: 105
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_3
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 912
+        width: 131
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_4
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 840
+        width: 154
+        height: 171
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_5
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 808
+        width: 235
+        height: 241
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_6
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 842
+        width: 149
+        height: 147
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_7
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 883
+        width: 167
+        height: 112
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_8
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 925
+        width: 109
+        height: 70
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_9
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 805
+        width: 131
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_10
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 817
+        width: 130
+        height: 73
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_11
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 816
+        width: 133
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_12
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 580
+        width: 172
+        height: 252
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_13
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 570
+        width: 232
+        height: 334
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_14
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 566
+        width: 138
+        height: 264
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_15
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 775
+        width: 102
+        height: 103
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_16
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 744
+        width: 240
+        height: 137
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_17
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 701
+        width: 106
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_18
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 693
+        width: 116
+        height: 89
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_19
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 587
+        width: 187
+        height: 230
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_20
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 623
+        width: 173
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_21
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 579
+        width: 124
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_22
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 592
+        width: 108
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_23
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 607
+        width: 110
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_24
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 24
+        width: 519
+        height: 665
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_25
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 349
+        width: 209
+        height: 185
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_26
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 322
+        width: 242
+        height: 239
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_27
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 396
+        width: 246
+        height: 168
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_28
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 399
+        width: 95
+        height: 106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_29
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 461
+        width: 102
+        height: 102
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_30
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 258
+        width: 68
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_31
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 215
+        width: 72
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_32
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 29
+        width: 164
+        height: 253
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_33
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 24
+        width: 249
+        height: 352
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_34
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 43
+        width: 185
+        height: 345
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_35
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 18
+        width: 252
+        height: 424
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_36
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 39
+        width: 117
+        height: 188
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: isometricassets_37
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 12
+        width: 20
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
