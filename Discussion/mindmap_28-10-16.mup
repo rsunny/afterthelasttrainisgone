@@ -1,0 +1,414 @@
+{
+  "id": "root",
+  "formatVersion": 3,
+  "ideas": {
+    "1": {
+      "id": 1,
+      "title": "2D or 3D ?",
+      "attr": {
+        "position": [
+          -19.333333333333258,
+          -12.333335876464844,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "2D sprites because we don't have 3d designers and it takes more time ",
+          "id": 2,
+          "ideas": {}
+        },
+        "2": {
+          "title": "Let's try both first and pick the one that seems easier",
+          "id": 34
+        },
+        "-1": {
+          "title": "Camera rotation",
+          "id": 32,
+          "ideas": {
+            "1": {
+              "title": "Scripted camera rotation eg : you arrive in a corner, the camera rotate 90°",
+              "id": 33
+            }
+          }
+        }
+      }
+    },
+    "2": {
+      "title": "Which Game Engine ?",
+      "id": 8,
+      "attr": {
+        "position": [
+          -140,
+          -330.33333587646484,
+          1
+        ]
+      },
+      "ideas": {
+        "1": {
+          "title": "Unity ?",
+          "id": 9,
+          "ideas": {
+            "1": {
+              "title": "We learn it in the course",
+              "id": 26
+            },
+            "2": {
+              "title": "free",
+              "id": 27
+            },
+            "3": {
+              "title": "C#",
+              "id": 30
+            }
+          }
+        },
+        "-1": {
+          "title": "an other one ?",
+          "id": 29
+        },
+        "-11": {
+          "title": "Unreal Engine ?",
+          "id": 10,
+          "ideas": {
+            "1": {
+              "title": "free",
+              "id": 28
+            },
+            "2": {
+              "title": "C++",
+              "id": 31
+            }
+          }
+        }
+      }
+    },
+    "3": {
+      "title": "Gameplay",
+      "id": 11,
+      "ideas": {
+        "1": {
+          "title": "Narrative quests ",
+          "id": 12,
+          "ideas": {
+            "1": {
+              "title": "Each member of the team can propose its own quest",
+              "id": 13
+            }
+          }
+        },
+        "2": {
+          "title": "Move mechanics",
+          "id": 17,
+          "ideas": {
+            "1": {
+              "title": "Walking",
+              "id": 18
+            },
+            "2": {
+              "title": "Running",
+              "id": 19
+            },
+            "3": {
+              "title": "Jump ?",
+              "id": 88
+            }
+          }
+        },
+        "3": {
+          "title": "Side elements",
+          "id": 63,
+          "ideas": {
+            "1": {
+              "title": "Eating ? Sleeping ? we'll see later",
+              "id": 64
+            }
+          }
+        },
+        "-1": {
+          "title": "Simple fighting system",
+          "id": 14,
+          "ideas": {
+            "1": {
+              "title": "attack / block ",
+              "id": 15
+            },
+            "2": {
+              "title": "Timing based system",
+              "id": 16
+            },
+            "3": {
+              "title": "counter attack",
+              "id": 25
+            }
+          }
+        },
+        "-2": {
+          "title": "Interaction",
+          "id": 20,
+          "ideas": {
+            "1": {
+              "title": "Quest object",
+              "id": 21
+            },
+            "2": {
+              "title": "Talk",
+              "id": 22
+            },
+            "3": {
+              "title": "Fight",
+              "id": 23
+            },
+            "4": {
+              "title": "Action (open door ..)",
+              "id": 24
+            }
+          }
+        }
+      },
+      "attr": {
+        "position": [
+          891.3333333333335,
+          -376.0000025431315,
+          1
+        ]
+      }
+    },
+    "4": {
+      "title": "Plot",
+      "id": 35,
+      "ideas": {
+        "2": {
+          "title": "How he gets in the world ?",
+          "id": 39,
+          "ideas": {
+            "1": {
+              "title": "Ghost train that goes in this \"world\"",
+              "id": 36,
+              "attr": {}
+            },
+            "2": {
+              "title": "No more train, everything's closed apart from one way that leads to the world",
+              "id": 40
+            }
+          }
+        },
+        "3": {
+          "title": "Why he arrives in the game ?",
+          "id": 59
+        },
+        "4": {
+          "title": "Some narrative elements",
+          "id": 62,
+          "ideas": {
+            "1": {
+              "title": "Old guy thinking about his journey he did in the world when he was younger",
+              "id": 37,
+              "attr": {}
+            }
+          }
+        },
+        "5": {
+          "title": "Main story",
+          "id": 82,
+          "ideas": {
+            "1": {
+              "title": "Not important for the player",
+              "id": 83
+            },
+            "2": {
+              "title": "Background element",
+              "id": 84
+            },
+            "3": {
+              "title": "Religion stuff ? Bad guy ?",
+              "id": 85
+            },
+            "4": {
+              "title": "Contrast between, organized level/ community and a kind of chaos",
+              "id": 87
+            }
+          }
+        },
+        "-2": {
+          "title": "Purpose of the game",
+          "id": 60,
+          "ideas": {
+            "1": {
+              "title": "Find a way out of the metro",
+              "id": 61
+            }
+          }
+        },
+        "-3": {
+          "title": "How to progress ?",
+          "id": 66,
+          "ideas": {
+            "1": {
+              "title": "From station to station = level to level",
+              "id": 67
+            },
+            "2": {
+              "title": "Linear game",
+              "id": 68
+            }
+          }
+        },
+        "-4": {
+          "title": "Who is the player ?",
+          "id": 69
+        },
+        "-5": {
+          "title": "Every level is somehow story connected to the next one",
+          "id": 90
+        }
+      },
+      "attr": {
+        "position": [
+          8.4352284498176,
+          461.3565726679258,
+          1
+        ]
+      }
+    },
+    "5": {
+      "title": "Atmosphere",
+      "id": 41,
+      "ideas": {
+        "22": {
+          "title": "Each level has its own atmosphere, ",
+          "id": 70,
+          "ideas": {
+            "5": {
+              "title": "Every level has its own identity, rules, background...",
+              "id": 75,
+              "ideas": {
+                "1": {
+                  "title": "80's",
+                  "id": 71,
+                  "attr": {}
+                },
+                "2": {
+                  "title": "Mixedstyle level",
+                  "id": 73,
+                  "attr": {}
+                },
+                "3": {
+                  "title": "Whatever you invent",
+                  "id": 74,
+                  "attr": {}
+                },
+                "4": {
+                  "title": "1800",
+                  "id": 72,
+                  "attr": {}
+                }
+              }
+            },
+            "6": {
+              "title": "They're linked somehow, first by the metro ",
+              "id": 76
+            }
+          }
+        },
+        "23": {
+          "title": "First and last level are the same train stations",
+          "id": 89
+        },
+        "-1": {
+          "title": "Places",
+          "id": 49,
+          "ideas": {
+            "1": {
+              "title": "Not only stations ",
+              "id": 43,
+              "attr": {}
+            },
+            "2": {
+              "title": "Real stations",
+              "id": 42,
+              "attr": {}
+            },
+            "5": {
+              "title": "Elements",
+              "id": 78,
+              "ideas": {
+                "1": {
+                  "title": "Shops",
+                  "id": 50,
+                  "attr": {}
+                },
+                "2": {
+                  "title": "Houses",
+                  "id": 77,
+                  "attr": {}
+                }
+              }
+            }
+          }
+        },
+        "-2": {
+          "title": "A background main story",
+          "id": 86
+        },
+        "-12": {
+          "title": "Characters",
+          "id": 44,
+          "ideas": {
+            "1": {
+              "title": "Ennemies",
+              "id": 45
+            },
+            "2": {
+              "title": "Quest characters",
+              "id": 46
+            },
+            "3": {
+              "title": "Random people just to create some atmosphere",
+              "id": 47
+            }
+          }
+        }
+      },
+      "attr": {
+        "position": [
+          897.8797664563908,
+          438.98383899579176,
+          1
+        ]
+      }
+    },
+    "6": {
+      "title": "Type of game",
+      "id": 53,
+      "ideas": {
+        "1": {
+          "title": "Exploring / Adventure",
+          "id": 54
+        },
+        "2": {
+          "title": "For everyone",
+          "id": 57
+        },
+        "-1": {
+          "title": "Not a shooter, not a fighting game, not a sport game, not a point'n'click",
+          "id": 56
+        },
+        "-2": {
+          "title": "Contemplative / Narrative / Puzzle",
+          "id": 58
+        }
+      },
+      "attr": {
+        "position": [
+          869.7779064727956,
+          0.8009806922125335,
+          1
+        ]
+      }
+    }
+  },
+  "attr": {},
+  "title": "2D or 3D ?",
+  "links": []
+}
