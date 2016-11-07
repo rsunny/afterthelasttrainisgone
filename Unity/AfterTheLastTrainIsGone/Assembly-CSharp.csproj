@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\TestInstantiate.cs" />
      <Compile Include="Assets\Scripts\TextBoxManager.cs" />
      <None Include="Assets\Text\sample.txt" />
  <Reference Include="UnityEngine.UI">
