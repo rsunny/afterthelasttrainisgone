@@ -1,0 +1,21 @@
+pull : git pull -r
+merge : git merge from_branch to_branch
+add : git add .
+commit message: git commit -m “message” (adds all newly created data)
+commit: git push origin 
+delete branch : git branch -d branch_name
+change branch : git checkout branch_name
+check status : git status
+regex remove : find . -name '*.DS_Store' -type f -delete
+get commit history : git log
+move head to some other commit : 
+git stash
+git reset --hard 0d1d7fc32
+git stash pop
+# This saves the modifications, then reapplies that patch after resetting.
+# You could get merge conflicts, if you've modified things which were
+# changed since the commit you reset to.
+git clone git@github.com:interviewstreet/canonical-solutions.git
+
+
+ssh ubuntu@cron.vpc.hackerrank.com
