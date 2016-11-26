@@ -45,10 +45,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Player.cs" />
-     <Compile Include="Assets\Scripts\TestInstantiate.cs" />
-     <Compile Include="Assets\Scripts\TextBoxManager.cs" />
-     <None Include="Assets\Text\sample.txt" />
+     <Compile Include="Assets\Scripts\CameraMovement.cs" />
+     <Compile Include="Assets\Scripts\Monster.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerAttack.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerInteract.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerJump.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerMove.cs" />
+     <Compile Include="Assets\Scripts\Shadow.cs" />
+     <Compile Include="Assets\Scripts\Sword.cs" />
+     <Compile Include="Assets\Scripts\TextBox.cs" />
+     <None Include="Assets\Text\rightBench.txt" />
+     <None Include="Assets\Text\middleBench.txt" />
+     <None Include="Assets\Text\leftBench.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
