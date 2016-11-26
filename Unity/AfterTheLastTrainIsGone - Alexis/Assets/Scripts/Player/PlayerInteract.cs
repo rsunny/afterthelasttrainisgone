@@ -3,9 +3,9 @@ using System.Collections;
 
 public class PlayerInteract : MonoBehaviour {
 
-	// Allow the player to interact with "NPC" tagged gameobject (on trigger) - key = Fire1
+	// Allows the player to interact with "NPC" tagged gameobject (on trigger) - key = Fire1
 
-	// interaction vairbale 
+	// interaction variables 
 	GameObject m_interactingNPC;
 	bool m_inNPCTrigger=false;
 
@@ -33,6 +33,7 @@ public class PlayerInteract : MonoBehaviour {
 		}
 	}
 
+	//Destroys the textbox when the player walk off
 	void OnTriggerExit(Collider other){
 		if (other.tag == "NPC") {
 			other.gameObject.GetComponent<TextBox>().DestroyTextBox();
