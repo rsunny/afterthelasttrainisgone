@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/scenes/Article.unity
+- path: Assets/scenes/Mystery.unity
   isLoaded: 1
   isActive: 1
