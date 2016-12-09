@@ -5,15 +5,19 @@ using UnityEngine;
 public class TitleAppearing : MonoBehaviour {
 
 
-	public GameObject Light;
+
+	//sprite Object not working need to fix it
+
+	public GameObject LightObject;
+	public GameObject SpriteObject;
 
 
 	void OnTriggerEnter (Collider collideObj)
 	{	
 		if (collideObj.tag == "Player")
 		{
-			Debug.Log("enter");
-			Light.SetActive(true);
+			LightObject.GetComponent<Light>().enabled = true;
+			SpriteObject.GetComponent<Renderer>().enabled = true;
 		}
 	}
 	void OnTriggerStay (Collider collideObj)
@@ -27,12 +31,13 @@ public class TitleAppearing : MonoBehaviour {
 	{
 		if (collideObj.tag == "Player")
 		{
-			Debug.Log("escher");
-			Light.SetActive(false);	
+			LightObject.GetComponent<Light>().enabled = false;
+			SpriteObject.GetComponent<Renderer>().enabled = false;
 		}
 	}
 	// Use this for initialization
 	void Start () {
+		
 		
 	}
 	

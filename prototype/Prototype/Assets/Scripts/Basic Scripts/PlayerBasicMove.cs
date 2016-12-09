@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class PlayerBasicMove : MonoBehaviour {
 
+	//instance of player
 	public static PlayerBasicMove Instance = null;
-
-	public bool stop = false;
+	//bool to make it stop
+	public static bool stop = false;
 
 	Transform tr;
 
@@ -61,11 +62,11 @@ public class PlayerBasicMove : MonoBehaviour {
 			* _speed * Time.fixedDeltaTime * _vertCoef;
 	}
 
-	public void stopPlayer()
+	public static void stopPlayer()
 	{
 		stop = true;
 	}
-	public void unstopPlayer()
+	public static void unstopPlayer()
 	{
 		stop = false;
 	}

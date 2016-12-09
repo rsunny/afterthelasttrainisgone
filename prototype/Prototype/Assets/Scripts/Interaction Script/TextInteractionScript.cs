@@ -5,9 +5,6 @@ using UnityEngine.UI;
 
 public class TextInteractionScript : MonoBehaviour {
 
-	public GameObject PlayerGameObject;
-	PlayerBasicMove PlayerMoveScript;
-
 	private int thougthtIter = 0;
 	private int dialogIter = 0;
 	
@@ -27,7 +24,7 @@ public class TextInteractionScript : MonoBehaviour {
 
 	void Start()
 	{
-		PlayerMoveScript = PlayerGameObject.GetComponent<PlayerBasicMove> ();
+		
 	}
 
 	void OnTriggerEnter (Collider collideObj)
@@ -50,7 +47,7 @@ public class TextInteractionScript : MonoBehaviour {
 					
 
 					//block the player movment while text appearing
-					PlayerMoveScript.stopPlayer();
+					PlayerBasicMove.stopPlayer();
 					//dismiss all preavious tests
 					TextScript.DismissText();
 					//default case
@@ -67,7 +64,7 @@ public class TextInteractionScript : MonoBehaviour {
 				//make text disappear and press Button appear
 				else if (TextScript.showingText)
 				{	
-					PlayerMoveScript.unstopPlayer();
+					PlayerBasicMove.unstopPlayer();
 					TextScript.DismissText();
 					TextScript.PopUpPressButton();
 				}
@@ -78,7 +75,7 @@ public class TextInteractionScript : MonoBehaviour {
 				{	
 					speechIter = 0;
 					//block the player movment while text appearing
-					PlayerMoveScript.stopPlayer();
+					PlayerBasicMove.stopPlayer();
 					//dismiss all preavious tests
 					TextScript.DismissText();
 					//start the thougth at interaction dialogIter
@@ -118,7 +115,7 @@ public class TextInteractionScript : MonoBehaviour {
 				//make text disappear and press Button appear
 				else if (TextScript.showingText)
 				{	
-					PlayerMoveScript.unstopPlayer();
+					PlayerBasicMove.unstopPlayer();
 					TextScript.DismissText();
 					TextScript.PopUpPressButton();
 				}

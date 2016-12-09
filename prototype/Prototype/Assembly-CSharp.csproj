@@ -53,9 +53,11 @@
      <Compile Include="Assets\Scripts\Game.cs" />
      <Compile Include="Assets\Scripts\GameplayManager.cs" />
      <Compile Include="Assets\Scripts\ImageMovement.cs" />
-     <Compile Include="Assets\Scripts\Interaction Script\InteractionsScript.cs" />
-     <Compile Include="Assets\Scripts\Interaction Script\InteractiveObject.cs" />
-     <Compile Include="Assets\Scripts\Interaction Script\PressButtonInteraction.cs" />
+     <Compile Include="Assets\Scripts\Interaction Script\TextInteractionScript.cs" />
+     <Compile Include="Assets\Scripts\Interaction Script\TextScript.cs" />
+     <Compile Include="Assets\Scripts\Interaction Script\TitleAppearing.cs" />
+     <Compile Include="Assets\Scripts\InteractionsScript.cs" />
+     <Compile Include="Assets\Scripts\InteractiveObject.cs" />
      <Compile Include="Assets\Scripts\Library\Unity\EventListener.cs" />
      <Compile Include="Assets\Scripts\Library\Unity\EventManager.cs" />
      <Compile Include="Assets\Scripts\Library\Unity\EventTrigger.cs" />
@@ -68,11 +70,9 @@
      <Compile Include="Assets\Scripts\MenuManager.cs" />
      <Compile Include="Assets\Scripts\MusicManager.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\PressButtonInteraction.cs" />
      <Compile Include="Assets\Scripts\SfxManager.cs" />
      <Compile Include="Assets\Scripts\SplashScreenManager.cs" />
-     <Compile Include="Assets\Scripts\TextInteractionScript.cs" />
-     <Compile Include="Assets\Scripts\TextScript.cs" />
-     <Compile Include="Assets\Scripts\TitleAppearing.cs" />
      <None Include="Assets\Texts\Prototype texts\Newspaper1-1.txt" />
      <None Include="Assets\Fonts\ciao\Ciao.txt" />
      <None Include="Assets\Fonts\disco-1\1001fonts-disco-1-eula.txt" />
