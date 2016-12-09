@@ -6,6 +6,8 @@ public class PlayerBasicMove : MonoBehaviour {
 
 	public static PlayerBasicMove Instance = null;
 
+	public bool stop = false;
+
 	Transform tr;
 
 	float horiz = 0f;
@@ -36,12 +38,15 @@ public class PlayerBasicMove : MonoBehaviour {
 
 	void FixedUpdate() 
 	{
-		horiz = Input.GetAxis ("Horizontal");
-		vert = Input.GetAxis ("Vertical");
-		Move(horiz,vert,speed,vertCoef);
+		if (!stop){
+			horiz = Input.GetAxis ("Horizontal");
+			vert = Input.GetAxis ("Vertical");
+			Move(horiz,vert,speed,vertCoef);
+		}
+
 	}
 	
-	// Update is called once per frame
+	// Update is called once peappears to be similar to pausing and unpausing the game. You can extract the relevant code from the community wiki's PauseMenu script, and I will be reprinting the relevant code here with an explanation:r frame
 	void Update () 
 	{
 		
@@ -54,5 +59,14 @@ public class PlayerBasicMove : MonoBehaviour {
 			* _speed * Time.fixedDeltaTime +
 			_v * transform.forward
 			* _speed * Time.fixedDeltaTime * _vertCoef;
+	}
+
+	public void stopPlayer()
+	{
+		stop = true;
+	}
+	public void unstopPlayer()
+	{
+		stop = false;
 	}
 }

@@ -70,14 +70,15 @@
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\SfxManager.cs" />
      <Compile Include="Assets\Scripts\SplashScreenManager.cs" />
+     <Compile Include="Assets\Scripts\TextInteractionScript.cs" />
+     <Compile Include="Assets\Scripts\TextScript.cs" />
+     <Compile Include="Assets\Scripts\TitleAppearing.cs" />
+     <None Include="Assets\Texts\Prototype texts\Newspaper1-1.txt" />
      <None Include="Assets\Fonts\ciao\Ciao.txt" />
      <None Include="Assets\Fonts\disco-1\1001fonts-disco-1-eula.txt" />
      <None Include="Assets\Fonts\typewriter\1001fonts-typewriter-eula.txt" />
      <None Include="Assets\PBS Materials Variety Pack\readme.txt" />
      <None Include="Assets\Fonts\quikhand\blank readme.txt" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -92,9 +93,6 @@
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Purchasing">
- <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.VR">
  <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
