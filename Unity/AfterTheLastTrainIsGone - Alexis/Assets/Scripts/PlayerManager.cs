@@ -45,7 +45,7 @@ public class PlayerManager : MonoBehaviour {
 
 	public void Defense(bool defenseInput){
 		if (m_defenseGameObject != null) {
-			m_defenseGameObject.GetComponent<Defense> ().Input (!m_disableAction && defenseInput && !m_attackMode);
+			m_defenseGameObject.GetComponent<Defense> ().Input (!m_disableAction && defenseInput && (!m_attackMode || m_defenseMode && m_attackMode)); // handel the case of the counterattack );
 		}
 	}
 

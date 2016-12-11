@@ -3,11 +3,7 @@ using System.Collections;
 
 public class CounterAttack : Attack {
 
-	public float m_gotHitTimeWindow;
 	public float m_inputTimeWindow;
-
-	bool m_gotHit;
-	int m_gotHitCoroutineCounter;
 
 	int m_inputCoroutineCounter;
 
@@ -20,23 +16,13 @@ public class CounterAttack : Attack {
 	void Update () {
 		if (m_input && m_gotHit && m_attackReady){
 			m_attackReady = false; // Avoids to attack before the previous attack routine is done
+			m_gotHit=false;
+			m_input = false;
 			StartCoroutine (AttackCoroutine ());
 		}
 	}
 
-	public void GotHit (){
-		m_gotHitCoroutineCounter += 1;
-		StartCoroutine (GotHitCoroutine ());
-	}
 
-	IEnumerator GotHitCoroutine (){
-		int numberCoroutine = m_gotHitCoroutineCounter;
-		m_gotHit = true;
-		yield return new WaitForSeconds (m_gotHitTimeWindow);
-		if (numberCoroutine == m_gotHitCoroutineCounter) { //will not change the gotHit boolean if an other coroutine has been launched
-			m_gotHit = false;
-		}
-	}
 
 	public void Input (bool input){
 		if (input) {

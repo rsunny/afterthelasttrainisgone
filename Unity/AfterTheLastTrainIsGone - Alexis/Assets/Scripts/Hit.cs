@@ -6,6 +6,7 @@ public class Hit : MonoBehaviour {
 	public GameObject m_playerManagerGameObject;
 	public GameObject m_healthGameObject;
 	public GameObject m_counterAttackGameObject;
+	public GameObject m_attackGameObject;
 	public Animator m_playerAnimator;
 
 	public float m_invulnerabilityDuration;
@@ -29,20 +30,29 @@ public class Hit : MonoBehaviour {
 
 	// If the defend mode is not activated, reduces the health by the damage given in argument and activate the corresponding animation
 	public void GetHit(int damage){
-		if (!m_defenseMode && !m_invulnerability) {
-			
-			m_healthGameObject.GetComponent<Health> ().SubstractHealth (damage);
+		if (!m_invulnerability) {
 			if (m_playerAnimator != null) {
 				m_playerAnimator.SetTrigger ("GetHit");
 			}
-			StartCoroutine (Invulnerability ());
-			if (m_playerManagerGameObject != null) {
-				m_disableActionCoroutineCounter += 1;
-				StartCoroutine (DisableAction ());
+			if (!m_defenseMode) {
+			
+				m_healthGameObject.GetComponent<Health> ().SubstractHealth (damage);
+				StartCoroutine (Invulnerability ());
+				if (m_playerManagerGameObject != null) {
+					m_disableActionCoroutineCounter += 1;
+					StartCoroutine (DisableAction ());
+				}
 			}
-		}
-		if (m_counterAttackGameObject != null) {
-			m_counterAttackGameObject.GetComponent<CounterAttack> ().GotHit ();
+			if (m_counterAttackGameObject != null) {
+				m_counterAttackGameObject.GetComponent<CounterAttack> ().GotHit ();
+			} else {
+				Debug.Log ("CounterAttack not assigned", gameObject);
+			}
+			if (m_attackGameObject != null) {
+				m_attackGameObject.GetComponent<Attack> ().GotHit ();
+			} else {
+				Debug.Log ("Attack not assigned", gameObject);
+			}
 		}
 	}
 
