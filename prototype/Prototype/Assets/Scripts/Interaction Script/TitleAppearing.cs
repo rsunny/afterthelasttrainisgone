@@ -10,12 +10,21 @@ public class TitleAppearing : MonoBehaviour {
 
 	public GameObject LightObject;
 	public GameObject SpriteObject;
+	public GameObject MusicObject;
+	public bool firstTime = true;
 
 
 	void OnTriggerEnter (Collider collideObj)
 	{	
 		if (collideObj.tag == "Player")
 		{
+			if(firstTime)
+			{
+				MusicObject.GetComponent<AudioSource>().Play();
+				firstTime = false;
+			}
+			else MusicObject.GetComponent<AudioSource>().UnPause();
+			
 			LightObject.GetComponent<Light>().enabled = true;
 			SpriteObject.GetComponent<Renderer>().enabled = true;
 		}
@@ -31,6 +40,7 @@ public class TitleAppearing : MonoBehaviour {
 	{
 		if (collideObj.tag == "Player")
 		{
+			MusicObject.GetComponent<AudioSource>().Pause();
 			LightObject.GetComponent<Light>().enabled = false;
 			SpriteObject.GetComponent<Renderer>().enabled = false;
 		}

@@ -124,6 +124,7 @@ public class TextScript : MonoBehaviour {
         showingText = true;    
 
         instance.DialogObject.SetActive(true);
+        instance.DialogCanvasGroup.gameObject.SetActive(true);
 		for(int _i= 0; _i < instance.WhoIsSpeaking.Length; _i++)
 		{
 			instance.WhoIsSpeaking[_i].text = _whoIsSpeaking;
@@ -133,7 +134,6 @@ public class TextScript : MonoBehaviour {
 			instance.DialogueText[_i].text = _whatHeSays;
 		}
         //Show the dialog canvas.
-        instance.DialogCanvasGroup.gameObject.SetActive(true);
 		
 		//Set our callbacks to the ones we received.
         if(_consequence == null)
@@ -154,6 +154,30 @@ public class TextScript : MonoBehaviour {
         showingText = false;
 		instance.buttonCanvasGroup.gameObject.SetActive(true);
 	}
+
+    public static void PopUpTimedThought(string _thougth)
+    {   
+        Debug.Log("sono dentro");
+        //If we're showing dialog already stop here.
+        if (showingText) return;
+		DismissText();
+        Debug.Log("ho superato il primo script e dismesso vecchio testo");
+        //Set the showing dialog bool to true to prevent another dialog over this.
+        showingText = true;    
+		
+        
+		instance.ThoughtObject.SetActive(true);
+		for(int _i= 0; _i < instance.ThoughtText.Length; _i++)
+		{
+            Debug.Log("sono dentro il ciclo for");
+            Debug.Log(_thougth);
+			instance.ThoughtText[_i].text = _thougth;
+		}
+		
+		//Show the dialog canvas.
+        instance.ThoughtCanvasGroup.gameObject.SetActive(true);
+		
+    }
 
 
 	public static void DismissText()

@@ -21,6 +21,11 @@ public class TextInteractionScript : MonoBehaviour {
 	private bool moreSpeech = false;
 
 
+	public bool isThereTimedThought;
+	public int time = 1;
+	public string[] arrayOfTimedThoughts;
+	private int timedThoughtIter = 0;
+
 
 	void Start()
 	{
@@ -50,7 +55,7 @@ public class TextInteractionScript : MonoBehaviour {
 					PlayerBasicMove.stopPlayer();
 					//dismiss all preavious tests
 					TextScript.DismissText();
-					//default case
+					//default case        yield return new WaitForSeconds(5);
 					if (arrayOfThoughts.Length == 0 && dialog.Length == 0) TextScript.PopUpThought("...");
 					//start the thougth at interaction thougthtIter
 					StartingThought(thougthtIter);
@@ -103,7 +108,6 @@ public class TextInteractionScript : MonoBehaviour {
 					//update dialogIter
 					if(!moreSpeech)
 					{
-						Debug.Log("l'ultima iterazione dovrei passare di qui");
 						if (dialogIter < dialog.Length - 1) 
 						{
 							dialogIter ++;
@@ -127,7 +131,19 @@ public class TextInteractionScript : MonoBehaviour {
 	{
 		if (collideObj.tag == "Player")
 		{
+			//dismiss all preavious tests
 			TextScript.DismissText();
+			//default case		
+			if (arrayOfTimedThoughts.Length == 0) return;
+			//start the thougth at interaction timedThoughtIter
+			StartingTimedThougth(timedThoughtIter);
+			//update timedThoughtIter
+			if (timedThoughtIter < arrayOfTimedThoughts.Length - 1) 
+			{
+				timedThoughtIter ++;
+			}
+			else timedThoughtIter = 0;
+	
 		}
 	}
 
@@ -155,6 +171,19 @@ public class TextInteractionScript : MonoBehaviour {
 	void StartingThought(int _i)
 	{
 		TextScript.PopUpThought(arrayOfThoughts[_i]);
+
 	}
 
+
+	void StartingTimedThougth(int _i)
+	{
+		TextScript.PopUpTimedThought(arrayOfTimedThoughts[_i]);
+		timeDelay(time);
+		TextScript.DismissText();
+	}
+
+	IEnumerator timeDelay(int _t)
+	{
+		yield return new WaitForSeconds(_t);
+	}
 }
