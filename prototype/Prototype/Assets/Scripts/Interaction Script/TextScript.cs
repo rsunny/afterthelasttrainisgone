@@ -64,6 +64,11 @@ public class TextScript : MonoBehaviour {
 	//collegamento al game object che useremo per pressButton
 	public GameObject PressButton;
 
+    //canvas Group che contiene cosa mostrare
+    public CanvasGroup openDoorCanvasGroup;
+	//collegamento al game object che useremo per pressButton
+	public GameObject OpenDoor;
+
 
 	/*DELEGATE FUNCTION: uses for change state of object after dialogs/interactions*/
 	//We're going to use a void delegate for the callbacks
@@ -142,7 +147,7 @@ public class TextScript : MonoBehaviour {
         } 
         else  instance.next = _consequence;
     }
-	public static void PopUpPressButton()
+	public static void PopUpPressButton(bool _isAOpenableDoor= false)
 	{
         //If we're showing dialog already stop here.
         if (showingText) return;
@@ -150,10 +155,13 @@ public class TextScript : MonoBehaviour {
 		DismissText();
 		
 		instance.PressButton.SetActive(true);
+        if(_isAOpenableDoor)instance.OpenDoor.SetActive(true);
         //Set the showing dialog bool to true to prevent another dialog over this.
         showingText = false;
 		instance.buttonCanvasGroup.gameObject.SetActive(true);
+        if(_isAOpenableDoor)instance.openDoorCanvasGroup.gameObject.SetActive(true);
 	}
+
 
     public static void PopUpTimedThought(string _thought)
     {   
@@ -186,6 +194,8 @@ public class TextScript : MonoBehaviour {
         //Hide the gameobjects and set the showingText back to false to allow for new dialog calls.
      	instance.PressButton.SetActive(false);
 		instance.buttonCanvasGroup.gameObject.SetActive(false);
+        instance.OpenDoor.SetActive(false);
+        instance.openDoorCanvasGroup.gameObject.SetActive(false);
 	    instance.ThoughtObject.SetActive(false);
         instance.ThoughtCanvasGroup.gameObject.SetActive(false);
 	    instance.DialogObject.SetActive(false);

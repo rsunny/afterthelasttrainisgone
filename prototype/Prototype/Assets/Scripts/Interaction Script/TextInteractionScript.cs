@@ -2,23 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TextInteractionScript : MonoBehaviour {
+
+
 
 	public int curState = 0;
 
 	private int thoughtIter = 0;
 	private int dialogIter = 0;
-	
+
+
+
+	public bool workingDoor = false;
+	public string sceneToLoad;
+
 	[System.Serializable]
 	public struct thoughtStruct
 	{
 		public int state;
 		public string[] arrayOfThoughts;
+		public bool changeTheState;
 
 	};
 	public thoughtStruct[] thoughtByState;
 	private string[] curArrayOfThoughts;
+	private bool changeTheState;
 
 
 
@@ -52,14 +62,16 @@ public class TextInteractionScript : MonoBehaviour {
 
 	void Start()
 	{
-		
+
 	}
 
 	void OnTriggerEnter (Collider collideObj)
 	{	
 		if (collideObj.tag == "Player")
 		{
-			TextScript.PopUpPressButton();
+			TextScript.PopUpPressButton(workingDoor);
+			curState = PlayerInteractionManager.currentState;
+
 		}
 	}
 	void OnTriggerStay (Collider collideObj)
@@ -71,12 +83,19 @@ public class TextInteractionScript : MonoBehaviour {
 			//thoughtLength
 			if(Input.GetKeyDown ("e"))
 			{	
+				Debug.Log (PlayerInteractionManager.currentState);
+				Debug.Log(curState);
 
 				//initialization of the array of thoughts base on the current state
 				for( int _i = 0; _i < thoughtByState.Length; _i++)
 				{
-					if (thoughtByState[_i].state == curState) curArrayOfThoughts = thoughtByState[_i].arrayOfThoughts;
+					if (thoughtByState[_i].state == curState)
+					{
+						curArrayOfThoughts = thoughtByState[_i].arrayOfThoughts;
+						changeTheState = thoughtByState[_i].changeTheState;
+					}
 				}
+				
 
 
 				//make text appear
@@ -97,14 +116,18 @@ public class TextInteractionScript : MonoBehaviour {
 					{
 						thoughtIter ++;
 					}
-					else thoughtIter = 0;
+					else
+					{
+						thoughtIter = 0;
+						if(changeTheState) PlayerInteractionManager.setCurrentState(curState+1);
+					} 
 				}
 				//make text disappear and press Button appear
 				else if (TextScript.showingText)
 				{	
 					PlayerBasicMove.unstopPlayer();
 					TextScript.DismissText();
-					TextScript.PopUpPressButton();
+					TextScript.PopUpPressButton(workingDoor);
 				}
 			}
 			if(Input.GetKeyDown ("q"))
@@ -162,8 +185,17 @@ public class TextInteractionScript : MonoBehaviour {
 				{	
 					PlayerBasicMove.unstopPlayer();
 					TextScript.DismissText();
-					TextScript.PopUpPressButton();
+					TextScript.PopUpPressButton(workingDoor);
 				}
+			}
+
+			if(Input.GetKeyDown("r")&&workingDoor)
+			{
+					//block the player movment while text appearing
+					PlayerBasicMove.stopPlayer();
+					//dismiss all preavious tests
+					TextScript.DismissText();
+					SceneManager.LoadScene (sceneToLoad);
 			}
 
 		}
@@ -218,13 +250,20 @@ public class TextInteractionScript : MonoBehaviour {
 
 	void StartingTimedthought(int _i)
 	{
+		Debug.Log ("sono qui");
+		Debug.Log(Time.time);
 		TextScript.PopUpTimedThought(arrayOfTimedThoughts[_i]);
-		timeDelay(time);
-		TextScript.DismissText();
+		StartCoroutine(waitAndDestroy());
+		Debug.Log("dopo un po' sono qui");
+		Debug.Log(Time.time);
+	
 	}
 
-	IEnumerator timeDelay(int _t)
+	IEnumerator waitAndDestroy()
 	{
-		yield return new WaitForSeconds(_t);
+		Debug.Log("qui sono dentro wait and destroy");
+		Debug.Log(Time.time);
+		yield return new WaitForSeconds(time);
+		TextScript.DismissText();
 	}
 }
