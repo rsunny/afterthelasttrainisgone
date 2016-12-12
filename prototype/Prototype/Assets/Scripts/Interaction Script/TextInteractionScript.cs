@@ -8,14 +8,16 @@ public class TextInteractionScript : MonoBehaviour {
 
 
 
-	public int curState = 0;
+	private int curState = 0;
 
 	private int thoughtIter = 0;
 	private int dialogIter = 0;
 
 
-
-	public bool workingDoor = false;
+	public bool isADoor = false;
+	private bool workingDoor = false;
+	public bool alwaysWorkingDoor = false;
+	public int doorWorkingFromState = 100;
 	public string sceneToLoad;
 
 	[System.Serializable]
@@ -28,7 +30,7 @@ public class TextInteractionScript : MonoBehaviour {
 	};
 	public thoughtStruct[] thoughtByState;
 	private string[] curArrayOfThoughts;
-	private bool changeTheState;
+	private bool changeTheStateThoughts;
 
 
 
@@ -40,6 +42,8 @@ public class TextInteractionScript : MonoBehaviour {
 	{
 		public int state;
 		public Line[] dialog;
+		public bool changeTheState;
+
 	};
 	public dialogStruct[] dialogByState;
 	private Line[] curDialog;
@@ -50,6 +54,7 @@ public class TextInteractionScript : MonoBehaviour {
 		public string[] Speakers;
 		public string[] Speech;
 	};
+	private bool changeTheStateDialog;
 	private int speechIter = 0;
 	private bool moreSpeech = false;
 
@@ -68,9 +73,18 @@ public class TextInteractionScript : MonoBehaviour {
 	void OnTriggerEnter (Collider collideObj)
 	{	
 		if (collideObj.tag == "Player")
-		{
-			TextScript.PopUpPressButton(workingDoor);
+		{	
+			dialogIter = 0;
+			thoughtIter = 0;
 			curState = PlayerInteractionManager.currentState;
+			if(isADoor){
+				if(alwaysWorkingDoor||curState >= doorWorkingFromState)
+				{
+					workingDoor = true;
+				}
+				else workingDoor = false;
+			}
+			TextScript.PopUpPressButton(workingDoor);
 
 		}
 	}
@@ -83,8 +97,9 @@ public class TextInteractionScript : MonoBehaviour {
 			//thoughtLength
 			if(Input.GetKeyDown ("e"))
 			{	
-				Debug.Log (PlayerInteractionManager.currentState);
+				Debug.Log("stato corrente e stato corrente giocatore");
 				Debug.Log(curState);
+				Debug.Log(PlayerInteractionManager.currentState);
 
 				//initialization of the array of thoughts base on the current state
 				for( int _i = 0; _i < thoughtByState.Length; _i++)
@@ -92,7 +107,7 @@ public class TextInteractionScript : MonoBehaviour {
 					if (thoughtByState[_i].state == curState)
 					{
 						curArrayOfThoughts = thoughtByState[_i].arrayOfThoughts;
-						changeTheState = thoughtByState[_i].changeTheState;
+						changeTheStateThoughts = thoughtByState[_i].changeTheState;
 					}
 				}
 				
@@ -119,7 +134,6 @@ public class TextInteractionScript : MonoBehaviour {
 					else
 					{
 						thoughtIter = 0;
-						if(changeTheState) PlayerInteractionManager.setCurrentState(curState+1);
 					} 
 				}
 				//make text disappear and press Button appear
@@ -128,14 +142,25 @@ public class TextInteractionScript : MonoBehaviour {
 					PlayerBasicMove.unstopPlayer();
 					TextScript.DismissText();
 					TextScript.PopUpPressButton(workingDoor);
+					if(changeTheStateThoughts) PlayerInteractionManager.setCurrentState(curState+1);
 				}
 			}
 			if(Input.GetKeyDown ("q"))
 			{
+				
+				Debug.Log("stato corrente e stato corrente giocatore");
+				Debug.Log(curState);
+				Debug.Log(PlayerInteractionManager.currentState);
 				//initialization of the array of thoughts base on the current state
 				for( int _i = 0; _i < dialogByState.Length; _i++)
 				{
-					if (dialogByState[_i].state == curState) curDialog = dialogByState[_i].dialog;
+					if (dialogByState[_i].state == curState)
+					{
+						curDialog = dialogByState[_i].dialog;
+						changeTheStateDialog = dialogByState[_i].changeTheState;
+
+					} 
+
 				}
 
 
@@ -154,12 +179,16 @@ public class TextInteractionScript : MonoBehaviour {
 					//update dialogIter
 					if(!moreSpeech)
 					{
-						Debug.Log("l'ultima iterazione dovrei passare di qui");
+	
 						if (dialogIter < curDialog.Length - 1) 
 						{
 							dialogIter ++;
 						}
-						else dialogIter = 0;
+						else
+						{
+							dialogIter = 0;
+
+						} 
 
 					}
 
@@ -176,7 +205,10 @@ public class TextInteractionScript : MonoBehaviour {
 						{
 							dialogIter ++;
 						}
-						else dialogIter = 0;
+						else
+						{
+							dialogIter = 0;
+						} 
 
 					}
 				}
@@ -186,16 +218,20 @@ public class TextInteractionScript : MonoBehaviour {
 					PlayerBasicMove.unstopPlayer();
 					TextScript.DismissText();
 					TextScript.PopUpPressButton(workingDoor);
+					if(changeTheStateDialog) PlayerInteractionManager.setCurrentState(curState+1);
 				}
 			}
 
-			if(Input.GetKeyDown("r")&&workingDoor)
-			{
+			if(Input.GetKeyDown("r")&&isADoor)
+			{		
+				if(workingDoor)
+				{
 					//block the player movment while text appearing
 					PlayerBasicMove.stopPlayer();
 					//dismiss all preavious tests
 					TextScript.DismissText();
 					SceneManager.LoadScene (sceneToLoad);
+				}
 			}
 
 		}
@@ -225,19 +261,14 @@ public class TextInteractionScript : MonoBehaviour {
 	{	
 		int speechLength = curDialog[_di].Speakers.Length - 1;
 		TextScript.PopUpDialog(curDialog[_di].Speakers[_si],curDialog[_di].Speech[_si]);
-		Debug.Log(_si);
-		Debug.Log(curDialog[_di].Speakers.Length - 1);
+
 		if(_si == speechLength){
-			Debug.Log("sono qui!");
 			moreSpeech = false;
-			Debug.Log(moreSpeech);
 		}
 		else
 		{	
-			Debug.Log("sono nell'else");
 			moreSpeech = true;
 			speechIter ++;
-			Debug.Log(moreSpeech);
 		}
 	}
 
@@ -250,19 +281,15 @@ public class TextInteractionScript : MonoBehaviour {
 
 	void StartingTimedthought(int _i)
 	{
-		Debug.Log ("sono qui");
-		Debug.Log(Time.time);
 		TextScript.PopUpTimedThought(arrayOfTimedThoughts[_i]);
 		StartCoroutine(waitAndDestroy());
-		Debug.Log("dopo un po' sono qui");
-		Debug.Log(Time.time);
+	
 	
 	}
 
 	IEnumerator waitAndDestroy()
 	{
-		Debug.Log("qui sono dentro wait and destroy");
-		Debug.Log(Time.time);
+
 		yield return new WaitForSeconds(time);
 		TextScript.DismissText();
 	}
