@@ -117,7 +117,7 @@ public class MenuManager : Singleton<MenuManager> {
 	public void Play() {
 		MusicManager.Instance.StopAll ();
 		MusicManager.Instance.PlayMusic ("GameplayMusic");
-		SceneManager.LoadScene ("Gameplay");
+		SceneManager.LoadScene ("Level0");
 	}
 
 
