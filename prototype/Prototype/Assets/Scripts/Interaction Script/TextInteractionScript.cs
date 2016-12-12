@@ -5,10 +5,34 @@ using UnityEngine.UI;
 
 public class TextInteractionScript : MonoBehaviour {
 
-	private int thougthtIter = 0;
+	public int curState = 0;
+
+	private int thoughtIter = 0;
 	private int dialogIter = 0;
 	
-	public string[] arrayOfThoughts;
+	[System.Serializable]
+	public struct thoughtStruct
+	{
+		public int state;
+		public string[] arrayOfThoughts;
+
+	};
+	public thoughtStruct[] thoughtByState;
+	private string[] curArrayOfThoughts;
+
+
+
+
+
+
+	[System.Serializable]
+	public struct dialogStruct
+	{
+		public int state;
+		public Line[] dialog;
+	};
+	public dialogStruct[] dialogByState;
+	private Line[] curDialog;
 
 	[System.Serializable]
 	public struct Line
@@ -16,7 +40,6 @@ public class TextInteractionScript : MonoBehaviour {
 		public string[] Speakers;
 		public string[] Speech;
 	};
-	public Line[] dialog;
 	private int speechIter = 0;
 	private bool moreSpeech = false;
 
@@ -41,11 +64,21 @@ public class TextInteractionScript : MonoBehaviour {
 	}
 	void OnTriggerStay (Collider collideObj)
 	{	
+
+
 		if (collideObj.tag == "Player")
 		{	
-			//thougth
+			//thoughtLength
 			if(Input.GetKeyDown ("e"))
 			{	
+
+				//initialization of the array of thoughts base on the current state
+				for( int _i = 0; _i < thoughtByState.Length; _i++)
+				{
+					if (thoughtByState[_i].state == curState) curArrayOfThoughts = thoughtByState[_i].arrayOfThoughts;
+				}
+
+
 				//make text appear
 				if (!TextScript.showingText)
 				{	
@@ -56,15 +89,15 @@ public class TextInteractionScript : MonoBehaviour {
 					//dismiss all preavious tests
 					TextScript.DismissText();
 					//default case        yield return new WaitForSeconds(5);
-					if (arrayOfThoughts.Length == 0 && dialog.Length == 0) TextScript.PopUpThought("...");
-					//start the thougth at interaction thougthtIter
-					StartingThought(thougthtIter);
-					//update thougthtIter
-					if (thougthtIter < arrayOfThoughts.Length - 1) 
+					if (curArrayOfThoughts.Length == 0 && curDialog.Length == 0) TextScript.PopUpThought("...");
+					//start the thought at interaction thoughtIter
+					StartingThought(thoughtIter);
+					//update thoughtIter
+					if (thoughtIter < curArrayOfThoughts.Length - 1) 
 					{
-						thougthtIter ++;
+						thoughtIter ++;
 					}
-					else thougthtIter = 0;
+					else thoughtIter = 0;
 				}
 				//make text disappear and press Button appear
 				else if (TextScript.showingText)
@@ -76,6 +109,14 @@ public class TextInteractionScript : MonoBehaviour {
 			}
 			if(Input.GetKeyDown ("q"))
 			{
+				//initialization of the array of thoughts base on the current state
+				for( int _i = 0; _i < dialogByState.Length; _i++)
+				{
+					if (dialogByState[_i].state == curState) curDialog = dialogByState[_i].dialog;
+				}
+
+
+				//make text appear
 				if(!TextScript.showingText)
 				{	
 					speechIter = 0;
@@ -83,15 +124,15 @@ public class TextInteractionScript : MonoBehaviour {
 					PlayerBasicMove.stopPlayer();
 					//dismiss all preavious tests
 					TextScript.DismissText();
-					//start the thougth at interaction dialogIter
-					if(dialog.Length == 0) TextScript.PopUpDialog("mc:","...");
+					//start the thought at interaction dialogIter
+					if(curDialog.Length == 0) TextScript.PopUpDialog("mc:","...");
 					else StartingDialog(dialogIter, speechIter);
 
 					//update dialogIter
 					if(!moreSpeech)
 					{
 						Debug.Log("l'ultima iterazione dovrei passare di qui");
-						if (dialogIter < dialog.Length - 1) 
+						if (dialogIter < curDialog.Length - 1) 
 						{
 							dialogIter ++;
 						}
@@ -108,7 +149,7 @@ public class TextInteractionScript : MonoBehaviour {
 					//update dialogIter
 					if(!moreSpeech)
 					{
-						if (dialogIter < dialog.Length - 1) 
+						if (dialogIter < curDialog.Length - 1) 
 						{
 							dialogIter ++;
 						}
@@ -135,8 +176,8 @@ public class TextInteractionScript : MonoBehaviour {
 			TextScript.DismissText();
 			//default case		
 			if (arrayOfTimedThoughts.Length == 0) return;
-			//start the thougth at interaction timedThoughtIter
-			StartingTimedThougth(timedThoughtIter);
+			//start the thought at interaction timedThoughtIter
+			StartingTimedthought(timedThoughtIter);
 			//update timedThoughtIter
 			if (timedThoughtIter < arrayOfTimedThoughts.Length - 1) 
 			{
@@ -150,10 +191,10 @@ public class TextInteractionScript : MonoBehaviour {
 
 	void StartingDialog(int _di, int _si)
 	{	
-		int speechLength = dialog[_di].Speakers.Length - 1;
-		TextScript.PopUpDialog(dialog[_di].Speakers[_si],dialog[_di].Speech[_si]);
+		int speechLength = curDialog[_di].Speakers.Length - 1;
+		TextScript.PopUpDialog(curDialog[_di].Speakers[_si],curDialog[_di].Speech[_si]);
 		Debug.Log(_si);
-		Debug.Log(dialog[_di].Speakers.Length - 1);
+		Debug.Log(curDialog[_di].Speakers.Length - 1);
 		if(_si == speechLength){
 			Debug.Log("sono qui!");
 			moreSpeech = false;
@@ -170,12 +211,12 @@ public class TextInteractionScript : MonoBehaviour {
 
 	void StartingThought(int _i)
 	{
-		TextScript.PopUpThought(arrayOfThoughts[_i]);
+		TextScript.PopUpThought(curArrayOfThoughts[_i]);
 
 	}
 
 
-	void StartingTimedThougth(int _i)
+	void StartingTimedthought(int _i)
 	{
 		TextScript.PopUpTimedThought(arrayOfTimedThoughts[_i]);
 		timeDelay(time);

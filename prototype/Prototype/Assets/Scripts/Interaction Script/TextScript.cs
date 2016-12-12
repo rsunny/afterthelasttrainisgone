@@ -90,7 +90,7 @@ public class TextScript : MonoBehaviour {
         }
     }
 
-	public static void PopUpThought (string _thougth, consequence _consequence = null)
+	public static void PopUpThought (string _thought, consequence _consequence = null)
 	{
 		//If we're showing dialog already stop here.
         if (showingText) return;
@@ -102,7 +102,7 @@ public class TextScript : MonoBehaviour {
 		instance.ThoughtObject.SetActive(true);
 		for(int _i= 0; _i < instance.ThoughtText.Length; _i++)
 		{
-			instance.ThoughtText[_i].text = _thougth;
+			instance.ThoughtText[_i].text = _thought;
 		}
 		
 		//Show the dialog canvas.
@@ -155,7 +155,7 @@ public class TextScript : MonoBehaviour {
 		instance.buttonCanvasGroup.gameObject.SetActive(true);
 	}
 
-    public static void PopUpTimedThought(string _thougth)
+    public static void PopUpTimedThought(string _thought)
     {   
         Debug.Log("sono dentro");
         //If we're showing dialog already stop here.
@@ -170,8 +170,8 @@ public class TextScript : MonoBehaviour {
 		for(int _i= 0; _i < instance.ThoughtText.Length; _i++)
 		{
             Debug.Log("sono dentro il ciclo for");
-            Debug.Log(_thougth);
-			instance.ThoughtText[_i].text = _thougth;
+            Debug.Log(_thought);
+			instance.ThoughtText[_i].text = _thought;
 		}
 		
 		//Show the dialog canvas.
