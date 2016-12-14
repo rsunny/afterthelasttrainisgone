@@ -13,6 +13,7 @@ public class TextInteractionScript : MonoBehaviour {
 	private int thoughtIter = 0;
 	private int dialogIter = 0;
 
+	private bool error;
 
 	public bool isADoor = false;
 	private bool workingDoor = false;
@@ -29,7 +30,7 @@ public class TextInteractionScript : MonoBehaviour {
 
 	};
 	public thoughtStruct[] thoughtByState;
-	private string[] curArrayOfThoughts;
+	private string[] curArrayOfThoughts = new string[0];
 	private bool changeTheStateThoughts;
 
 
@@ -46,7 +47,7 @@ public class TextInteractionScript : MonoBehaviour {
 
 	};
 	public dialogStruct[] dialogByState;
-	private Line[] curDialog;
+	private Line[] curDialog = new Line[0];
 
 	[System.Serializable]
 	public struct Line
@@ -95,7 +96,7 @@ public class TextInteractionScript : MonoBehaviour {
 		if (collideObj.tag == "Player")
 		{	
 			//thoughtLength
-			if(Input.GetKeyDown ("e"))
+			if(Input.GetButtonDown ("Jump"))
 			{	
 				Debug.Log("stato corrente e stato corrente giocatore");
 				Debug.Log(curState);
@@ -110,20 +111,23 @@ public class TextInteractionScript : MonoBehaviour {
 						changeTheStateThoughts = thoughtByState[_i].changeTheState;
 					}
 				}
-				
+
 
 
 				//make text appear
 				if (!TextScript.showingText)
 				{	
-					
 
 					//block the player movment while text appearing
 					PlayerBasicMove.stopPlayer();
 					//dismiss all preavious tests
 					TextScript.DismissText();
 					//default case        yield return new WaitForSeconds(5);
-					if (curArrayOfThoughts.Length == 0 && curDialog.Length == 0) TextScript.PopUpThought("...");
+					if ((curArrayOfThoughts.Length == 0 && curDialog.Length == 0)|| error )
+					{
+						TextScript.PopUpThought("...");
+						error = false;
+					}
 					//start the thought at interaction thoughtIter
 					StartingThought(thoughtIter);
 					//update thoughtIter
@@ -137,7 +141,7 @@ public class TextInteractionScript : MonoBehaviour {
 					} 
 				}
 				//make text disappear and press Button appear
-				else if (TextScript.showingText)
+				else
 				{	
 					PlayerBasicMove.unstopPlayer();
 					TextScript.DismissText();
@@ -145,7 +149,7 @@ public class TextInteractionScript : MonoBehaviour {
 					if(changeTheStateThoughts) PlayerInteractionManager.setCurrentState(curState+1);
 				}
 			}
-			if(Input.GetKeyDown ("q"))
+			if(Input.GetButtonDown ("Fire3"))
 			{
 				
 				Debug.Log("stato corrente e stato corrente giocatore");
@@ -173,7 +177,11 @@ public class TextInteractionScript : MonoBehaviour {
 					//dismiss all preavious tests
 					TextScript.DismissText();
 					//start the thought at interaction dialogIter
-					if(curDialog.Length == 0) TextScript.PopUpDialog("mc:","...");
+					if(curDialog.Length == 0 || error)
+					{
+						TextScript.PopUpDialog("mc:","...");
+						error = false;
+					}
 					else StartingDialog(dialogIter, speechIter);
 
 					//update dialogIter
@@ -222,7 +230,7 @@ public class TextInteractionScript : MonoBehaviour {
 				}
 			}
 
-			if(Input.GetKeyDown("r")&&isADoor)
+			if(Input.GetButtonDown("Fire2")&&isADoor)
 			{		
 				if(workingDoor)
 				{
@@ -274,7 +282,11 @@ public class TextInteractionScript : MonoBehaviour {
 
 	void StartingThought(int _i)
 	{
-		TextScript.PopUpThought(curArrayOfThoughts[_i]);
+		if (curArrayOfThoughts.Length > _i) {
+			TextScript.PopUpThought (curArrayOfThoughts [_i]);
+		} else {
+			TextScript.PopUpThought ("...");
+		}
 
 	}
 

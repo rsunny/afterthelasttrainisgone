@@ -32,7 +32,7 @@ public class Controls : MonoBehaviour {
 			//m_playerManagerGameObject.GetComponent<PlayerManager> ().Jump (m_jumpInput);
 
 			//Attack
-			m_attackInput = Input.GetButtonDown ("Fire1");
+			m_attackInput = Input.GetButtonDown ("Fire3");
 			m_playerManagerGameObject.GetComponent<PlayerManager> ().Attack (m_attackInput);
 
 			//Interaction
@@ -40,11 +40,11 @@ public class Controls : MonoBehaviour {
 			//m_playerManagerGameObject.GetComponent<PlayerManager> ().Interaction (m_interactionInput);
 
 			//Defense
-			m_defenseInput = Input.GetButton ("Fire3");
+			m_defenseInput = Input.GetButton ("Jump");
 			m_playerManagerGameObject.GetComponent<PlayerManager> ().Defense (m_defenseInput);
 
 			//CounterAttack
-			m_counterAttackInput = Input.GetButtonDown ("Fire3");
+			m_counterAttackInput = Input.GetButtonDown ("Jump");
 			m_playerManagerGameObject.GetComponent<PlayerManager> ().CounterAttack (m_counterAttackInput);
 		}
 	}

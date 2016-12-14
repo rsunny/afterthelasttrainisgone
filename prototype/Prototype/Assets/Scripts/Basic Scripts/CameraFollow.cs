@@ -7,6 +7,9 @@ public class CameraFollow : MonoBehaviour {
 	public Transform target;
 	[Range(0f,10f)]
 	public float smoothing = 5f;
+	public float minhorizontal = 0f;
+	public float maxhorizontal = 500f;
+	public float mindepth = 0f;
 	
 	Vector3 offset;
 
@@ -23,8 +26,10 @@ public class CameraFollow : MonoBehaviour {
 		//ad ogni aggiornamento la camera rimane alla stessa distanza (offset) dal player
 		Vector3 targetCamPos = target.position + offset;
 
-		transform.position = Vector3.Lerp (transform.position, targetCamPos, smoothing * Time.deltaTime);
+		Vector3 positionTemp = Vector3.Lerp (transform.position, targetCamPos, smoothing * Time.deltaTime);
 		//transform.Rotate(0,20*Time.deltaTime,0);
-		
+
+		transform.position = new Vector3 (Mathf.Max(minhorizontal,Mathf.Min (positionTemp.x, maxhorizontal)), positionTemp.y, Mathf.Max (positionTemp.z, mindepth));
+
 	}
 }
