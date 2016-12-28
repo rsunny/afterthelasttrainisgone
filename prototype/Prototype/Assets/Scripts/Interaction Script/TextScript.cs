@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class TextScript : MonoBehaviour {
 	
-	
+    /*Introduction and initialization of the instance*/
 	private static TextScript _instance;
     public static TextScript instance
     {
@@ -37,8 +37,37 @@ public class TextScript : MonoBehaviour {
     {
         isShuttingDown = true;
     }
+	void Awake()
+    {
+        //If there is no instance of this currently in the scene
+        if (_instance == null)
+        {
+            //Set ourselves as the instance and mark us to persist between scenes
+            _instance = this;
+            DontDestroyOnLoad(this);
+        }
+        else
+        {
+            //If there is already an instance of this and It's not me, then destroy me as there should only be one.
+            if (this != _instance)
+                Destroy(this.gameObject);
+        }
+    }
+    //end of Introduction
 	
-	
+	/* A GROUP OF STATIC FUNCTION TO DISPLAY TEXT ON CANVAS
+	-need to test it
+	-need to add the default cases
+
+
+	This class requires some elements of the canvas
+	three basic canvas group:
+	1.Tought with a text space and a image space
+	2.dialog with two text space
+	3.button with one text space
+
+
+	*/
 	
 	
 	
@@ -78,22 +107,6 @@ public class TextScript : MonoBehaviour {
 	//Bool to check if there is already a dialog currently showing.
     public static bool showingText;
 
-	void Awake()
-    {
-        //If there is no instance of this currently in the scene
-        if (_instance == null)
-        {
-            //Set ourselves as the instance and mark us to persist between scenes
-            _instance = this;
-            DontDestroyOnLoad(this);
-        }
-        else
-        {
-            //If there is already an instance of this and It's not me, then destroy me as there should only be one.
-            if (this != _instance)
-                Destroy(this.gameObject);
-        }
-    }
 
 	public static void PopUpThought (string _thought, consequence _consequence = null)
 	{

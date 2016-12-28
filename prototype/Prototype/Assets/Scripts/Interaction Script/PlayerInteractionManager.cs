@@ -38,7 +38,7 @@ public class PlayerInteractionManager : MonoBehaviour {
 	
 
 
-	public static int currentState = 0;
+	public static int currentState = 1;
 
 	public static void setCurrentState(int _i)
 	{
