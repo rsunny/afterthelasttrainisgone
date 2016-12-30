@@ -71,7 +71,7 @@ public class CanvasManager : MonoBehaviour {
 	*/
 
 
-	public int Time = 1;
+	public static int defaultTime = 1;
 
 	public static bool showingText;
 
@@ -99,7 +99,7 @@ public class CanvasManager : MonoBehaviour {
 
 
 
-public static void ShowThought(string _thought = null, Image _thoughtImage = null)
+public static void ShowThought(string _thought = null, Sprite _thoughtImage = null)
 {
 	//check if there are preavious Tought or Dialog code
 	if(showingText)return;
@@ -118,7 +118,8 @@ public static void ShowThought(string _thought = null, Image _thoughtImage = nul
 	if(_thoughtImage !=  null)
 	{
 		//instanciate the diesered image
-		instance.Image = _thoughtImage;
+		instance.Image.sprite = _thoughtImage;
+		instance.Image.preserveAspect = true;
 		instance.ImageObject.SetActive(true);
 		instance.ImageCanvasGroup.gameObject.SetActive(true);
 	}
@@ -136,17 +137,17 @@ public static void DismissThought()
 
 }
 
-public static void ShowTimedTought(string _thought, Image _thoughtImage = null, int _time = 1)
+public static void ShowTimedTought(string _thought, Sprite _thoughtImage = null, int _time = 1)
 {
 	ShowThought(_thought, _thoughtImage);
-	instance.Time = _time;
+	defaultTime = _time;
 	instance.StartCoroutine(waitAndDestroy());
 }
 
 private static IEnumerator waitAndDestroy()
 {
-	yield return new WaitForSeconds(instance.Time);
-	DismissAll();
+	yield return new WaitForSeconds(defaultTime);
+	DismissThought();
 }
 
 

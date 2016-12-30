@@ -12,6 +12,8 @@ public class InteractionManager : MonoBehaviour {
 	private string defaultDialog = " I don't know what to say";
 	//button interaction
 	public string ButtonString = "press E to interact";
+	//button to press
+	private string button = "e";
 
 
 
@@ -32,9 +34,13 @@ public class InteractionManager : MonoBehaviour {
 	[System.Serializable]
 	public struct ThoughtStruct
 	{
+		//the image is shown only if the showImage flag is set to true, in this case, or you can chose what image to show or he is going to show the sprite
 		public string Thought;
-		public Image ThoughtImage;
+		public bool showImage;
+		public Sprite ThoughtImage;
 	}
+	private Sprite CurrentSprite = null;
+
 
 	[System.Serializable]
 	public struct DialogStruct
@@ -50,15 +56,21 @@ public class InteractionManager : MonoBehaviour {
 	[System.Serializable]
 	public struct InteractionStruct
 	{
+		public bool changeTheState; // = false;
+		
 		//boolean that say if it is the first time that you interact or it has something new to say
 		public bool isDialogue;
 		public ThoughtStruct[] Thoughts;
 		public DialogStruct[] Dialogs;
-		public bool interactable;// = false;
-		public interactionDelegate interaction;
+
+
+		//still need to decide if use them or not
 		public bool needAnObject; // = false;
 		public bool giveAnObject; // = false;
-		public bool changeTheState; // = false;
+		
+		//still to decide if use them or not
+		public bool interactable;// = false;
+		public interactionDelegate interaction;
 	}
 
 	public InteractionStruct[] Interactions = null;
@@ -72,8 +84,9 @@ public class InteractionManager : MonoBehaviour {
 			//show the botton
 			//initialized the Variables
 			
-			//in this way any time you entry the collider the conversations starts again from the begininng
-			//iterator = 0;
+
+			//dismiss previous text form narration or other colliders
+			CanvasManager.DismissAll();
 			
 			//show the botton  NOTA: bisogna ancora impementare un modo per cambiare colore se non c'è più nulla da dire!!
 			CanvasManager.ShowButton(ButtonString, firstTime);
@@ -85,7 +98,7 @@ public class InteractionManager : MonoBehaviour {
 
 	void OnTriggerStay (Collider collideObj)
 	{
-		if (collideObj.tag == "Player" && Input.GetKeyDown ("e"))
+		if (collideObj.tag == "Player" && Input.GetKeyDown (button))
 		{
 
 
@@ -174,26 +187,51 @@ public class InteractionManager : MonoBehaviour {
 			displayThought(_curStruct.Thoughts);
 		}
 
-		//need to check the maximum size of the iterator
+		//Iteration     ** not clean code **
 		iterator ++;
+		//here there is the iteration that set the first time to false
 		if(iterator >= _curIterationLength -1)
 		{
-			iterator = 0;
 			firstTime = false;
 		}
-		
+		//this is the one that set the iteration
+		if(iterator >= _curIterationLength)
+		{
+			iterator = 0;
+			isTheStateChanging(_curStruct.changeTheState);
+		}
 	}
 
 	private void displayThought(ThoughtStruct[] _curThoughts )
 	{
 
 		//if(iterator >= _curThoughts.Length)iterator = 0;
-		string _curThought = _curThoughts[iterator].Thought;
-		Image _curImage = _curThoughts[iterator].ThoughtImage;
+		string _curThought = defaultThought;
+		Sprite _curImage = null;
 
+		if(_curThoughts.Length == 0)
+		{
+			_curThought = defaultThought;
+			_curImage = null;
+		}
+		else 
+		{
+			_curThought = _curThoughts[iterator].Thought;
+			if (_curThoughts[iterator].showImage)
+			{	
+				if( _curThoughts[iterator].ThoughtImage == null)
+				{
+					_curImage = CurrentSprite;
+				}
+				else 
+				{
+					_curImage = _curThoughts[iterator].ThoughtImage;
+				}
+			}
+		}
 
 		//default case if something is empty
-		if(_curThought == null) _curThought = "...";
+		if(_curThought == null) _curThought = defaultThought;
 		if(!_curImage) _curImage = null;
 
 		CanvasManager.ShowThought( _curThought,  _curImage );
@@ -202,23 +240,25 @@ public class InteractionManager : MonoBehaviour {
 
 	private void displayDialog(DialogStruct[] _curDialogs )
 	{
-		string _curWhoIsSpeaking = "";
-		string _curDialog = "...";
+		string _curWhoIsSpeaking = defaultWhoIsSpeaking;
+		string _curDialog = defaultDialog;
 		
-		//if(iterator >= _curDialogs.Length) iterator = 0;
+		//default case if _curDialog is empty
 		if(_curDialogs.Length == 0)
 		{
 			_curWhoIsSpeaking = defaultWhoIsSpeaking;
 			_curDialog = defaultDialog;
-
 		}
-		_curWhoIsSpeaking = _curDialogs[iterator].WhoIsSpeaking;
-		_curDialog = _curDialogs[iterator].Dialog;
+		else
+		{
+			_curWhoIsSpeaking = _curDialogs[iterator].WhoIsSpeaking;
+			_curDialog = _curDialogs[iterator].Dialog;
+		}
 
 
-		//default case if something is empty
-		if(_curWhoIsSpeaking == null) _curWhoIsSpeaking = "";
-		if(_curDialog == null) _curDialog = "...";
+		//default case if something inside is empty
+		if(_curWhoIsSpeaking == null) _curWhoIsSpeaking = defaultWhoIsSpeaking;
+		if(_curDialog == null) _curDialog = defaultDialog;
 
 		CanvasManager.ShowDialog( _curWhoIsSpeaking,  _curDialog );
 	}
@@ -240,6 +280,8 @@ public class InteractionManager : MonoBehaviour {
 	{
 		previousState = StateManager.currentState;
 		firstTime = true;
+
+		CurrentSprite = transform.parent.GetComponent<SpriteRenderer>().sprite;
 		
 	}
 	

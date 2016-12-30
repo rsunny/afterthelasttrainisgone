@@ -53,6 +53,8 @@ public class StateManager : MonoBehaviour {
         }
     }
 
+	public static int maxState = 2;
+
 	public static int currentState = 1;
 	public static void setCurrentState(int _i)
 	{

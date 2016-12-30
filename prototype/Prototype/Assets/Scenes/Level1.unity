@@ -588,35 +588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ButtonString: press E to interact
   firstTime: 1
-  Interactions:
-  - isDialogue: 0
-    Thoughts:
-    - Thought: what
-      ThoughtImage: {fileID: 0}
-    - Thought: are
-      ThoughtImage: {fileID: 0}
-    - Thought: you
-      ThoughtImage: {fileID: 0}
-    Dialogs: []
-    interactable: 0
-    needAnObject: 0
-    giveAnObject: 0
-    changeTheState: 0
-  - isDialogue: 0
-    Thoughts:
-    - Thought: this is the rigght one
-      ThoughtImage: {fileID: 0}
-    - Thought: ok ok
-      ThoughtImage: {fileID: 0}
-    - Thought: yesss
-      ThoughtImage: {fileID: 0}
-    - Thought: 
-      ThoughtImage: {fileID: 0}
-    Dialogs: []
-    interactable: 0
-    needAnObject: 0
-    giveAnObject: 0
-    changeTheState: 0
+  Interactions: []
 --- !u!65 &77177320
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -954,12 +926,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: I need to find a way out...
---- !u!114 &107017249 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114278438888408298, guid: 987625b3ecbac4c55b9a6f396c33dc53,
-    type: 2}
-  m_PrefabInternal: {fileID: 963517309}
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &115630696
 GameObject:
   m_ObjectHideFlags: 0
@@ -2804,34 +2770,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ButtonString: press E to interact
   firstTime: 1
-  Interactions:
-  - isDialogue: 0
-    Thoughts:
-    - Thought: 
-      ThoughtImage: {fileID: 107017249}
-    - Thought: 
-      ThoughtImage: {fileID: 0}
-    - Thought: 
-      ThoughtImage: {fileID: 0}
-    Dialogs: []
-    interactable: 0
-    needAnObject: 0
-    giveAnObject: 0
-    changeTheState: 0
-  - isDialogue: 0
-    Thoughts: []
-    Dialogs: []
-    interactable: 0
-    needAnObject: 0
-    giveAnObject: 0
-    changeTheState: 0
-  - isDialogue: 0
-    Thoughts: []
-    Dialogs: []
-    interactable: 0
-    needAnObject: 0
-    giveAnObject: 0
-    changeTheState: 0
+  Interactions: []
 --- !u!222 &318836493
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3433,12 +3372,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4087951060438732, guid: a039c3d3c66ed4453a800635ccc37b64, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 114558590931072326, guid: a039c3d3c66ed4453a800635ccc37b64,
         type: 2}
       propertyPath: arrayOfTimedThoughts.Array.data[0]
       value: I need to find a way out from this prototype
+      objectReference: {fileID: 0}
+    - target: {fileID: 1929705793074662, guid: a039c3d3c66ed4453a800635ccc37b64, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a039c3d3c66ed4453a800635ccc37b64, type: 2}
@@ -3724,7 +3667,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.000007, y: 1.000007, z: 1.000007}
   m_Children:
-  - {fileID: 1664046310}
   - {fileID: 1862448577}
   m_Father: {fileID: 738206749}
   m_RootOrder: 0
@@ -4473,6 +4415,29 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 529605820}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &529876645 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1929705793074662, guid: a039c3d3c66ed4453a800635ccc37b64,
+    type: 2}
+  m_PrefabInternal: {fileID: 1879528246}
+--- !u!114 &529876646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 529876645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85d73975069154fc69fa26ea451e86ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onEnter: 1
+  justOnce: 0
+  changeTheState: 0
+  fromState: 2
+  time: 2
+  narration: should I stay or should i go
+  imageToShow: {fileID: 21300000, guid: 0739e52ceea7c064a8280a738645cfab, type: 3}
 --- !u!4 &533504251 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4615842635576784, guid: 10a3525454cb94dfeb790b9292c5072f,
@@ -11012,7 +10977,7 @@ Transform:
   - {fileID: 695583244}
   - {fileID: 1266960632}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1286679166
 GameObject:
@@ -13596,74 +13561,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1648633565}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1664046309
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1664046310}
-  - component: {fileID: 1664046312}
-  - component: {fileID: 1664046311}
-  m_Layer: 0
-  m_Name: Background
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1664046310
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1664046309}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 442366248}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1664046311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1664046309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.9843137, g: 0.8745098, b: 0.2784314, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1664046312
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1664046309}
 --- !u!1 &1668852793
 GameObject:
   m_ObjectHideFlags: 0
@@ -13896,7 +13793,7 @@ Transform:
   m_Children:
   - {fileID: 210908686}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1691551969
 GameObject:
@@ -13929,7 +13826,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e56f8d984bca4255a82e3a56151e2a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Time: 1
   ThoughtCanvasGroup: {fileID: 776368658}
   ThoughtObject: {fileID: 2020824345}
   Thought: {fileID: 103688606}
@@ -14168,7 +14064,7 @@ Transform:
   m_Children:
   - {fileID: 77177318}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &1709403780
 GameObject:
@@ -15464,7 +15360,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 442366248}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.024595087, y: 0.040000003}
   m_AnchorMax: {x: 0.975, y: 0.96300006}
@@ -15535,7 +15431,7 @@ Transform:
   m_Children:
   - {fileID: 652107687}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1872762649
 GameObject:
@@ -15789,6 +15685,58 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1879372876}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1879528246
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4087951060438732, guid: a039c3d3c66ed4453a800635ccc37b64, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 9.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 4087951060438732, guid: a039c3d3c66ed4453a800635ccc37b64, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4087951060438732, guid: a039c3d3c66ed4453a800635ccc37b64, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4087951060438732, guid: a039c3d3c66ed4453a800635ccc37b64, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4087951060438732, guid: a039c3d3c66ed4453a800635ccc37b64, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4087951060438732, guid: a039c3d3c66ed4453a800635ccc37b64, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4087951060438732, guid: a039c3d3c66ed4453a800635ccc37b64, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4087951060438732, guid: a039c3d3c66ed4453a800635ccc37b64, type: 2}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 114558590931072326, guid: a039c3d3c66ed4453a800635ccc37b64,
+        type: 2}
+      propertyPath: arrayOfTimedThoughts.Array.data[0]
+      value: I need to find a way out from this prototype
+      objectReference: {fileID: 0}
+    - target: {fileID: 1929705793074662, guid: a039c3d3c66ed4453a800635ccc37b64, type: 2}
+      propertyPath: m_Name
+      value: NarrationCollider (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114558590931072326, guid: a039c3d3c66ed4453a800635ccc37b64, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: a039c3d3c66ed4453a800635ccc37b64, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1886891112
 GameObject:
   m_ObjectHideFlags: 0
