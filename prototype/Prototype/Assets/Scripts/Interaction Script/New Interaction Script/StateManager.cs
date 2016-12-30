@@ -52,7 +52,7 @@ public class StateManager : MonoBehaviour {
                 Destroy(this.gameObject);
         }
     }
-
+	//not used yet
 	public static int maxState = 2;
 
 	public static int currentState = 1;

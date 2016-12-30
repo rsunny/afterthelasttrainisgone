@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class InteractionManager : MonoBehaviour {
@@ -63,6 +64,9 @@ public class InteractionManager : MonoBehaviour {
 		public ThoughtStruct[] Thoughts;
 		public DialogStruct[] Dialogs;
 
+		//tell if it is a door or not, and if can be open that state...
+		public bool openableDoor;
+		public string sceneToLoad;
 
 		//still need to decide if use them or not
 		public bool needAnObject; // = false;
@@ -129,7 +133,7 @@ public class InteractionManager : MonoBehaviour {
 			else if (CanvasManager.showingText == true)
 			{
 				CanvasManager.DismissAll();
-				//show the botton  NOTA: bisogna ancora impementare un modo per cambiare colore se non c'è più nulla da dire!!
+				//show the botton  
 				CanvasManager.ShowButton( ButtonString, firstTime);
 			}
 
@@ -198,8 +202,17 @@ public class InteractionManager : MonoBehaviour {
 		if(iterator >= _curIterationLength)
 		{
 			iterator = 0;
+			//state changing
 			isTheStateChanging(_curStruct.changeTheState);
+			//check if is a door that can be open in this state and open it
+			if(_curStruct.openableDoor)
+			{
+				if(_curStruct.sceneToLoad == null) return;
+				CanvasManager.DismissAll();
+				SceneManager.LoadScene (_curStruct.sceneToLoad);
+			}
 		}
+
 	}
 
 	private void displayThought(ThoughtStruct[] _curThoughts )
