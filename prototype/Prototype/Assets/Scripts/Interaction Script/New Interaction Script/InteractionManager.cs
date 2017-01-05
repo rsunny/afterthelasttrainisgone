@@ -243,7 +243,7 @@ public class InteractionManager : MonoBehaviour {
 			}
 		}
 
-		//default case if something is empty
+		//default case if something is emptyCurrentSprite
 		if(_curThought == null) _curThought = defaultThought;
 		if(!_curImage) _curImage = null;
 
@@ -294,7 +294,10 @@ public class InteractionManager : MonoBehaviour {
 		previousState = StateManager.currentState;
 		firstTime = true;
 
-		CurrentSprite = transform.parent.GetComponent<SpriteRenderer>().sprite;
+		if(transform.parent.GetComponent<SpriteRenderer>() != null)
+		{
+			CurrentSprite = transform.parent.GetComponent<SpriteRenderer>().sprite;
+		}
 		
 	}
 	

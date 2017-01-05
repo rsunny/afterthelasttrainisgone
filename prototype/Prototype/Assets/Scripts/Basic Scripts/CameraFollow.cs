@@ -6,10 +6,10 @@ public class CameraFollow : MonoBehaviour {
 
 	public Transform target;
 	[Range(0f,10f)]
-	public float smoothing = 5f;
-	public float minhorizontal = 0f;
+	public float smoothing = 2f;
+	public float minhorizontal = 10f;
 	public float maxhorizontal = 500f;
-	public float mindepth = 0f;
+	public float mindepth = 10f;
 	
 	Vector3 offset;
 

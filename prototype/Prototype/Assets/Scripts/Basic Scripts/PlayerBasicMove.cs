@@ -9,11 +9,14 @@ public class PlayerBasicMove : MonoBehaviour {
 	//bool to make it stop
 	public static bool stop = false;
 
+
 	//animarion
 	Animator anim;
 	
 	//trasform
 	Transform tr;
+
+	//Rigidbody rigidbody;
 
 	float horiz = 0f;
 	float vert = 0f;
@@ -38,6 +41,7 @@ public class PlayerBasicMove : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
+	//	rigidbody = GetComponent<Rigidbody> ();
 		tr = GetComponent<Transform> () as Transform;
 		anim = GetComponent<Animator> ();	
 	}
@@ -47,7 +51,15 @@ public class PlayerBasicMove : MonoBehaviour {
 		if (!stop){
 			horiz = Input.GetAxis ("Horizontal");
 			vert = Input.GetAxis ("Vertical");
-			Move(horiz,vert,speed,vertCoef);
+			if ( Input.GetKey(KeyCode.LeftShift) )
+			{
+				//rigidbody.constraints = RigidbodyConstraints.FreezePositionY;
+				Move( horiz, vert, speed * 1.8f , vertCoef);
+			}
+			else 
+			{
+				Move(horiz,vert,speed,vertCoef);
+			}
 		}
 
 	}
