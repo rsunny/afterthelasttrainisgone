@@ -169,6 +169,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1132890576318772
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4498395566341518}
+  - component: {fileID: 65531512593306524}
+  - component: {fileID: 114245081641112074}
+  m_Layer: 0
+  m_Name: GeneralGraffitiCollider1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1146721631275610
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,6 +214,23 @@ GameObject:
   - component: {fileID: 4250614384350484}
   m_Layer: 0
   m_Name: Illumination
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1174008775832134
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4700452023456148}
+  - component: {fileID: 65091617050896086}
+  - component: {fileID: 114854931485111956}
+  m_Layer: 0
+  m_Name: GeneralGraffitiCollider2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -515,6 +549,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1543061309290346
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4189016170243938}
+  - component: {fileID: 65856996047569596}
+  - component: {fileID: 114149769851840378}
+  m_Layer: 0
+  m_Name: InteractionCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1550415323009164
 GameObject:
   m_ObjectHideFlags: 1
@@ -736,6 +787,23 @@ GameObject:
   - component: {fileID: 23482921627322382}
   m_Layer: 0
   m_Name: Quad (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1750280448168364
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4606812788166224}
+  - component: {fileID: 65600653346928300}
+  - component: {fileID: 114037849066540522}
+  m_Layer: 0
+  m_Name: InteractionCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1071,9 +1139,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -18.479996, y: 0, z: 14.989998}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 4189016170243938}
   m_Father: {fileID: 4491635761026550}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4047500620842172
 Transform:
@@ -1178,7 +1247,7 @@ Transform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 4491635761026550}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4170476796575564
 Transform:
@@ -1193,6 +1262,19 @@ Transform:
   m_Father: {fileID: 4685635909575144}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!4 &4189016170243938
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1543061309290346}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.0599976, y: 0, z: -0.7799988}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4012218188401638}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4197558162307460
 Transform:
   m_ObjectHideFlags: 1
@@ -1311,7 +1393,7 @@ Transform:
   m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 1}
   m_Children: []
   m_Father: {fileID: 4491635761026550}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4323794152887056
 Transform:
@@ -1483,14 +1565,29 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 4498395566341518}
+  - {fileID: 4700452023456148}
   - {fileID: 4012218188401638}
   - {fileID: 4162022378860616}
   - {fileID: 4613381564226696}
+  - {fileID: 4098112843340656}
   - {fileID: 4503844053208342}
   - {fileID: 4307333899693540}
-  - {fileID: 4098112843340656}
   m_Father: {fileID: 4685635909575144}
   m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4498395566341518
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1132890576318772}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -26.58, y: 0, z: 14.209999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4491635761026550}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4500245312249044
 Transform:
@@ -1518,7 +1615,7 @@ Transform:
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children: []
   m_Father: {fileID: 4491635761026550}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4507836699636982
 Transform:
@@ -1542,7 +1639,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 29.99, y: -1.28, z: 4}
   m_LocalScale: {x: 4, y: 3, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 4606812788166224}
   m_Father: {fileID: 4685635909575144}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -1585,6 +1683,19 @@ Transform:
   m_Father: {fileID: 4500245312249044}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4606812788166224
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1750280448168364}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4555620873684592}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4613381564226696
 Transform:
   m_ObjectHideFlags: 1
@@ -1596,7 +1707,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4491635761026550}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4643114611000832
 Transform:
@@ -1670,6 +1781,19 @@ Transform:
   - {fileID: 4811645086624896}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4700452023456148
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1174008775832134}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -8.42, y: 0, z: 14.209999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4491635761026550}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4747515123318396
 Transform:
@@ -3787,6 +3911,18 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &65091617050896086
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1174008775832134}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 16.432964, y: 7.8095226, z: 1.5832293}
+  m_Center: {x: 6.6107044, y: -0.98886776, z: -0.29161072}
 --- !u!65 &65102316138182402
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -3823,6 +3959,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65531512593306524
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1132890576318772}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.797376, y: 7.8095226, z: 1.5832293}
+  m_Center: {x: 2.7519665, y: -0.98886776, z: -0.29161072}
+--- !u!65 &65600653346928300
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1750280448168364}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.4250536, z: 2.9595969}
+  m_Center: {x: 0.000084906824, y: -0.12292044, z: -0.98005116}
 --- !u!65 &65607984022133784
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -3859,6 +4019,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.22, y: 6.4864464, z: 1.0386622}
   m_Center: {x: 0.0000019073486, y: 2.5932224, z: 0.15665722}
+--- !u!65 &65856996047569596
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1543061309290346}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.921549, y: 7.8095226, z: 1.5832293}
+  m_Center: {x: -0.1050396, y: -0.98886776, z: -0.29161167}
 --- !u!108 &108041798120669484
 Light:
   m_ObjectHideFlags: 1
@@ -3999,6 +4171,204 @@ Light:
   m_CCT: 6500
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114037849066540522
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1750280448168364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 084107186a19345c895dda45f215a216, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonString: press E to interact
+  Interactions:
+  - changeTheState: 0
+    isDialogue: 0
+    Thoughts: []
+    Dialogs: []
+    openableDoor: 0
+    sceneToLoad: 
+    needAnObject: 0
+    giveAnObject: 0
+    interactable: 0
+  - changeTheState: 0
+    isDialogue: 0
+    Thoughts: []
+    Dialogs: []
+    openableDoor: 0
+    sceneToLoad: 
+    needAnObject: 0
+    giveAnObject: 0
+    interactable: 0
+  - changeTheState: 1
+    isDialogue: 0
+    Thoughts: []
+    Dialogs: []
+    openableDoor: 0
+    sceneToLoad: 
+    needAnObject: 0
+    giveAnObject: 0
+    interactable: 0
+  - changeTheState: 0
+    isDialogue: 0
+    Thoughts: []
+    Dialogs: []
+    openableDoor: 0
+    sceneToLoad: 
+    needAnObject: 0
+    giveAnObject: 0
+    interactable: 0
+  - changeTheState: 0
+    isDialogue: 0
+    Thoughts: []
+    Dialogs: []
+    openableDoor: 0
+    sceneToLoad: 
+    needAnObject: 0
+    giveAnObject: 0
+    interactable: 0
+  - changeTheState: 0
+    isDialogue: 0
+    Thoughts: []
+    Dialogs: []
+    openableDoor: 0
+    sceneToLoad: 
+    needAnObject: 0
+    giveAnObject: 0
+    interactable: 0
+  - changeTheState: 0
+    isDialogue: 0
+    Thoughts: []
+    Dialogs: []
+    openableDoor: 1
+    sceneToLoad: Level2
+    needAnObject: 0
+    giveAnObject: 0
+    interactable: 0
+--- !u!114 &114149769851840378
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1543061309290346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 084107186a19345c895dda45f215a216, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonString: press E to interact
+  Interactions:
+  - changeTheState: 0
+    isDialogue: 0
+    Thoughts:
+    - Thought: Just some graffiti
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    Dialogs: []
+    openableDoor: 0
+    sceneToLoad: 
+    needAnObject: 0
+    giveAnObject: 0
+    interactable: 0
+  - changeTheState: 0
+    isDialogue: 0
+    Thoughts:
+    - Thought: Just some graffiti
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    Dialogs: []
+    openableDoor: 0
+    sceneToLoad: 
+    needAnObject: 0
+    giveAnObject: 0
+    interactable: 0
+  - changeTheState: 0
+    isDialogue: 0
+    Thoughts:
+    - Thought: Just some graffiti
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    Dialogs: []
+    openableDoor: 0
+    sceneToLoad: 
+    needAnObject: 0
+    giveAnObject: 0
+    interactable: 0
+  - changeTheState: 0
+    isDialogue: 0
+    Thoughts:
+    - Thought: Just some graffiti
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    Dialogs: []
+    openableDoor: 0
+    sceneToLoad: 
+    needAnObject: 0
+    giveAnObject: 0
+    interactable: 0
+  - changeTheState: 1
+    isDialogue: 0
+    Thoughts:
+    - Thought: Here it is a big smile
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    Dialogs: []
+    openableDoor: 0
+    sceneToLoad: 
+    needAnObject: 0
+    giveAnObject: 0
+    interactable: 0
+  - changeTheState: 0
+    isDialogue: 0
+    Thoughts:
+    - Thought: Thank you for your smile
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    Dialogs: []
+    openableDoor: 0
+    sceneToLoad: 
+    needAnObject: 0
+    giveAnObject: 0
+    interactable: 0
+  - changeTheState: 0
+    isDialogue: 0
+    Thoughts:
+    - Thought: I can't do nothing with a key here
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    Dialogs: []
+    openableDoor: 0
+    sceneToLoad: 
+    needAnObject: 0
+    giveAnObject: 0
+    interactable: 0
+--- !u!114 &114245081641112074
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1132890576318772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 084107186a19345c895dda45f215a216, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonString: press E to interact
+  Interactions:
+  - changeTheState: 0
+    isDialogue: 0
+    Thoughts:
+    - Thought: Just some graffiti
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    Dialogs: []
+    openableDoor: 0
+    sceneToLoad: 
+    needAnObject: 0
+    giveAnObject: 0
+    interactable: 0
 --- !u!114 &114578946993025826
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4012,13 +4382,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ButtonString: press E to interact
   Interactions:
-  - changeTheState: 1
+  - changeTheState: 0
     isDialogue: 0
     Thoughts:
     - Thought: Sleeping dog
       showImage: 0
       ThoughtImage: {fileID: 0}
     - Thought: It is better to let him sleep
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    Dialogs: []
+    openableDoor: 0
+    sceneToLoad: 
+    needAnObject: 0
+    giveAnObject: 0
+    interactable: 0
+--- !u!114 &114854931485111956
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1174008775832134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 084107186a19345c895dda45f215a216, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonString: press E to interact
+  Interactions:
+  - changeTheState: 0
+    isDialogue: 0
+    Thoughts:
+    - Thought: Just some graffiti
       showImage: 0
       ThoughtImage: {fileID: 0}
     Dialogs: []
@@ -4038,7 +4433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 084107186a19345c895dda45f215a216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonString: press E to interact
+  ButtonString: press E to talk
   Interactions:
   - changeTheState: 0
     isDialogue: 1
@@ -4068,13 +4463,54 @@ MonoBehaviour:
     isDialogue: 1
     Thoughts: []
     Dialogs:
-    - singleDialog:
-      - WhoIsSpeaking: "\x16Arthur Treyu:"
-        Dialog: Excuse me, do you know how to go out from here?
-      - WhoIsSpeaking: 'Homeless:'
-        Dialog: Didn't you noticed the big EXIT sign?
-      - WhoIsSpeaking: 'Arthur Treyu:'
-        Dialog: oh... I see
+    - WhoIsSpeaking: 
+      Dialog: 
+    openableDoor: 0
+    sceneToLoad: 
+    needAnObject: 0
+    giveAnObject: 0
+    interactable: 0
+  - changeTheState: 1
+    isDialogue: 1
+    Thoughts: []
+    Dialogs:
+    - WhoIsSpeaking: 
+      Dialog: 
+    openableDoor: 0
+    sceneToLoad: 
+    needAnObject: 0
+    giveAnObject: 0
+    interactable: 0
+  - changeTheState: 0
+    isDialogue: 1
+    Thoughts: []
+    Dialogs:
+    - WhoIsSpeaking: 
+      Dialog: 
+    - WhoIsSpeaking: 
+      Dialog: 
+    openableDoor: 0
+    sceneToLoad: 
+    needAnObject: 0
+    giveAnObject: 0
+    interactable: 0
+  - changeTheState: 1
+    isDialogue: 1
+    Thoughts: []
+    Dialogs:
+    - WhoIsSpeaking: 
+      Dialog: 
+    openableDoor: 0
+    sceneToLoad: 
+    needAnObject: 0
+    giveAnObject: 0
+    interactable: 0
+  - changeTheState: 0
+    isDialogue: 1
+    Thoughts: []
+    Dialogs:
+    - WhoIsSpeaking: 
+      Dialog: 
     openableDoor: 0
     sceneToLoad: 
     needAnObject: 0
