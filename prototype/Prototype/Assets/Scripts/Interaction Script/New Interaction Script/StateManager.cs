@@ -73,6 +73,7 @@ public class StateManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		Debug.Log(currentState);
 		
 	}
 }

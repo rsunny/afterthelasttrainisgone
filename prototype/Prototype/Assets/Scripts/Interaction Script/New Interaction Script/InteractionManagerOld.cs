@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
-public class InteractionManager : MonoBehaviour {
+public class InteractionManagerOld : MonoBehaviour {
 	
 	//default thought e dialog
 	private string defaultThought = "I don't know now what to think";
@@ -29,10 +29,9 @@ public class InteractionManager : MonoBehaviour {
 	//iterator of texts inside a state
 	private int iterator = 0;
 
-	/*OLD*/
-	//iteator for a single dialog CAN FIND THIS IN INTERACTION MANAGER OLD
-	//private int dialogIterator = 0;
-	//private bool keepTalking = false;
+	//iteator for a single dialog
+	private int dialogIterator = 0;
+	private bool keepTalking = false;
 
 
 
@@ -68,7 +67,7 @@ public class InteractionManager : MonoBehaviour {
 		public bool isDialogue;
 		public ThoughtStruct[] Thoughts;
 
-		public DialogStruct[] Dialogs;
+		public DialogStructs[] Dialogs;
 
 		//tell if it is a door or not, and if can be open that state...
 		public bool openableDoor;
@@ -85,13 +84,11 @@ public class InteractionManager : MonoBehaviour {
 
 	public InteractionStruct[] Interactions = null;
 
-	/*OLD*/
-	/*[System.Serializable]
+	[System.Serializable]
 	public class DialogStructs
 	{
 		public DialogStruct[] singleDialog;
 	}
-	*/
 
 
 	void OnTriggerEnter (Collider collideObj)
@@ -104,9 +101,7 @@ public class InteractionManager : MonoBehaviour {
 
 			//dismiss previous text form narration or other colliders
 			CanvasManager.DismissAll();
-			
-			/*OLD*/
-			//keepTalking = false;
+			keepTalking = false;
 			
 			//This is the check if the state change on trigger enter, and to update the button
 			if (previousState != StateManager.currentState && Interactions.Length > StateManager.currentState)
@@ -135,7 +130,6 @@ public class InteractionManager : MonoBehaviour {
 		}
 
 		 Debug.Log(StateManager.currentState);
-		 
 		//when you press the interaction button
 		if (collideObj.tag == "Player" && Input.GetKeyDown (button))
 		{
@@ -168,14 +162,11 @@ public class InteractionManager : MonoBehaviour {
 				//show either a dialog or a thought, base on the state
 			}
 			
-			/*OLD*/
-			/*
 			else if(CanvasManager.showingText == true && keepTalking)
 			{
 				CanvasManager.DismissAll();
 				Interact(curState);
 			}
-			*/
 				
 			//dismiss the text and show the button again
 			else if (CanvasManager.showingText == true )
@@ -196,12 +187,10 @@ public class InteractionManager : MonoBehaviour {
 		{
 			//dismiss all text
 			CanvasManager.DismissAll();
+			keepTalking = false;
+			dialogIterator = 0;
 			
-			
-			//keepTalking = false;
-			//dialogIterator = 0;
-			
-
+			/*
 			//This set dialog iteretor to 0 if you go out from the collider,
 			//that's because make no sense to keep dialoging like nothing happend if sameone goes around
 			if(Interactions.Length != 0 && Interactions.Length <= StateManager.currentState && Interactions[0].isDialogue )
@@ -212,7 +201,7 @@ public class InteractionManager : MonoBehaviour {
 			{
 				iterator = 0;
 			}
-
+			*/
 		}
 
 	}
@@ -313,36 +302,30 @@ public class InteractionManager : MonoBehaviour {
 
 	}
 
-	private void displayDialog(DialogStruct[] _curDialogs )
+	private void displayDialog(DialogStructs[] _curDialogs )
 	{
 		string _curWhoIsSpeaking = defaultWhoIsSpeaking;
 		string _curDialog = defaultDialog;
 		
 		//default case if _curDialog is empty
-		if(_curDialogs.Length == 0 )
+		if(_curDialogs.Length == 0 || _curDialogs[iterator].singleDialog.Length == 0)
 		{
 			_curWhoIsSpeaking = defaultWhoIsSpeaking;
 			_curDialog = defaultDialog;
 		}
 		else
 		{
-			/*OLD*/
-			//keepTalking = true;
-			_curWhoIsSpeaking = _curDialogs[iterator].WhoIsSpeaking; //.singleDialog[dialogIterator].WhoIsSpeaking;
-			_curDialog = _curDialogs[iterator].Dialog;  //.singleDialog[dialogIterator].Dialog;
-			/*OLD*/
-			//dialogIterator ++;
+			keepTalking = true;
+			_curWhoIsSpeaking = _curDialogs[iterator].singleDialog[dialogIterator].WhoIsSpeaking;
+			_curDialog = _curDialogs[iterator].singleDialog[dialogIterator].Dialog;
 			
-			/*OLD*/
-			/* 
+			dialogIterator ++;
+			
 			if(_curDialogs[iterator].singleDialog.Length <= dialogIterator)
-			{	
-			
+			{
 				dialogIterator = 0;	
-				
 				keepTalking = false;
 			}
-			*/
 		}
 
 
@@ -370,9 +353,7 @@ public class InteractionManager : MonoBehaviour {
 	{
 		previousState = StateManager.currentState;
 		firstTime = true;
-		
-		/*OLD*/
-		//keepTalking = false;
+		keepTalking = false;
 
 		if(transform.parent.GetComponent<SpriteRenderer>() != null)
 		{

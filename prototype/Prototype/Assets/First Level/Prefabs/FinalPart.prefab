@@ -652,6 +652,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1661332592705268
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4747515123318396}
+  - component: {fileID: 65607984022133784}
+  - component: {fileID: 114909425450789318}
+  m_Layer: 0
+  m_Name: InteractionCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1691055871746984
 GameObject:
   m_ObjectHideFlags: 1
@@ -1654,6 +1671,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4747515123318396
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1661332592705268}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -2.15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4811645086624896}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4750753658677304
 Transform:
   m_ObjectHideFlags: 1
@@ -1676,7 +1706,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 12.57, y: -2.33, z: 9.71}
   m_LocalScale: {x: 0.35, y: 0.35, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 4747515123318396}
   m_Father: {fileID: 4685635909575144}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3792,6 +3823,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65607984022133784
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1661332592705268}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.731701, y: 26.65241, z: 2.1474762}
+  m_Center: {x: 0.16935074, y: 5.2733893, z: 0.76122046}
 --- !u!65 &65759997860421646
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -3968,9 +4011,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ButtonString: press E to interact
-  firstTime: 1
   Interactions:
-  - changeTheState: 0
+  - changeTheState: 1
     isDialogue: 0
     Thoughts:
     - Thought: Sleeping dog
@@ -3980,6 +4022,59 @@ MonoBehaviour:
       showImage: 0
       ThoughtImage: {fileID: 0}
     Dialogs: []
+    openableDoor: 0
+    sceneToLoad: 
+    needAnObject: 0
+    giveAnObject: 0
+    interactable: 0
+--- !u!114 &114909425450789318
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1661332592705268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 084107186a19345c895dda45f215a216, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonString: press E to interact
+  Interactions:
+  - changeTheState: 0
+    isDialogue: 1
+    Thoughts:
+    - Thought: Is a homeless
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    Dialogs: []
+    openableDoor: 0
+    sceneToLoad: 
+    needAnObject: 0
+    giveAnObject: 0
+    interactable: 0
+  - changeTheState: 0
+    isDialogue: 1
+    Thoughts:
+    - Thought: Is just a homeless
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    Dialogs: []
+    openableDoor: 0
+    sceneToLoad: 
+    needAnObject: 0
+    giveAnObject: 0
+    interactable: 0
+  - changeTheState: 0
+    isDialogue: 1
+    Thoughts: []
+    Dialogs:
+    - singleDialog:
+      - WhoIsSpeaking: "\x16Arthur Treyu:"
+        Dialog: Excuse me, do you know how to go out from here?
+      - WhoIsSpeaking: 'Homeless:'
+        Dialog: Didn't you noticed the big EXIT sign?
+      - WhoIsSpeaking: 'Arthur Treyu:'
+        Dialog: oh... I see
     openableDoor: 0
     sceneToLoad: 
     needAnObject: 0

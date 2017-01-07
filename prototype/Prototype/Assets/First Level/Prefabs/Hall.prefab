@@ -3028,12 +3028,12 @@ GameObject:
   - component: {fileID: 64140544827385070}
   - component: {fileID: 23268147274187112}
   m_Layer: 0
-  m_Name: Wall (10)
+  m_Name: WallToTheSecondPart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1688563449644396
 GameObject:
   m_ObjectHideFlags: 1
@@ -18083,7 +18083,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ButtonString: press E to interact
-  firstTime: 1
   Interactions:
   - changeTheState: 0
     isDialogue: 0
@@ -18121,7 +18120,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ButtonString: press E to interact
-  firstTime: 1
   Interactions:
   - changeTheState: 0
     isDialogue: 0
@@ -18159,7 +18157,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ButtonString: press E to interact
-  firstTime: 1
   Interactions:
   - changeTheState: 0
     isDialogue: 0
@@ -18200,7 +18197,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ButtonString: press E to interact
-  firstTime: 1
   Interactions:
   - changeTheState: 0
     isDialogue: 0
@@ -18208,7 +18204,7 @@ MonoBehaviour:
     - Thought: Clear Cola.... crystal
       showImage: 1
       ThoughtImage: {fileID: 0}
-    - Thought: 
+    - Thought: Stupid advertisment
       showImage: 0
       ThoughtImage: {fileID: 0}
     Dialogs: []
