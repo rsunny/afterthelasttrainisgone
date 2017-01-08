@@ -4167,6 +4167,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 114037849066540522, guid: fcb0a9825de684f8ab14f40440125e16,
+        type: 2}
+      propertyPath: Interactions.Array.data[6].sceneToLoad
+      value: SecondLevel
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fcb0a9825de684f8ab14f40440125e16, type: 2}
   m_IsPrefabParent: 0
@@ -8635,7 +8640,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1.0000001}
   m_Children: []
   m_Father: {fileID: 900466305}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 30, z: 30}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -13752,7 +13757,6 @@ RectTransform:
   - {fileID: 1890588724}
   - {fileID: 1546831545}
   - {fileID: 1570607681}
-  - {fileID: 1572009718}
   - {fileID: 604386533}
   m_Father: {fileID: 1910057014}
   m_RootOrder: 3
@@ -15627,16 +15631,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 114515412454137844, guid: e1f17d245dffc4ca8bd46993df5ec2f2,
-        type: 2}
-      propertyPath: titleToDestroy
-      value: 
-      objectReference: {fileID: 604386532}
     - target: {fileID: 114689972226496558, guid: e1f17d245dffc4ca8bd46993df5ec2f2,
         type: 2}
       propertyPath: titleToDestroy
       value: 
       objectReference: {fileID: 1570607680}
+    - target: {fileID: 114515412454137844, guid: e1f17d245dffc4ca8bd46993df5ec2f2,
+        type: 2}
+      propertyPath: titleToDestroy
+      value: 
+      objectReference: {fileID: 604386532}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e1f17d245dffc4ca8bd46993df5ec2f2, type: 2}
   m_IsPrefabParent: 0
@@ -24138,84 +24142,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1570607680}
---- !u!1 &1572009717
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1912183544545990, guid: 1e01f0e12ed4d489c86c7e48cf5499b2,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1572009718}
-  - component: {fileID: 1572009720}
-  - component: {fileID: 1572009719}
-  m_Layer: 5
-  m_Name: TimeText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1572009718
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 224663074421487160, guid: 1e01f0e12ed4d489c86c7e48cf5499b2,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1572009717}
-  m_LocalRotation: {x: -0, y: -0, z: 0.2588191, w: 0.9659259}
-  m_LocalPosition: {x: 0, y: 0, z: 2.47}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 900466305}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 74.74, y: 18.83}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1572009719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114401009499753188, guid: 1e01f0e12ed4d489c86c7e48cf5499b2,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1572009717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 1
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 300
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: February 2017, almost midnight
---- !u!222 &1572009720
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 222656779073539778, guid: 1e01f0e12ed4d489c86c7e48cf5499b2,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1572009717}
 --- !u!1 &1577522189
 GameObject:
   m_ObjectHideFlags: 0
@@ -24323,11 +24249,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 12
       objectReference: {fileID: 0}
-    - target: {fileID: 114544502248151348, guid: 472a6842c981f452d9dcb63bef023a16,
+    - target: {fileID: 114952452604034202, guid: 472a6842c981f452d9dcb63bef023a16,
         type: 2}
       propertyPath: objectToDestroy
       value: 
-      objectReference: {fileID: 1683113285}
+      objectReference: {fileID: 2144744950}
+    - target: {fileID: 114617635630240304, guid: 472a6842c981f452d9dcb63bef023a16,
+        type: 2}
+      propertyPath: objectToDestroy
+      value: 
+      objectReference: {fileID: 56491424}
+    - target: {fileID: 114683148813618584, guid: 472a6842c981f452d9dcb63bef023a16,
+        type: 2}
+      propertyPath: objectToDestroy
+      value: 
+      objectReference: {fileID: 2027585946}
     - target: {fileID: 114581959898943274, guid: 472a6842c981f452d9dcb63bef023a16,
         type: 2}
       propertyPath: objectToCreate
@@ -24338,21 +24274,11 @@ Prefab:
       propertyPath: objectToDestroy
       value: 
       objectReference: {fileID: 1821822665}
-    - target: {fileID: 114683148813618584, guid: 472a6842c981f452d9dcb63bef023a16,
+    - target: {fileID: 114544502248151348, guid: 472a6842c981f452d9dcb63bef023a16,
         type: 2}
       propertyPath: objectToDestroy
       value: 
-      objectReference: {fileID: 2027585946}
-    - target: {fileID: 114617635630240304, guid: 472a6842c981f452d9dcb63bef023a16,
-        type: 2}
-      propertyPath: objectToDestroy
-      value: 
-      objectReference: {fileID: 56491424}
-    - target: {fileID: 114952452604034202, guid: 472a6842c981f452d9dcb63bef023a16,
-        type: 2}
-      propertyPath: objectToDestroy
-      value: 
-      objectReference: {fileID: 2144744950}
+      objectReference: {fileID: 1683113285}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 472a6842c981f452d9dcb63bef023a16, type: 2}
   m_IsPrefabParent: 0
