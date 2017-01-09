@@ -4814,9 +4814,104 @@ Prefab:
       propertyPath: Interactions.Array.data[4].Dialogs.Array.data[2].Dialog
       value: Useless dog
       objectReference: {fileID: 0}
+    - target: {fileID: 114037849066540522, guid: fcb0a9825de684f8ab14f40440125e16,
+        type: 2}
+      propertyPath: m_audioSource
+      value: 
+      objectReference: {fileID: 323977592}
+    - target: {fileID: 114037849066540522, guid: fcb0a9825de684f8ab14f40440125e16,
+        type: 2}
+      propertyPath: m_doorSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 511a4b8f23585d042b3108f0ba989e17, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fcb0a9825de684f8ab14f40440125e16, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &323977591 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1750280448168364, guid: fcb0a9825de684f8ab14f40440125e16,
+    type: 2}
+  m_PrefabInternal: {fileID: 323977590}
+--- !u!82 &323977592
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 323977591}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &324992308
 GameObject:
   m_ObjectHideFlags: 0
@@ -6516,9 +6611,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 084107186a19345c895dda45f215a216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_doorSound: {fileID: 0}
+  m_audioSource: {fileID: 0}
   ButtonString: press E to interact
   Interactions:
   - changeTheState: 0
+    stateChanged: 0
     isDialogue: 0
     Thoughts:
     - Thought: Clear Cola.... crystal
@@ -6534,6 +6632,7 @@ MonoBehaviour:
     giveAnObject: 0
     interactable: 0
   - changeTheState: 0
+    stateChanged: 0
     isDialogue: 0
     Thoughts:
     - Thought: Not now, the train is just here!
@@ -9642,9 +9741,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 084107186a19345c895dda45f215a216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_doorSound: {fileID: 0}
+  m_audioSource: {fileID: 0}
   ButtonString: press E to interact
   Interactions:
   - changeTheState: 0
+    stateChanged: 0
     isDialogue: 0
     Thoughts:
     - Thought: I start feeling thirsty
@@ -9657,6 +9759,7 @@ MonoBehaviour:
     giveAnObject: 0
     interactable: 0
   - changeTheState: 0
+    stateChanged: 0
     isDialogue: 0
     Thoughts:
     - Thought: Why I'm losing all this time, I need to take the train
@@ -10118,9 +10221,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 084107186a19345c895dda45f215a216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_doorSound: {fileID: 0}
+  m_audioSource: {fileID: 0}
   ButtonString: press E to interact
   Interactions:
   - changeTheState: 0
+    stateChanged: 0
     isDialogue: 0
     Thoughts:
     - Thought: Nice work
@@ -11348,9 +11454,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 084107186a19345c895dda45f215a216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_doorSound: {fileID: 0}
+  m_audioSource: {fileID: 0}
   ButtonString: press E to interact
   Interactions:
   - changeTheState: 0
+    stateChanged: 0
     isDialogue: 0
     Thoughts:
     - Thought: It is something for hair?
@@ -11366,6 +11475,7 @@ MonoBehaviour:
     giveAnObject: 0
     interactable: 0
   - changeTheState: 0
+    stateChanged: 0
     isDialogue: 0
     Thoughts:
     - Thought: I have no time for this, I need to take the train
@@ -17705,9 +17815,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 084107186a19345c895dda45f215a216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_doorSound: {fileID: 0}
+  m_audioSource: {fileID: 0}
   ButtonString: press E to interact
   Interactions:
   - changeTheState: 0
+    stateChanged: 0
     isDialogue: 0
     Thoughts:
     - Thought: It still have no name
@@ -17720,6 +17833,7 @@ MonoBehaviour:
     giveAnObject: 0
     interactable: 0
   - changeTheState: 0
+    stateChanged: 0
     isDialogue: 0
     Thoughts:
     - Thought: I need to take the train now
@@ -31246,9 +31360,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 084107186a19345c895dda45f215a216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_doorSound: {fileID: 0}
+  m_audioSource: {fileID: 0}
   ButtonString: press E to interact
   Interactions:
   - changeTheState: 0
+    stateChanged: 0
     isDialogue: 0
     Thoughts:
     - Thought: It is closed

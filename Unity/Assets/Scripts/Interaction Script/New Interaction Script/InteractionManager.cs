@@ -6,7 +6,11 @@ using UnityEngine.SceneManagement;
 
 
 public class InteractionManager : MonoBehaviour {
-	
+
+	//SOUND
+	public AudioClip m_doorSound;
+	public AudioSource m_audioSource;
+
 	//default thought e dialog
 	private string defaultThought = "I don't know now what to think";
 	private string defaultWhoIsSpeaking = "Arthur Treyu:";
@@ -31,8 +35,8 @@ public class InteractionManager : MonoBehaviour {
 
 	/*OLD*/
 	//iteator for a single dialog CAN FIND THIS IN INTERACTION MANAGER OLD
-	//private int dialogIterator = 0;
-	//private bool keepTalking = false;
+	private int dialogIterator = 0;
+	private bool keepTalking = false;
 
 
 
@@ -63,7 +67,8 @@ public class InteractionManager : MonoBehaviour {
 	public struct InteractionStruct
 	{
 		public bool changeTheState; // = false;
-		
+		public bool stateChanged;
+
 		//boolean that say if it is the first time that you interact or it has something new to say
 		public bool isDialogue;
 		public ThoughtStruct[] Thoughts;
@@ -77,7 +82,7 @@ public class InteractionManager : MonoBehaviour {
 		//still need to decide if use them or not
 		public bool needAnObject; // = false;
 		public bool giveAnObject; // = false;
-		
+
 		//still to decide if use them or not
 		public bool interactable;// = false;
 		public interactionDelegate interaction;
@@ -100,14 +105,14 @@ public class InteractionManager : MonoBehaviour {
 		{
 			//show the botton
 			//initialized the Variables
-			
+
 
 			//dismiss previous text form narration or other colliders
 			CanvasManager.DismissAll();
-			
+
 			/*OLD*/
 			//keepTalking = false;
-			
+
 			//This is the check if the state change on trigger enter, and to update the button
 			if (previousState != StateManager.currentState && Interactions.Length > StateManager.currentState)
 			{
@@ -134,8 +139,8 @@ public class InteractionManager : MonoBehaviour {
 			previousState = StateManager.currentState;			
 		}
 
-		 Debug.Log(StateManager.currentState);
-		 
+		Debug.Log(StateManager.currentState);
+
 		//when you press the interaction button
 		if (collideObj.tag == "Player" && Input.GetKeyDown (button))
 		{
@@ -149,11 +154,11 @@ public class InteractionManager : MonoBehaviour {
 			{
 				//dismiss button
 				CanvasManager.DismissButton();
-				
-				
+
+
 				//initialize the state
 				curState = StateManager.currentState;
-	
+
 
 
 				if(Interactions.Length == 0)
@@ -167,16 +172,16 @@ public class InteractionManager : MonoBehaviour {
 				}
 				//show either a dialog or a thought, base on the state
 			}
-			
+
 			/*OLD*/
-			/*
+
 			else if(CanvasManager.showingText == true && keepTalking)
 			{
 				CanvasManager.DismissAll();
 				Interact(curState);
-			}
+			}/*
 			*/
-				
+
 			//dismiss the text and show the button again
 			else if (CanvasManager.showingText == true )
 			{
@@ -196,11 +201,11 @@ public class InteractionManager : MonoBehaviour {
 		{
 			//dismiss all text
 			CanvasManager.DismissAll();
-			
-			
-			//keepTalking = false;
-			//dialogIterator = 0;
-			
+
+
+			keepTalking = false;
+			dialogIterator = 0;
+
 
 			//This set dialog iteretor to 0 if you go out from the collider,
 			//that's because make no sense to keep dialoging like nothing happend if sameone goes around
@@ -230,9 +235,9 @@ public class InteractionManager : MonoBehaviour {
 		{
 			_curStruct = Interactions[_curState];
 			_isDialog = _curStruct.isDialogue;
-			
+
 		}
-		
+
 		//case: the state 0 (so Interactions[0]) is always the default case for an object
 		else
 		{
@@ -259,23 +264,33 @@ public class InteractionManager : MonoBehaviour {
 		}
 		//Iteration     ** not clean code **
 		iterator ++;
-		
+
 		//this is the one that set the iteration
 		if(iterator >= _curIterationLength)
 		{
 			iterator = 0;
 			//state changing
-			isTheStateChanging(_curStruct.changeTheState);
+			isTheStateChanging(_curStruct.changeTheState&&(!(_curStruct.stateChanged)));
 			//check if is a door that can be open in this state and open it
 			if(_curStruct.openableDoor)
 			{
 				if(_curStruct.sceneToLoad == null) return;
-				CanvasManager.DismissAll();
-				SceneManager.LoadScene (_curStruct.sceneToLoad);
+				StartCoroutine (OpenDoor (_curStruct.sceneToLoad));
+
 			}
 		}
 
 	}
+
+	private IEnumerator OpenDoor (string scene){
+		if (m_audioSource != null) {
+			m_audioSource.PlayOneShot (m_doorSound);
+		}
+		yield return new WaitForSeconds (2);
+		CanvasManager.DismissAll();
+		SceneManager.LoadScene (scene);
+	}
+
 
 	private void displayThought(ThoughtStruct[] _curThoughts )
 	{
@@ -317,9 +332,10 @@ public class InteractionManager : MonoBehaviour {
 	{
 		string _curWhoIsSpeaking = defaultWhoIsSpeaking;
 		string _curDialog = defaultDialog;
-		
+		int dialogLength = _curDialogs.Length;
+
 		//default case if _curDialog is empty
-		if(_curDialogs.Length == 0 )
+		if(dialogLength == 0 )
 		{
 			_curWhoIsSpeaking = defaultWhoIsSpeaking;
 			_curDialog = defaultDialog;
@@ -327,22 +343,20 @@ public class InteractionManager : MonoBehaviour {
 		else
 		{
 			/*OLD*/
-			//keepTalking = true;
+			keepTalking = true;
 			_curWhoIsSpeaking = _curDialogs[iterator].WhoIsSpeaking; //.singleDialog[dialogIterator].WhoIsSpeaking;
 			_curDialog = _curDialogs[iterator].Dialog;  //.singleDialog[dialogIterator].Dialog;
 			/*OLD*/
-			//dialogIterator ++;
-			
+			dialogIterator ++;
+
 			/*OLD*/
-			/* 
-			if(_curDialogs[iterator].singleDialog.Length <= dialogIterator)
+
+			if(dialogLength <= dialogIterator)
 			{	
-			
+
 				dialogIterator = 0;	
-				
 				keepTalking = false;
 			}
-			*/
 		}
 
 
@@ -370,7 +384,7 @@ public class InteractionManager : MonoBehaviour {
 	{
 		previousState = StateManager.currentState;
 		firstTime = true;
-		
+
 		/*OLD*/
 		//keepTalking = false;
 
@@ -378,11 +392,11 @@ public class InteractionManager : MonoBehaviour {
 		{
 			CurrentSprite = transform.parent.GetComponent<SpriteRenderer>().sprite;
 		}
-		
+
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
 }
