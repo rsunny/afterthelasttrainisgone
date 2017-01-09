@@ -1598,7 +1598,7 @@ GameObject:
   - component: {fileID: 285540177}
   - component: {fileID: 285540176}
   m_Layer: 0
-  m_Name: Collider
+  m_Name: SwitchLightsObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1640,6 +1640,7 @@ MonoBehaviour:
   switchOffLine: press E to switch off
   timeSwitchOff: 0
   button: e
+  lightsKey: lights
 --- !u!65 &285540177
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9210,8 +9211,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1, z: 40.764923}
+  m_Center: {x: 0, y: 0, z: 19.882462}
 --- !u!4 &1321692996
 Transform:
   m_ObjectHideFlags: 0
@@ -9793,7 +9794,7 @@ MonoBehaviour:
       ThoughtImage: {fileID: 0}
     Dialogs: []
     openableDoor: 1
-    sceneToLoad: RobotronGame
+    sceneToLoad: RobotronFirst
     needAnObject: 0
     giveAnObject: 0
     interactable: 0
@@ -13143,6 +13144,24 @@ Transform:
   m_Father: {fileID: 396682824}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1836231069 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1285579075253004, guid: 94e1e8563ddbb4f4580d69800e460ec4,
+    type: 2}
+  m_PrefabInternal: {fileID: 2035581523}
+--- !u!114 &1836231070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1836231069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a48cf71a75f6b4cfeb1847fba05b6f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightKey: lights
+  SwitchLightObject: {fileID: 285540174}
 --- !u!1 &1836963208
 GameObject:
   m_ObjectHideFlags: 0
@@ -14820,7 +14839,7 @@ Prefab:
     - target: {fileID: 114414934684367188, guid: 94e1e8563ddbb4f4580d69800e460ec4,
         type: 2}
       propertyPath: StartingPositions.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4566590266552736, guid: 94e1e8563ddbb4f4580d69800e460ec4, type: 2}
       propertyPath: m_LocalPosition.x
@@ -14878,6 +14897,26 @@ Prefab:
         type: 2}
       propertyPath: StartingPositions.Array.data[0].position.z
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114414934684367188, guid: 94e1e8563ddbb4f4580d69800e460ec4,
+        type: 2}
+      propertyPath: StartingPositions.Array.data[1].fromScene
+      value: Robotron
+      objectReference: {fileID: 0}
+    - target: {fileID: 114414934684367188, guid: 94e1e8563ddbb4f4580d69800e460ec4,
+        type: 2}
+      propertyPath: StartingPositions.Array.data[1].position.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114414934684367188, guid: 94e1e8563ddbb4f4580d69800e460ec4,
+        type: 2}
+      propertyPath: StartingPositions.Array.data[1].position.y
+      value: 2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114414934684367188, guid: 94e1e8563ddbb4f4580d69800e460ec4,
+        type: 2}
+      propertyPath: StartingPositions.Array.data[1].position.z
+      value: 119
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 94e1e8563ddbb4f4580d69800e460ec4, type: 2}

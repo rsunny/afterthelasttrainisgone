@@ -13,6 +13,9 @@ public class SwitchLights : MonoBehaviour {
 	public string button = "e";
 	private int length = 0;
 	
+	public string lightsKey = "lights";
+	private bool lightsAreOn;
+
 	private void switchOn()
 	{
 		for(int _i = 0; _i < length; _i++)
@@ -106,6 +109,20 @@ public class SwitchLights : MonoBehaviour {
 	void Start () 
 	{
 		length = lights.Length;
+		Debug.Log(ApplicationModel.GetString(lightsKey));
+		if(ApplicationModel.GetString(lightsKey) == null) lightsAreOn = false;
+		else
+		{
+			string lightsBool = ApplicationModel.GetString(lightsKey);
+			Debug.Log(lightsBool);
+			if( lightsBool == "true") lightsAreOn = true;
+			else if( lightsBool == "false" ) lightsAreOn = false;
+			
+		}
+		for(int _i = 0; _i < length; _i++)
+		{
+			lights[_i].SetActive(lightsAreOn);
+		}
 
 
 	}
