@@ -10,7 +10,9 @@ public class Attack : MonoBehaviour {
 
 	public GameObject m_playerManagerGameObject;
 
-	// weapon characteristics 
+	//SOUND
+	public AudioClip m_punchSound;
+	public AudioSource m_audioSource;
 
 	// Normal attack parameters
 	public int m_damage;
@@ -65,7 +67,7 @@ public class Attack : MonoBehaviour {
 			StopAttack (coroutine); // Stop the current value of coroutine
 		}
 
-			
+
 	}
 
 	public void Input (bool input){
@@ -79,7 +81,7 @@ public class Attack : MonoBehaviour {
 		m_hitMode = false;
 	}
 
-		
+
 
 	// set the attackmode of the gameobject to true for a fixed amount of time
 	protected IEnumerator AttackCoroutine (){
@@ -87,7 +89,9 @@ public class Attack : MonoBehaviour {
 		if (m_weaponAnimator != null) {
 			m_weaponAnimator.SetTrigger(m_animation);
 		}
-
+		if (m_audioSource != null) {
+			m_audioSource.PlayOneShot (m_punchSound);
+		}
 		yield return new WaitForSeconds (m_duration * m_setTime); // Duration of the setting of the attack
 		m_hitMode = true;
 		yield return new WaitForSeconds (Mathf.Max (m_duration * m_hitTime, 1f / 30f)); // Duration of the hit (superior to 1 30fps-frame)

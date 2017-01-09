@@ -3,6 +3,11 @@ using System.Collections;
 
 public class Hit : MonoBehaviour {
 
+	//SOUND
+	public AudioClip m_hitSound;
+	public AudioClip m_blockSound;
+	public AudioSource m_audioSource;
+
 	public GameObject m_playerManagerGameObject;
 	public GameObject m_healthGameObject;
 	public GameObject m_counterAttackGameObject;
@@ -20,12 +25,12 @@ public class Hit : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 
 	// If the defend mode is not activated, reduces the health by the damage given in argument and activate the corresponding animation
@@ -35,12 +40,21 @@ public class Hit : MonoBehaviour {
 				m_playerAnimator.SetTrigger ("GetHit");
 			}
 			if (!m_defenseMode) {
-			
+
+				if (m_audioSource != null) {
+					m_audioSource.PlayOneShot (m_hitSound);
+				}
+
 				m_healthGameObject.GetComponent<Health> ().SubstractHealth (damage);
 				StartCoroutine (Invulnerability ());
 				if (m_playerManagerGameObject != null) {
 					m_disableActionCoroutineCounter += 1;
 					StartCoroutine (DisableAction ());
+				}
+			}
+			else {
+				if (m_audioSource != null) {
+					m_audioSource.PlayOneShot (m_blockSound);
 				}
 			}
 			if (m_counterAttackGameObject != null) {

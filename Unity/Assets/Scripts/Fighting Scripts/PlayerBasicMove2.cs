@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class PlayerBasicMove2 : MonoBehaviour {
 
+	public AudioClip m_stepSound;
+	public AudioSource m_audioSource;
+	private bool m_stepSoundActivated = false;
+	private bool m_switchSound = false;
+
 	//instance of player
 	public static PlayerBasicMove2 Instance = null;
 	//bool to make it stop
@@ -11,7 +16,7 @@ public class PlayerBasicMove2 : MonoBehaviour {
 
 	//animarion
 	public Animator anim;
-	
+
 	//trasform
 	Transform tr;
 
@@ -21,9 +26,9 @@ public class PlayerBasicMove2 : MonoBehaviour {
 	public float speed = 2f;
 	[Range(0f,4f)]
 	public float vertCoef = 1f;
-	
 
- 	void Awake()
+
+	void Awake()
 	{
 		if (Instance == null)
 		{
@@ -47,18 +52,38 @@ public class PlayerBasicMove2 : MonoBehaviour {
 			horiz = Input.GetAxis ("Horizontal");
 			vert = Input.GetAxis ("Vertical");
 			Move(horiz,vert,speed,vertCoef);
+			if ( Input.GetKey(KeyCode.LeftShift) )
+			{
+				print ("shift");
+				//rigidbody.constraints = RigidbodyConstraints.FreezePositionY;
+				Move( horiz, vert, speed * 1.8f , vertCoef);
+			}
+			else 
+			{
+				Move(horiz,vert,speed,vertCoef);
+			}
 		}
 
 	}
-	
+
 	// Update is called once peappears to be similar to pausing and unpausing the game. You can extract the relevant code from the community wiki's PauseMenu script, and I will be reprinting the relevant code here with an explanation:r frame
 	void Update () 
 	{
+		if (m_switchSound) {
+			if (m_stepSoundActivated) {
+				m_audioSource.Stop ();
+				m_stepSoundActivated = false;
+			} else {
+				m_audioSource.PlayOneShot (m_stepSound);
+				m_stepSoundActivated = true;
+			}
+			m_switchSound = false;
+		}
 	}
 
 	void Move (float _h, float _v, float _speed,float _vertCoef)
 	{
-			tr.position = tr.position +
+		tr.position = tr.position +
 			_h * transform.right
 			* _speed * Time.fixedDeltaTime +
 			_v * transform.forward
@@ -66,15 +91,18 @@ public class PlayerBasicMove2 : MonoBehaviour {
 
 		//animation
 		Animating(_h,_v);
+
+		m_switchSound = (((_h != 0 || _v != 0) && !m_stepSoundActivated) || (_h==0 && _v==0 && m_stepSoundActivated));
+
 	}
 
 	void Animating (float h, float v)
-    {
-        // Create a boolean that is true if either of the input axes is non-zero.
-        bool walking = h != 0f || v != 0f;
+	{
+		// Create a boolean that is true if either of the input axes is non-zero.
+		bool walking = h != 0f || v != 0f;
 
-        // Tell the animator whether or not the player is walking.
-        anim.SetBool ("IsWalking", walking);
+		// Tell the animator whether or not the player is walking.
+		anim.SetBool ("IsWalking", walking);
 
 		bool walkingR = h > 0;
 		bool walkingL = h < 0;
@@ -131,12 +159,12 @@ public class PlayerBasicMove2 : MonoBehaviour {
 
 		//general case for any mistake
 		else 
-				{
-					Debug.Log("movement direction animation mistake!");
-				}
-			
+		{
+			Debug.Log("movement direction animation mistake!");
+		}
 
-	    anim.SetInteger ("movingDirection", movingDirection);
+
+		anim.SetInteger ("movingDirection", movingDirection);
 
 		//case walkingR
 		/*
@@ -158,8 +186,8 @@ public class PlayerBasicMove2 : MonoBehaviour {
 
 		*/
 
-		
-    }
+
+	}
 
 	public static void stopPlayer()
 	{
