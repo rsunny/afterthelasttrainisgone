@@ -52,9 +52,8 @@ public class PlayerBasicMove2 : MonoBehaviour {
 			horiz = Input.GetAxis ("Horizontal");
 			vert = Input.GetAxis ("Vertical");
 			Move(horiz,vert,speed,vertCoef);
-			if ( Input.GetKey(KeyCode.LeftShift) )
+			if ( Input.GetButton ("Jump") )
 			{
-				print ("shift");
 				//rigidbody.constraints = RigidbodyConstraints.FreezePositionY;
 				Move( horiz, vert, speed * 1.8f , vertCoef);
 			}
