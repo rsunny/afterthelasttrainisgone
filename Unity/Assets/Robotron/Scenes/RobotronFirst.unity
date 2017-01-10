@@ -256,6 +256,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114325928837785200, guid: 049bdeefb073842758d4e2d3364a4eaf,
+        type: 2}
+      propertyPath: button
+      value: Exit
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 049bdeefb073842758d4e2d3364a4eaf, type: 2}
   m_IsPrefabParent: 0
@@ -600,7 +605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99188fdc0af8449ce838a609cb5e68d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: a
+  button: Start
   sceneToLoad: Gameplay
 --- !u!1 &998597030
 GameObject:

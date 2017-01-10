@@ -20,6 +20,11 @@ public class PlayerRobotron : MonoBehaviour {
 	float m_horizontal = 0f;
 	float m_vertical = 0f;
 
+	private string shootDown = "ShootDown";
+	private string shootUp = "ShootUp";
+	private string shootLeft = "ShootLeft";
+	private string shootRight = "ShootRight";
+
 	// Use this for initialization
 	void Start () {
 		tr = GetComponent<Transform> () as Transform;
@@ -30,7 +35,7 @@ public class PlayerRobotron : MonoBehaviour {
 		m_horizontal = Input.GetAxis ("Horizontal");
 		m_vertical = Input.GetAxis ("Vertical");
 
-		if (Input.GetKeyDown (KeyCode.L)) {
+		if (Input.GetButtonDown (shootRight)) {
 			// shoot right!
 			GameObject go = Instantiate (m_shot_prefab,
 				                m_shootright.position,
@@ -40,7 +45,7 @@ public class PlayerRobotron : MonoBehaviour {
 			SoundManager.Instance.PlayerShoots ();
 		}
 
-		if (Input.GetKeyDown (KeyCode.J)) {
+		if (Input.GetButtonDown (shootLeft)) {
 			// shoot right!
 			GameObject go = ObjectPoolingManager.Instance.GetObject(m_shot_prefab.name);
 			go.transform.position = m_shootleft.position;
@@ -53,7 +58,7 @@ public class PlayerRobotron : MonoBehaviour {
 		}
 
 
-		if (Input.GetKeyDown (KeyCode.I)) {
+		if (Input.GetButtonDown (shootUp)) {
 			// shoot right!
 			GameObject go = Instantiate (m_shot_prefab,
 				m_shootup.position,
@@ -62,7 +67,7 @@ public class PlayerRobotron : MonoBehaviour {
 			SoundManager.Instance.PlayerShoots ();
 		}
 
-		if (Input.GetKeyDown (KeyCode.K)) {
+		if (Input.GetButtonDown (shootDown)) {
 			// shoot right!
 			GameObject go = Instantiate (m_shot_prefab,
 				m_shootdown.position,

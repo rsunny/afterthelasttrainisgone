@@ -249,7 +249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 440c037b9a8414a34a9f8e2df98d09e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: e
+  button: Exit
   sceneToLoad: LostAndFound
 --- !u!114 &114348012899870378
 MonoBehaviour:

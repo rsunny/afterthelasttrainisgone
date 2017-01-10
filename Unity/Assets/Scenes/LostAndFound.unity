@@ -1592,7 +1592,7 @@ MonoBehaviour:
   timeSwitchOn: 1
   switchOffLine: press E to switch off
   timeSwitchOff: 0
-  button: e
+  button: Fire3
   lightsKey: lights
 --- !u!65 &285540177
 BoxCollider:

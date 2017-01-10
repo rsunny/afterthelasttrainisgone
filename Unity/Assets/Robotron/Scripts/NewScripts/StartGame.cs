@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class StartGame : MonoBehaviour {
 
-	public string button = "a";
+	public string button = "Start";
 	public string sceneToLoad = "Gameplay";
 
 	// Use this for initialization
@@ -15,7 +15,7 @@ public class StartGame : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown(button))
+		if(Input.GetButtonDown(button))
 		{
 			SceneManager.LoadScene (sceneToLoad);
 		}

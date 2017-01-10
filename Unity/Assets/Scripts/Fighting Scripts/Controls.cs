@@ -6,10 +6,11 @@ public class Controls : MonoBehaviour {
 	public GameObject m_playerManagerGameObject;
 
 	// horizontal & vertical input variables
-	//float m_horizontal = 0f;
-	//float m_depth = 0f;
+	float m_horizontal = 0f;
+	float m_depth = 0f;
 
 	//bool m_jumpInput;
+	bool m_runInput;
 	bool m_attackInput;
 	//bool m_interactionInput;
 	bool m_defenseInput;
@@ -23,13 +24,17 @@ public class Controls : MonoBehaviour {
 	void Update () {
 		if (m_playerManagerGameObject != null) {
 			// Move
-			//m_horizontal = Input.GetAxis ("Horizontal");
-			//m_depth = Input.GetAxis ("Vertical");
-			//m_playerManagerGameObject.GetComponent<PlayerManager> ().Move (m_horizontal, m_depth);
+			m_horizontal = Input.GetAxis ("Horizontal");
+			m_depth = Input.GetAxis ("Vertical");
+			m_playerManagerGameObject.GetComponent<PlayerManager> ().Move (m_horizontal, m_depth);
 
 			//Jump
 			//m_jumpInput = Input.GetButtonDown ("Jump");
 			//m_playerManagerGameObject.GetComponent<PlayerManager> ().Jump (m_jumpInput);
+
+			//Run
+			m_runInput = Input.GetButton ("Jump");
+			m_playerManagerGameObject.GetComponent<PlayerManager> ().Run (m_runInput);
 
 			//Attack
 			m_attackInput = Input.GetButtonDown ("Fire1");

@@ -10,7 +10,7 @@ public class SwitchLights : MonoBehaviour {
 	public int timeSwitchOn = 1;
 	public string switchOffLine= "press E to switch off";
 	public int timeSwitchOff = 0;
-	public string button = "e";
+	public string button = "Fire3";
 	private int length = 0;
 	
 	public string lightsKey = "lights";
@@ -75,7 +75,7 @@ public class SwitchLights : MonoBehaviour {
 
 	void OnTriggerStay (Collider collideObj)
 	{
-		if (collideObj.tag == "Player" && Input.GetKeyDown (button))
+		if (collideObj.tag == "Player" && Input.GetButtonDown (button))
 		{
 			CanvasManager.DismissButton();
 			if(lightsOn)
