@@ -4754,6 +4754,36 @@ Prefab:
       propertyPath: m_doorSound
       value: 
       objectReference: {fileID: 8300000, guid: 511a4b8f23585d042b3108f0ba989e17, type: 3}
+    - target: {fileID: 108177899529441170, guid: fcb0a9825de684f8ab14f40440125e16,
+        type: 2}
+      propertyPath: m_Range
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 108492264439454524, guid: fcb0a9825de684f8ab14f40440125e16,
+        type: 2}
+      propertyPath: m_Range
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 108817556296764410, guid: fcb0a9825de684f8ab14f40440125e16,
+        type: 2}
+      propertyPath: m_Range
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 108817556296764410, guid: fcb0a9825de684f8ab14f40440125e16,
+        type: 2}
+      propertyPath: m_SpotAngle
+      value: 117
+      objectReference: {fileID: 0}
+    - target: {fileID: 108492264439454524, guid: fcb0a9825de684f8ab14f40440125e16,
+        type: 2}
+      propertyPath: m_SpotAngle
+      value: 105
+      objectReference: {fileID: 0}
+    - target: {fileID: 108177899529441170, guid: fcb0a9825de684f8ab14f40440125e16,
+        type: 2}
+      propertyPath: m_SpotAngle
+      value: 78
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fcb0a9825de684f8ab14f40440125e16, type: 2}
   m_IsPrefabParent: 0
