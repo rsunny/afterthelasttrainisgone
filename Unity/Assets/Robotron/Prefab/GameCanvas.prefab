@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 114325928837785200}
   m_Layer: 5
   m_Name: GameCanvas
-  m_TagString: Untagged
+  m_TagString: Robotron
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

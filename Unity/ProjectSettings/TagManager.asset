@@ -6,6 +6,9 @@ TagManager:
   tags:
   - EnemyHealth
   - Train
+  - PlayerHealth
+  - Undefined
+  - Robotron
   layers:
   - Default
   - TransparentFX

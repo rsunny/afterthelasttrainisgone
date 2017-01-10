@@ -615,7 +615,7 @@ GameObject:
   - component: {fileID: 998597031}
   m_Layer: 0
   m_Name: SoundManager
-  m_TagString: Untagged
+  m_TagString: Robotron
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1020,8 +1020,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_mainmenu: {fileID: 518430456}
-  m_credits: {fileID: 0}
-  m_settings: {fileID: 0}
 --- !u!4 &1625043261
 Transform:
   m_ObjectHideFlags: 0

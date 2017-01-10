@@ -11,13 +11,17 @@ public class ExitFromRobotron : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if(Input.GetKeyDown(button))
 		{
+			var objects = GameObject.FindGameObjectsWithTag ("Robotron");
+			foreach (GameObject obj in objects){
+				Destroy (obj);
+			}
+			
 			SceneManager.LoadScene (sceneToLoad);
 		}
 	}
