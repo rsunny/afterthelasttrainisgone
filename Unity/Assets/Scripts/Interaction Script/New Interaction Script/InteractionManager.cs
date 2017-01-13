@@ -19,6 +19,7 @@ public class InteractionManager : MonoBehaviour {
 	public string ButtonString = "press E to interact";
 	//button to press
 	private string button = "Fire3";
+	private bool buttonValue = false;
 
 
 
@@ -142,7 +143,7 @@ public class InteractionManager : MonoBehaviour {
 		Debug.Log(StateManager.currentState);
 
 		//when you press the interaction button
-		if (collideObj.tag == "Player" && Input.GetButtonDown (button))
+		if (collideObj.tag == "Player" && buttonValue)
 		{
 
 
@@ -397,6 +398,6 @@ public class InteractionManager : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-
+		buttonValue = Input.GetButtonDown (button);
 	}
 }

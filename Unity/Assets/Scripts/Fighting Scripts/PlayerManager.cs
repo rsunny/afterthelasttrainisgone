@@ -31,6 +31,12 @@ public class PlayerManager : MonoBehaviour {
 		}
 	}
 
+	public void Run(bool runInput){
+		if (m_moveGameObject != null) {
+			m_moveGameObject.GetComponent<Move> ().Run (runInput);
+		}
+	}
+
 	public void Jump(bool jumpInput){
 		if (m_jumpGameObject != null) {
 			m_jumpGameObject.GetComponent<Jump> ().Input (!m_disableAction && jumpInput && !m_defenseMode);
@@ -62,6 +68,11 @@ public class PlayerManager : MonoBehaviour {
 	}
 
 	public void Die(){
+		StartCoroutine (DieCoroutine());
+	}
+
+	private IEnumerator DieCoroutine(){
+		yield return new WaitForSeconds (0.5f);
 		Destroy (gameObject);
 	}
 

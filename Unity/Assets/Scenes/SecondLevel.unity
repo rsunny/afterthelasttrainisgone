@@ -981,40 +981,40 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4141876893660942, guid: 7fe66a216802fbd4988312cb8513d244, type: 2}
+    - target: {fileID: 4631499342749294, guid: 10a3525454cb94dfeb790b9292c5072f, type: 2}
       propertyPath: m_LocalPosition.x
       value: 1.6
       objectReference: {fileID: 0}
-    - target: {fileID: 4141876893660942, guid: 7fe66a216802fbd4988312cb8513d244, type: 2}
+    - target: {fileID: 4631499342749294, guid: 10a3525454cb94dfeb790b9292c5072f, type: 2}
       propertyPath: m_LocalPosition.y
       value: 2.8
       objectReference: {fileID: 0}
-    - target: {fileID: 4141876893660942, guid: 7fe66a216802fbd4988312cb8513d244, type: 2}
+    - target: {fileID: 4631499342749294, guid: 10a3525454cb94dfeb790b9292c5072f, type: 2}
       propertyPath: m_LocalPosition.z
       value: 8.3
       objectReference: {fileID: 0}
-    - target: {fileID: 4141876893660942, guid: 7fe66a216802fbd4988312cb8513d244, type: 2}
+    - target: {fileID: 4631499342749294, guid: 10a3525454cb94dfeb790b9292c5072f, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4141876893660942, guid: 7fe66a216802fbd4988312cb8513d244, type: 2}
+    - target: {fileID: 4631499342749294, guid: 10a3525454cb94dfeb790b9292c5072f, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4141876893660942, guid: 7fe66a216802fbd4988312cb8513d244, type: 2}
+    - target: {fileID: 4631499342749294, guid: 10a3525454cb94dfeb790b9292c5072f, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4141876893660942, guid: 7fe66a216802fbd4988312cb8513d244, type: 2}
+    - target: {fileID: 4631499342749294, guid: 10a3525454cb94dfeb790b9292c5072f, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4141876893660942, guid: 7fe66a216802fbd4988312cb8513d244, type: 2}
+    - target: {fileID: 4631499342749294, guid: 10a3525454cb94dfeb790b9292c5072f, type: 2}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 7fe66a216802fbd4988312cb8513d244, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 10a3525454cb94dfeb790b9292c5072f, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &388308160
 GameObject:
@@ -2664,15 +2664,12 @@ MonoBehaviour:
     stateChanged: 0
     isDialogue: 0
     Thoughts:
-    - Thought: It doesn't looks like a way out
-      showImage: 0
-      ThoughtImage: {fileID: 0}
-    - Thought: '...'
+    - Thought: It doesn't look like a way out
       showImage: 0
       ThoughtImage: {fileID: 0}
     Dialogs: []
     openableDoor: 1
-    sceneToLoad: MainTerminalVictoria
+    sceneToLoad: FightingScene
     needAnObject: 0
     giveAnObject: 0
     interactable: 0
@@ -4402,7 +4399,7 @@ MeshFilter:
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &1690961321 stripped
 Transform:
-  m_PrefabParentObject: {fileID: 4141876893660942, guid: 7fe66a216802fbd4988312cb8513d244,
+  m_PrefabParentObject: {fileID: 4631499342749294, guid: 10a3525454cb94dfeb790b9292c5072f,
     type: 2}
   m_PrefabInternal: {fileID: 382647231}
 --- !u!1 &1724959300

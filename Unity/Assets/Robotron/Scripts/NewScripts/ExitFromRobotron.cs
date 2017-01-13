@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class ExitFromRobotron : MonoBehaviour {
 
-	public string button = "e";
+	public string button = "Exit";
 	public string sceneToLoad = "LostAndFound";
 
 	// Use this for initialization
@@ -15,7 +15,7 @@ public class ExitFromRobotron : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown(button))
+		if(Input.GetButtonDown(button))
 		{
 			var objects = GameObject.FindGameObjectsWithTag ("Robotron");
 			foreach (GameObject obj in objects){

@@ -77,8 +77,8 @@ GameObject:
   - component: {fileID: 114586563652873150}
   - component: {fileID: 114052709013060420}
   - component: {fileID: 114908309225088482}
-  - component: {fileID: 114114623261944374}
   - component: {fileID: 82701236869435780}
+  - component: {fileID: 114236848689156006}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -106,7 +106,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1970447732228006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.05, y: 46.33001, z: 58.4}
+  m_LocalPosition: {x: 132.98, y: 2.8, z: 59.25}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children:
   - {fileID: 4137333782406240}
@@ -305,7 +305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_playerManagerGameObject: {fileID: 1970447732228006}
   m_health: 1000
---- !u!114 &114114623261944374
+--- !u!114 &114236848689156006
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -313,14 +313,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1970447732228006}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edd4358cd515f684dbfd649053f3d975, type: 3}
+  m_Script: {fileID: 11500000, guid: d1c661f63ca7c97468612702783132bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_stepSound: {fileID: 8300000, guid: 07ec5b8937573a84b86e4c304e4c9950, type: 3}
   m_audioSource: {fileID: 82701236869435780}
   anim: {fileID: 95167621405659492}
-  speed: 3
+  speed: 4
   vertCoef: 1
+  m_runMultiplicator: 2
 --- !u!114 &114314325564914214
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -383,7 +384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2a70ea8f6e14d43a14096cf589dea0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_hitSound: {fileID: 8300000, guid: 8baab3d1c6973c545a6e0a3a1609b23e, type: 3}
+  m_hitSound: {fileID: 8300000, guid: 7bc118af556dc8b4fa42dcdf2e0f2476, type: 3}
   m_blockSound: {fileID: 8300000, guid: 3e0337f4af8c66f43b194635681de86b, type: 3}
   m_audioSource: {fileID: 82701236869435780}
   m_playerManagerGameObject: {fileID: 1970447732228006}
@@ -404,7 +405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 245330ea13bf7bc40aa3e334777e6cc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_moveGameObject: {fileID: 0}
+  m_moveGameObject: {fileID: 1970447732228006}
   m_jumpGameObject: {fileID: 0}
   m_interactionGameObject: {fileID: 0}
   m_defenseGameObject: {fileID: 1970447732228006}

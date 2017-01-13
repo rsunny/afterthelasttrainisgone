@@ -1592,7 +1592,7 @@ MonoBehaviour:
   timeSwitchOn: 1
   switchOffLine: press E to switch off
   timeSwitchOff: 0
-  button: e
+  button: Fire3
   lightsKey: lights
 --- !u!65 &285540177
 BoxCollider:
@@ -7813,7 +7813,7 @@ Light:
   m_Type: 0
   m_Color: {r: 1, g: 0.6413793, b: 0, a: 1}
   m_Intensity: 0.4
-  m_Range: 30
+  m_Range: 60
   m_SpotAngle: 125.6
   m_CookieSize: 10
   m_Shadows:
@@ -12514,8 +12514,8 @@ Light:
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.3
-  m_Range: 10
-  m_SpotAngle: 30
+  m_Range: 100
+  m_SpotAngle: 65
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
