@@ -13581,6 +13581,7 @@ Transform:
   - {fileID: 1070679734}
   - {fileID: 1102557994}
   - {fileID: 1078989573}
+  - {fileID: 1409296972}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15120,6 +15121,93 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 914833497}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &917275836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1795357149044862, guid: 6c70a418b76094f068798e6131bdbe3a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 917275837}
+  - component: {fileID: 917275839}
+  - component: {fileID: 917275838}
+  m_Layer: 0
+  m_Name: InteractionCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &917275837
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4857367059689884, guid: 6c70a418b76094f068798e6131bdbe3a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 917275836}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1409296972}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &917275838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114121948332078812, guid: 6c70a418b76094f068798e6131bdbe3a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 917275836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 084107186a19345c895dda45f215a216, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_doorSound: {fileID: 0}
+  m_audioSource: {fileID: 0}
+  ButtonString: press E to interact
+  Interactions:
+  - changeTheState: 0
+    stateChanged: 0
+    isDialogue: 0
+    Thoughts:
+    - Thought: It is just the map of the tube
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    Dialogs: []
+    openableDoor: 0
+    sceneToLoad: 
+    needAnObject: 0
+    giveAnObject: 0
+    interactable: 0
+  - changeTheState: 0
+    stateChanged: 0
+    isDialogue: 0
+    Thoughts:
+    - Thought: I know where I am, I need to take the train now
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    Dialogs: []
+    openableDoor: 0
+    sceneToLoad: 
+    needAnObject: 0
+    giveAnObject: 0
+    interactable: 0
+--- !u!65 &917275839
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 65924699994586418, guid: 6c70a418b76094f068798e6131bdbe3a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 917275836}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 27.69226, y: 39.72381, z: 3.1848445}
+  m_Center: {x: 2.5211334, y: -10.734992, z: -0.24679542}
 --- !u!1 &917801836
 GameObject:
   m_ObjectHideFlags: 0
@@ -18972,6 +19060,21 @@ Prefab:
       propertyPath: m_audioSource
       value: 
       objectReference: {fileID: 1197510580}
+    - target: {fileID: 65045007940669404, guid: 7b7510b48e7aa407080ae9f64524cc16,
+        type: 2}
+      propertyPath: m_Size.z
+      value: 3.3518066
+      objectReference: {fileID: 0}
+    - target: {fileID: 65045007940669404, guid: 7b7510b48e7aa407080ae9f64524cc16,
+        type: 2}
+      propertyPath: m_Center.z
+      value: -6.332157
+      objectReference: {fileID: 0}
+    - target: {fileID: 114723182437181096, guid: 7b7510b48e7aa407080ae9f64524cc16,
+        type: 2}
+      propertyPath: narration
+      value: Oh F**k...
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7b7510b48e7aa407080ae9f64524cc16, type: 2}
   m_IsPrefabParent: 0
@@ -22334,6 +22437,79 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e99585b2b25d74e97870d99af2a7e8fa, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+--- !u!1 &1409296971
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1143458778042650, guid: 6c70a418b76094f068798e6131bdbe3a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1409296972}
+  - component: {fileID: 1409296973}
+  m_Layer: 0
+  m_Name: LondonTube Map
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1409296972
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4563957006684146, guid: 6c70a418b76094f068798e6131bdbe3a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1409296971}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.8, y: -4.24, z: 14.099998}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_Children:
+  - {fileID: 917275837}
+  m_Father: {fileID: 831251919}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!212 &1409296973
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 212233770029687598, guid: 6c70a418b76094f068798e6131bdbe3a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1409296971}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: d23c64e5f2d924c04a1625fa5033176a, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: a931d44a1dd70408abea1bfa9fce0124, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
