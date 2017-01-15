@@ -66,6 +66,10 @@ public class StateManager : MonoBehaviour {
 		currentState++;
 	}
 
+	public static void InitializeState(){
+		currentState = 1;
+	}
+
 	// Use this for initialization
 	void Start () {
 		

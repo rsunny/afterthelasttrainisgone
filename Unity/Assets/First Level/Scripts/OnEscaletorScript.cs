@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class OnEscaletorScript : MonoBehaviour {
 
-	public GameObject player;
+	public GameObject m_player;
 	public bool goingDown = true;
 	public float speedH = 1;
 	public float speedV = 0;
@@ -13,7 +13,7 @@ public class OnEscaletorScript : MonoBehaviour {
 	{	
 		if (collideObj.tag == "Player")
 		{
-			PlayerBasicMove.stopPlayer();
+			m_player.GetComponent<PlayerManager> ().DisableAction (true);
 		}
 	}
 
@@ -21,8 +21,8 @@ public class OnEscaletorScript : MonoBehaviour {
 	{	
 		if (collideObj.tag == "Player" )
 		{			
-			player.transform.Translate(Vector3.right * Time.deltaTime * speedH);
-			player.transform.Translate(Vector3.up * Time.deltaTime * speedV);
+			m_player.transform.Translate(Vector3.right * Time.deltaTime * speedH);
+			m_player.transform.Translate(Vector3.up * Time.deltaTime * speedV);
 		}
 	}
 
@@ -30,7 +30,7 @@ public class OnEscaletorScript : MonoBehaviour {
 	{
 		if (collideObj.tag == "Player")
 		{
-			PlayerBasicMove.unstopPlayer();
+			m_player.GetComponent<PlayerManager> ().DisableAction (false);
 		}
 	}
 	// Use this for initialization

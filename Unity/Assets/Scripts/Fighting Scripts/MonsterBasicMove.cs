@@ -162,11 +162,11 @@ public class MonsterBasicMove : MonoBehaviour {
 		
     }
 
-	public static void stopPlayer()
+	public void StopPlayer()
 	{
 		stop = true;
 	}
-	public static void unstopPlayer()
+	public void UnstopPlayer()
 	{
 		stop = false;
 	}

@@ -107,7 +107,6 @@ public class InteractionManager : MonoBehaviour {
 			//show the botton
 			//initialized the Variables
 
-
 			//dismiss previous text form narration or other colliders
 			CanvasManager.DismissAll();
 
@@ -145,11 +144,7 @@ public class InteractionManager : MonoBehaviour {
 		//when you press the interaction button
 		if (collideObj.tag == "Player" && buttonValue)
 		{
-
-
-
-
-
+			buttonValue = false;
 			//show the text and dismiss the button
 			if(CanvasManager.showingText == false) 
 			{

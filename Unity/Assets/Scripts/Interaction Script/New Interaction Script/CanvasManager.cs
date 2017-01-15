@@ -191,11 +191,11 @@ public static void ShowButton(string _button, bool _firsTime = false)
 
 	if(_firsTime)
 	{
-		instance.ButtonCanvasGroup.alpha = 0.4f ;
+		instance.ButtonCanvasGroup.alpha = 0.8f ;
 	}
 	else
 	{
-		instance.ButtonCanvasGroup.alpha = 0.1f ;
+		instance.ButtonCanvasGroup.alpha = 0.4f ;
 	} 
 
 
