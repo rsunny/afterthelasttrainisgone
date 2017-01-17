@@ -21,7 +21,8 @@ public class InteractionManager : MonoBehaviour {
 	//button to press
 	private string button = "Fire3";
 	private bool buttonValue = false;
-
+	//player in an interaction trigger
+	private bool trig;
 
 
 	//current state
@@ -132,68 +133,63 @@ public class InteractionManager : MonoBehaviour {
 			//show the botton  NOTA: bisogna ancora impementare un modo per cambiare colore se non c'è più nulla da dire!!
 			CanvasManager.ShowButton(ButtonString, firstTime);
 
-
+			trig = true;
 		}
 
 	}
 
-	void OnTriggerStay (Collider collideObj)
+	/*void OnTriggerStay (Collider collideObj)*/
+	void Interaction()
 	{
-		//This is the check if the state change while you stay in the same trigger, and to update the button
-		if (collideObj.tag == "Player" && previousState != StateManager.currentState && Interactions.Length > StateManager.currentState)
-		{
-			firstTime = true;
-			previousState = StateManager.currentState;			
-		}
-
-		Debug.Log(StateManager.currentState);
-
-		//when you press the interaction button
-		if (collideObj.tag == "Player" && buttonValue)
-		{
-			buttonValue = false;
-			//show the text and dismiss the button
-			if(CanvasManager.showingText == false) 
-			{
-				//dismiss button
-				CanvasManager.DismissButton();
-
-
-				//initialize the state
-				curState = StateManager.currentState;
-
-
-
-				if(Interactions.Length == 0)
-				{
-					CanvasManager.ShowThought( defaultThought, null );
-					firstTime = false;
-				} 
-				else 
-				{
-					Interact(curState);
-				}
-				//show either a dialog or a thought, base on the state
+		if (trig) {
+			//This is the check if the state change while you stay in the same trigger, and to update the button
+			if (/*collideObj.tag == "Player" &&*/ previousState != StateManager.currentState && Interactions.Length > StateManager.currentState) {
+				firstTime = true;
+				previousState = StateManager.currentState;			
 			}
+
+			Debug.Log (StateManager.currentState);
+
+			//when you press the interaction button
+			if (/*collideObj.tag == "Player" &&*/ buttonValue) {
+				buttonValue = false;
+				//show the text and dismiss the button
+				if (CanvasManager.showingText == false) {
+					//dismiss button
+					CanvasManager.DismissButton ();
+
+
+					//initialize the state
+					curState = StateManager.currentState;
+
+
+
+					if (Interactions.Length == 0) {
+						CanvasManager.ShowThought (defaultThought, null);
+						firstTime = false;
+					} else {
+						Interact (curState);
+					}
+					//show either a dialog or a thought, base on the state
+				}
 
 			/*OLD*/
 
-			else if(CanvasManager.showingText == true && keepTalking)
-			{
-				CanvasManager.DismissAll();
-				Interact(curState);
-			}/*
+			else if (CanvasManager.showingText == true && keepTalking) {
+					CanvasManager.DismissAll ();
+					Interact (curState);
+				}/*
 			*/
 
 			//dismiss the text and show the button again
-			else if (CanvasManager.showingText == true )
-			{
-				CanvasManager.DismissAll();
-				//show the botton  
-				CanvasManager.ShowButton( ButtonString, firstTime);
+			else if (CanvasManager.showingText == true) {
+					CanvasManager.DismissAll ();
+					//show the botton  
+					CanvasManager.ShowButton (ButtonString, firstTime);
+				}
+
+
 			}
-
-
 		}
 
 	}
@@ -220,6 +216,7 @@ public class InteractionManager : MonoBehaviour {
 			{
 				iterator = 0;
 			}
+			trig = false;
 
 		}
 
@@ -422,5 +419,6 @@ public class InteractionManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		buttonValue = Input.GetButtonDown (button);
+		Interaction ();
 	}
 }
