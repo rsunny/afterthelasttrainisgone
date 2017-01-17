@@ -455,6 +455,11 @@ MonoBehaviour:
   ButtonCanvasGroup: {fileID: 225232564891118262}
   ButtonObject: {fileID: 1023450227617434}
   Button: {fileID: 114059418755350162}
+  StateChangeCanvasGroup: {fileID: 0}
+  StateChangeObject: {fileID: 0}
+  StateImageObject: {fileID: 0}
+  StateSentence: {fileID: 0}
+  StateImage: {fileID: 0}
 --- !u!114 &114668980050908088
 MonoBehaviour:
   m_ObjectHideFlags: 1

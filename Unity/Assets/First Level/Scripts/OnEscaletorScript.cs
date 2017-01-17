@@ -36,6 +36,7 @@ public class OnEscaletorScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
+		m_player = GameObject.Find("Player");
 		if(goingDown) speedV = - speedV;
 		
 	}

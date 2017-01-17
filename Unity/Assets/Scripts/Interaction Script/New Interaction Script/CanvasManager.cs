@@ -97,6 +97,14 @@ public class CanvasManager : MonoBehaviour {
 	public Text Button;
 
 
+	public CanvasGroup StateChangeCanvasGroup;
+	//public CanvasGroup StateImageCanvasGroup;
+	public GameObject StateChangeObject;
+	public GameObject StateImageObject;
+	public Text StateSentence;
+	public Image StateImage;
+
+
 
 
 public static void ShowThought(string _thought = null, Sprite _thoughtImage = null)
@@ -221,6 +229,54 @@ public static void DismissAll()
 	DismissDialog();
 	DismissButton();
 }
+
+
+
+public static void DismissChangeState()
+{
+	instance.StateChangeObject.SetActive(false);
+	instance.StateChangeCanvasGroup.gameObject.SetActive(false);
+	instance.StateImageObject.SetActive(false);
+	//instance.StateImageCanvasGroup.gameObject.SetActive(false);
+}
+
+
+private static void ShowStateSetence(string _sentence = null, Sprite _stateImage = null)
+{
+
+	if(_sentence == null) return;
+	//activate the Thought game object
+	instance.StateChangeObject.SetActive(true);
+
+	//instanciate the desired text
+	instance.StateSentence.text = _sentence;
+	//check if an image exists
+	if(_stateImage !=  null)
+	{
+		//instanciate the diesered image
+		instance.StateImage.sprite = _stateImage;
+		instance.StateImage.preserveAspect = true;
+		instance.StateImageObject.SetActive(true);
+		//instance.StateImageCanvasGroup.gameObject.SetActive(true);
+	}
+	//else instance.StateImageObject.SetActive(false);
+	//activate the canvas Group
+	instance.StateChangeCanvasGroup.gameObject.SetActive(true);
+}
+
+public static void ShowChangeState(string _sentence = null, Sprite _image = null, int _time = 2)
+{
+	ShowStateSetence(_sentence, _image);
+	int time = _time;
+	instance.StartCoroutine(waitAndDestroyState(time));
+}
+
+private static IEnumerator waitAndDestroyState(int _t)
+{
+	yield return new WaitForSeconds(_t);
+	DismissChangeState();
+}
+
 
 	// Use this for initialization
 	void Start () {

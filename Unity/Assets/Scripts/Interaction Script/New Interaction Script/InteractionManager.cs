@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 
 public class InteractionManager : MonoBehaviour {
@@ -67,8 +68,6 @@ public class InteractionManager : MonoBehaviour {
 	[System.Serializable]
 	public struct InteractionStruct
 	{
-		public bool changeTheState; // = false;
-		public bool stateChanged;
 
 		//boolean that say if it is the first time that you interact or it has something new to say
 		public bool isDialogue;
@@ -76,17 +75,25 @@ public class InteractionManager : MonoBehaviour {
 
 		public DialogStruct[] Dialogs;
 
+		public bool changeTheState; // = false;
+		public string changingStateSentence;
+		public Sprite stateImage;
+		public int timeToDestroyStateCanvas;
+		public bool stateChanged;
+		
+		
 		//tell if it is a door or not, and if can be open that state...
 		public bool openableDoor;
 		public string sceneToLoad;
+		public string changingSceneSentence;
 
 		//still need to decide if use them or not
-		public bool needAnObject; // = false;
-		public bool giveAnObject; // = false;
+		//public bool needAnObject; // = false;
+		//public bool giveAnObject; // = false;
 
 		//still to decide if use them or not
-		public bool interactable;// = false;
-		public interactionDelegate interaction;
+		//public bool interactable;// = false;
+		//public interactionDelegate interaction;
 	}
 
 	public InteractionStruct[] Interactions = null;
@@ -271,6 +278,12 @@ public class InteractionManager : MonoBehaviour {
 			if(_curStruct.openableDoor)
 			{
 				if(_curStruct.sceneToLoad == null) return;
+
+				string sentenceToShow = "opening door...";
+				if(String.IsNullOrEmpty(_curStruct.changingSceneSentence)) sentenceToShow = _curStruct.changingSceneSentence;
+				CanvasManager.ShowChangeState(sentenceToShow, null ,3 );
+
+
 				StartCoroutine (OpenDoor (_curStruct.sceneToLoad));
 
 			}
@@ -363,11 +376,26 @@ public class InteractionManager : MonoBehaviour {
 		CanvasManager.ShowDialog( _curWhoIsSpeaking,  _curDialog );
 	}
 
+	private void displayStateChanging()
+	{
+		string _sentence;
+		int _time = 2;
+		Sprite _stateImage = null;
 
+		InteractionStruct _tempStruct = Interactions[StateManager.currentState];
+		if(String.IsNullOrEmpty(_tempStruct.changingStateSentence) ) return;
+		_sentence = _tempStruct.changingStateSentence;
+		_time = _tempStruct.timeToDestroyStateCanvas;
+		_stateImage = _tempStruct.stateImage;
+		
+		CanvasManager.ShowChangeState(_sentence,_stateImage,_time );
+
+	}
 	private void isTheStateChanging (bool _changeTheState)
 	{
 		if(_changeTheState)
 		{
+			displayStateChanging();
 			StateManager.updateState();
 		}
 		else return;

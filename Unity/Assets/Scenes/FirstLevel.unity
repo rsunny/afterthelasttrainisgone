@@ -2928,6 +2928,110 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 211558331}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &218876560
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1627462766440562, guid: 7d09658deaebd4890aba12f94cd7a1a8, type: 2}
+      propertyPath: m_Name
+      value: NewCanvas
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 7d09658deaebd4890aba12f94cd7a1a8, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &227858980
 GameObject:
   m_ObjectHideFlags: 0
@@ -4784,6 +4888,42 @@ Prefab:
       propertyPath: m_SpotAngle
       value: 78
       objectReference: {fileID: 0}
+    - target: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
+        type: 2}
+      propertyPath: Interactions.Array.data[5].changingStateSentence
+      value: Homeless give you a key
+      objectReference: {fileID: 0}
+    - target: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
+        type: 2}
+      propertyPath: Interactions.Array.data[5].stateImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 0dca4a46a731341eca24dd711e52f636,
+        type: 3}
+    - target: {fileID: 114149769851840378, guid: fcb0a9825de684f8ab14f40440125e16,
+        type: 2}
+      propertyPath: Interactions.Array.data[4].stateImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 6fe57f9bdc2f6446397b9637c9e48436,
+        type: 3}
+    - target: {fileID: 114149769851840378, guid: fcb0a9825de684f8ab14f40440125e16,
+        type: 2}
+      propertyPath: Interactions.Array.data[4].changingStateSentence
+      value: Graffiti gives you a smile
+      objectReference: {fileID: 0}
+    - target: {fileID: 114149769851840378, guid: fcb0a9825de684f8ab14f40440125e16,
+        type: 2}
+      propertyPath: Interactions.Array.data[4].timeToDestroyStateCanvas
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
+        type: 2}
+      propertyPath: Interactions.Array.data[5].timeToDestroyStateCanvas
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161585893200274, guid: fcb0a9825de684f8ab14f40440125e16, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fcb0a9825de684f8ab14f40440125e16, type: 2}
   m_IsPrefabParent: 0
@@ -6504,36 +6644,7 @@ MonoBehaviour:
   m_doorSound: {fileID: 0}
   m_audioSource: {fileID: 0}
   ButtonString: press E to interact
-  Interactions:
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 0
-    Thoughts:
-    - Thought: Clear Cola.... crystal
-      showImage: 1
-      ThoughtImage: {fileID: 0}
-    - Thought: Stupid advertisment
-      showImage: 0
-      ThoughtImage: {fileID: 0}
-    Dialogs: []
-    openableDoor: 0
-    sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 0
-    Thoughts:
-    - Thought: Not now, the train is just here!
-      showImage: 0
-      ThoughtImage: {fileID: 0}
-    Dialogs: []
-    openableDoor: 0
-    sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
+  Interactions: []
 --- !u!65 &435053362
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8737,11 +8848,6 @@ Light:
   m_CCT: 6500
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1 &554678965 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1970447732228006, guid: 7fe66a216802fbd4988312cb8513d244,
-    type: 2}
-  m_PrefabInternal: {fileID: 1659863729}
 --- !u!1 &563364666
 GameObject:
   m_ObjectHideFlags: 0
@@ -9574,33 +9680,7 @@ MonoBehaviour:
   m_doorSound: {fileID: 0}
   m_audioSource: {fileID: 0}
   ButtonString: press E to interact
-  Interactions:
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 0
-    Thoughts:
-    - Thought: I start feeling thirsty
-      showImage: 1
-      ThoughtImage: {fileID: 0}
-    Dialogs: []
-    openableDoor: 0
-    sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 0
-    Thoughts:
-    - Thought: Why I'm losing all this time, I need to take the train
-      showImage: 0
-      ThoughtImage: {fileID: 0}
-    Dialogs: []
-    openableDoor: 0
-    sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
+  Interactions: []
 --- !u!65 &624186830
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10054,20 +10134,7 @@ MonoBehaviour:
   m_doorSound: {fileID: 0}
   m_audioSource: {fileID: 0}
   ButtonString: press E to interact
-  Interactions:
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 0
-    Thoughts:
-    - Thought: Nice work
-      showImage: 1
-      ThoughtImage: {fileID: 0}
-    Dialogs: []
-    openableDoor: 0
-    sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
+  Interactions: []
 --- !u!65 &659906350
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11292,36 +11359,7 @@ MonoBehaviour:
   m_doorSound: {fileID: 0}
   m_audioSource: {fileID: 0}
   ButtonString: press E to interact
-  Interactions:
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 0
-    Thoughts:
-    - Thought: It is something for hair?
-      showImage: 1
-      ThoughtImage: {fileID: 0}
-    - Thought: It is not so important, just and advertisment
-      showImage: 0
-      ThoughtImage: {fileID: 0}
-    Dialogs: []
-    openableDoor: 0
-    sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 0
-    Thoughts:
-    - Thought: I have no time for this, I need to take the train
-      showImage: 0
-      ThoughtImage: {fileID: 0}
-    Dialogs: []
-    openableDoor: 0
-    sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
+  Interactions: []
 --- !u!65 &723707931
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12689,106 +12727,6 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
---- !u!1001 &801507945
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: d45647b03709c44189965b8256a12377, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &802848077
 GameObject:
   m_ObjectHideFlags: 0
@@ -14582,9 +14520,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 079005dd52f074d55867bb46f1e27fe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 554678965}
+  m_player: {fileID: 0}
   goingDown: 1
-  speedH: 2
+  speedH: 1
   speedV: 0
 --- !u!23 &900617695
 MeshRenderer:
@@ -15168,33 +15106,7 @@ MonoBehaviour:
   m_doorSound: {fileID: 0}
   m_audioSource: {fileID: 0}
   ButtonString: press E to interact
-  Interactions:
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 0
-    Thoughts:
-    - Thought: It is just the map of the tube
-      showImage: 0
-      ThoughtImage: {fileID: 0}
-    Dialogs: []
-    openableDoor: 0
-    sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 0
-    Thoughts:
-    - Thought: I know where I am, I need to take the train now
-      showImage: 0
-      ThoughtImage: {fileID: 0}
-    Dialogs: []
-    openableDoor: 0
-    sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
+  Interactions: []
 --- !u!65 &917275839
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17504,6 +17416,11 @@ Light:
   m_CCT: 6500
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1069990554 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1161585893200274, guid: fcb0a9825de684f8ab14f40440125e16,
+    type: 2}
+  m_PrefabInternal: {fileID: 323977590}
 --- !u!1 &1070679733
 GameObject:
   m_ObjectHideFlags: 0
@@ -17759,33 +17676,7 @@ MonoBehaviour:
   m_doorSound: {fileID: 0}
   m_audioSource: {fileID: 0}
   ButtonString: press E to interact
-  Interactions:
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 0
-    Thoughts:
-    - Thought: It still have no name
-      showImage: 1
-      ThoughtImage: {fileID: 0}
-    Dialogs: []
-    openableDoor: 0
-    sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 0
-    Thoughts:
-    - Thought: I need to take the train now
-      showImage: 0
-      ThoughtImage: {fileID: 0}
-    Dialogs: []
-    openableDoor: 0
-    sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
+  Interactions: []
 --- !u!65 &1095864340
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19063,17 +18954,27 @@ Prefab:
     - target: {fileID: 65045007940669404, guid: 7b7510b48e7aa407080ae9f64524cc16,
         type: 2}
       propertyPath: m_Size.z
-      value: 3.3518066
+      value: 2.271614
       objectReference: {fileID: 0}
     - target: {fileID: 65045007940669404, guid: 7b7510b48e7aa407080ae9f64524cc16,
         type: 2}
       propertyPath: m_Center.z
-      value: -6.332157
+      value: -6.8722534
       objectReference: {fileID: 0}
     - target: {fileID: 114723182437181096, guid: 7b7510b48e7aa407080ae9f64524cc16,
         type: 2}
       propertyPath: narration
       value: Oh F**k...
+      objectReference: {fileID: 0}
+    - target: {fileID: 65045007940669404, guid: 7b7510b48e7aa407080ae9f64524cc16,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 66.61348
+      objectReference: {fileID: 0}
+    - target: {fileID: 65045007940669404, guid: 7b7510b48e7aa407080ae9f64524cc16,
+        type: 2}
+      propertyPath: m_Center.x
+      value: 26.862846
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7b7510b48e7aa407080ae9f64524cc16, type: 2}
@@ -20716,6 +20617,26 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1297225972}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1298588118 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1453532188926468, guid: 472a6842c981f452d9dcb63bef023a16,
+    type: 2}
+  m_PrefabInternal: {fileID: 1585273617}
+--- !u!114 &1298588119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1298588118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2204303aa01914c29a5f9fb756477e3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onEnter: 1
+  seconds: 3
+  objectToCreate: {fileID: 1069990554}
+  objectToDestroy: {fileID: 0}
 --- !u!1 &1310982166
 GameObject:
   m_ObjectHideFlags: 0
@@ -31529,23 +31450,7 @@ MonoBehaviour:
   m_doorSound: {fileID: 0}
   m_audioSource: {fileID: 0}
   ButtonString: press E to interact
-  Interactions:
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 0
-    Thoughts:
-    - Thought: It is closed
-      showImage: 0
-      ThoughtImage: {fileID: 0}
-    - Thought: Who closed this door?
-      showImage: 0
-      ThoughtImage: {fileID: 0}
-    Dialogs: []
-    openableDoor: 0
-    sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
+  Interactions: []
 --- !u!65 &1933914964
 BoxCollider:
   m_ObjectHideFlags: 0
