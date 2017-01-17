@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 AfterTheLastTrain
 
 
@@ -23,4 +24,31 @@ Mariella Araya(filippe) :
 
 Email: araya.mariella@gmail.com 
 Git ID: kimaar
+=======
+AfterTheLastTrain
+
+
+Ravulapalli Prasanth (sunny) : 
+
+Email: rsunny1993@gmail.com 
+Git ID: rsunny
+Phone number: +39 3472875769
+
+Alberto Jovane (filippe) : 
+
+Email: jovanealberto@hotmail.com 
+Git ID: filippe
+Phone number: +39 3470795169
+
+Alexis Rougnant (alexis) : 
+
+Email: alexis.rougnant@hotmail.com 
+Git ID: alexis
+Phone number: +39 3911813606
+
+Mariella Araya(filippe) : 
+
+Email: araya.mariella@gmail.com 
+Git ID: kimaar
+>>>>>>> d1a4bf549eb4090710623198b4ced170cdeab31f
 Phone number: +56 978797175

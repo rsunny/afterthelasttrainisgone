@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 1f1af133c7764487c9ae21568bde1803
+timeCreated: 1481047897
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Ciao
+  fontNames:
+  - Ciao
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
