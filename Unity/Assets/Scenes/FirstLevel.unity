@@ -4316,6 +4316,11 @@ Prefab:
       propertyPath: Interactions.Array.data[6].Thoughts.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114037849066540522, guid: fcb0a9825de684f8ab14f40440125e16,
+        type: 2}
+      propertyPath: Interactions.Array.data[6].Thoughts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4685635909575144, guid: fcb0a9825de684f8ab14f40440125e16, type: 2}
       propertyPath: m_LocalPosition.x
       value: 260
@@ -4401,7 +4406,7 @@ Prefab:
     - target: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
       propertyPath: Interactions.Array.data[2].Dialogs.Array.data[1].Dialog
-      value: Didn't you noticed the big EXIT sign?
+      value: Didn't you notice the big EXIT sign ?
       objectReference: {fileID: 0}
     - target: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
@@ -4426,7 +4431,7 @@ Prefab:
     - target: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
       propertyPath: Interactions.Array.data[3].Dialogs.Array.data[0].Dialog
-      value: Do you know how to open that door?
+      value: The door is closed. Do you know how to open it ?
       objectReference: {fileID: 0}
     - target: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
@@ -4436,7 +4441,7 @@ Prefab:
     - target: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
       propertyPath: Interactions.Array.data[3].Dialogs.Array.data[1].Dialog
-      value: Of course I do, you need the key
+      value: Of course I do, you need the key !
       objectReference: {fileID: 0}
     - target: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
@@ -4476,7 +4481,7 @@ Prefab:
     - target: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
       propertyPath: Interactions.Array.data[3].Dialogs.Array.data[5].Dialog
-      value: Because I don't want bad people to open my door
+      value: Because I don't want bad people to open my door..
       objectReference: {fileID: 0}
     - target: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
@@ -4496,7 +4501,7 @@ Prefab:
     - target: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
       propertyPath: Interactions.Array.data[3].Dialogs.Array.data[7].Dialog
-      value: '... If you want that key give me a smile'
+      value: '... If you want that key give me a smile then !'
       objectReference: {fileID: 0}
     - target: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
@@ -4506,7 +4511,7 @@ Prefab:
     - target: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
       propertyPath: Interactions.Array.data[3].Dialogs.Array.data[8].Dialog
-      value: A smile? I don't have one
+      value: A smile? I don't have any
       objectReference: {fileID: 0}
     - target: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
@@ -4536,7 +4541,7 @@ Prefab:
     - target: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
       propertyPath: Interactions.Array.data[4].Dialogs.Array.data[2].Dialog
-      value: Why you keep that door closed?
+      value: Why do you keep that door closed?
       objectReference: {fileID: 0}
     - target: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
@@ -4546,7 +4551,7 @@ Prefab:
     - target: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
       propertyPath: Interactions.Array.data[4].Dialogs.Array.data[3].Dialog
-      value: To keep the cold outside
+      value: To keep the cold outside ! Come on, give me a smile now !
       objectReference: {fileID: 0}
     - target: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
@@ -4566,7 +4571,7 @@ Prefab:
     - target: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
       propertyPath: Interactions.Array.data[5].Dialogs.Array.data[0].Dialog
-      value: Here it is your smile :)
+      value: Here is your smile :) :)
       objectReference: {fileID: 0}
     - target: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
@@ -4576,7 +4581,7 @@ Prefab:
     - target: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
       propertyPath: Interactions.Array.data[5].Dialogs.Array.data[1].Dialog
-      value: Here is your key.
+      value: Here is your key !
       objectReference: {fileID: 0}
     - target: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
@@ -4586,7 +4591,7 @@ Prefab:
     - target: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
       propertyPath: Interactions.Array.data[6].Dialogs.Array.data[0].Dialog
-      value: It was great to work with you
+      value: It was great to deal with you !
       objectReference: {fileID: 0}
     - target: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
@@ -4631,17 +4636,17 @@ Prefab:
     - target: {fileID: 114037849066540522, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
       propertyPath: Interactions.Array.data[3].Thoughts.Array.data[0].Thought
-      value: I need to find a key, or something to open this
+      value: I need to find a key, or something to open it
       objectReference: {fileID: 0}
     - target: {fileID: 114037849066540522, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
       propertyPath: Interactions.Array.data[4].Thoughts.Array.data[0].Thought
-      value: I need a smile for the homeless now
+      value: I need a smile for the homeless guy, he will give me the key
       objectReference: {fileID: 0}
     - target: {fileID: 114037849066540522, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
       propertyPath: Interactions.Array.data[5].Thoughts.Array.data[0].Thought
-      value: I can't open this with a smile...
+      value: I can't open this with a smile, I need a key...
       objectReference: {fileID: 0}
     - target: {fileID: 114578946993025826, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
@@ -4696,7 +4701,7 @@ Prefab:
     - target: {fileID: 114578946993025826, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
       propertyPath: Interactions.Array.data[6].Thoughts.Array.data[0].Thought
-      value: Sleeping dog
+      value: It is better to let him sleep
       objectReference: {fileID: 0}
     - target: {fileID: 114578946993025826, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
@@ -4716,7 +4721,7 @@ Prefab:
     - target: {fileID: 114578946993025826, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
       propertyPath: Interactions.Array.data[3].Dialogs.Array.data[0].Dialog
-      value: Do you know how to open that door?
+      value: Do you know how to open that door ?
       objectReference: {fileID: 0}
     - target: {fileID: 114578946993025826, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
@@ -4741,7 +4746,7 @@ Prefab:
     - target: {fileID: 114578946993025826, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
       propertyPath: Interactions.Array.data[4].Dialogs.Array.data[0].Dialog
-      value: Give me a smile
+      value: Give me a smile !
       objectReference: {fileID: 0}
     - target: {fileID: 114578946993025826, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
@@ -4801,7 +4806,7 @@ Prefab:
     - target: {fileID: 114578946993025826, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
       propertyPath: Interactions.Array.data[6].Dialogs.Array.data[0].Dialog
-      value: Bye dog, I hope to not see you again
+      value: Bye dog ! I hope to not see you again
       objectReference: {fileID: 0}
     - target: {fileID: 114578946993025826, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
@@ -4821,7 +4826,7 @@ Prefab:
     - target: {fileID: 114578946993025826, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
       propertyPath: Interactions.Array.data[2].Dialogs.Array.data[0].Dialog
-      value: Do you know how to go out little dog?
+      value: Do you know how to go out little dog ?
       objectReference: {fileID: 0}
     - target: {fileID: 114578946993025826, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
@@ -4846,7 +4851,7 @@ Prefab:
     - target: {fileID: 114578946993025826, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
       propertyPath: Interactions.Array.data[4].Dialogs.Array.data[2].Dialog
-      value: Useless dog
+      value: Useless dog !
       objectReference: {fileID: 0}
     - target: {fileID: 114037849066540522, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
@@ -4891,7 +4896,7 @@ Prefab:
     - target: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
       propertyPath: Interactions.Array.data[5].changingStateSentence
-      value: Homeless give you a key
+      value: The homeless gives you a key
       objectReference: {fileID: 0}
     - target: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
         type: 2}
@@ -4923,6 +4928,31 @@ Prefab:
     - target: {fileID: 1161585893200274, guid: fcb0a9825de684f8ab14f40440125e16, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114037849066540522, guid: fcb0a9825de684f8ab14f40440125e16,
+        type: 2}
+      propertyPath: Interactions.Array.data[6].Thoughts.Array.data[0].Thought
+      value: Finally I opened it !
+      objectReference: {fileID: 0}
+    - target: {fileID: 114149769851840378, guid: fcb0a9825de684f8ab14f40440125e16,
+        type: 2}
+      propertyPath: Interactions.Array.data[5].Thoughts.Array.data[0].Thought
+      value: Thank you for your smile !
+      objectReference: {fileID: 0}
+    - target: {fileID: 114149769851840378, guid: fcb0a9825de684f8ab14f40440125e16,
+        type: 2}
+      propertyPath: Interactions.Array.data[6].Thoughts.Array.data[0].Thought
+      value: I need the key now !
+      objectReference: {fileID: 0}
+    - target: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
+        type: 2}
+      propertyPath: Interactions.Array.data[0].Thoughts.Array.data[0].Thought
+      value: He's a homeless person
+      objectReference: {fileID: 0}
+    - target: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
+        type: 2}
+      propertyPath: Interactions.Array.data[1].Thoughts.Array.data[0].Thought
+      value: He's a homeless person !
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fcb0a9825de684f8ab14f40440125e16, type: 2}
@@ -14522,7 +14552,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_player: {fileID: 0}
   goingDown: 1
-  speedH: 1
+  speedH: 2
   speedV: 0
 --- !u!23 &900617695
 MeshRenderer:
@@ -16394,6 +16424,31 @@ Prefab:
       propertyPath: titleToDestroy
       value: 
       objectReference: {fileID: 604386532}
+    - target: {fileID: 114264425637039226, guid: e1f17d245dffc4ca8bd46993df5ec2f2,
+        type: 2}
+      propertyPath: narration
+      value: Why lights never work down here ?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114718375406043476, guid: e1f17d245dffc4ca8bd46993df5ec2f2,
+        type: 2}
+      propertyPath: narration
+      value: It is quite late, but I think I can still take the last train
+      objectReference: {fileID: 0}
+    - target: {fileID: 114301661529400566, guid: e1f17d245dffc4ca8bd46993df5ec2f2,
+        type: 2}
+      propertyPath: narration
+      value: I think the train has just arrived
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934615964188710, guid: e1f17d245dffc4ca8bd46993df5ec2f2,
+        type: 2}
+      propertyPath: narration
+      value: I need to hurry if I want to take it !
+      objectReference: {fileID: 0}
+    - target: {fileID: 114205029432029556, guid: e1f17d245dffc4ca8bd46993df5ec2f2,
+        type: 2}
+      propertyPath: narration
+      value: Here it is !
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e1f17d245dffc4ca8bd46993df5ec2f2, type: 2}
   m_IsPrefabParent: 0
@@ -25384,6 +25439,41 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114813736482529716, guid: 472a6842c981f452d9dcb63bef023a16,
+        type: 2}
+      propertyPath: Interactions.Array.data[0].Thoughts.Array.data[0].Thought
+      value: Someone closed that door..
+      objectReference: {fileID: 0}
+    - target: {fileID: 114813736482529716, guid: 472a6842c981f452d9dcb63bef023a16,
+        type: 2}
+      propertyPath: Interactions.Array.data[1].Thoughts.Array.data[0].Thought
+      value: No. My train is on the blue line !
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693956329674378, guid: 472a6842c981f452d9dcb63bef023a16,
+        type: 2}
+      propertyPath: Interactions.Array.data[0].Thoughts.Array.data[0].Thought
+      value: It makes no sense to take the escalator backward
+      objectReference: {fileID: 0}
+    - target: {fileID: 114848465297070086, guid: 472a6842c981f452d9dcb63bef023a16,
+        type: 2}
+      propertyPath: narration
+      value: F**k! They switched off all the lights !
+      objectReference: {fileID: 0}
+    - target: {fileID: 114977675580595842, guid: 472a6842c981f452d9dcb63bef023a16,
+        type: 2}
+      propertyPath: narration
+      value: Maybe there are still some buses, I should go out !
+      objectReference: {fileID: 0}
+    - target: {fileID: 114066844891698540, guid: 472a6842c981f452d9dcb63bef023a16,
+        type: 2}
+      propertyPath: narration
+      value: I did not notice this door before
+      objectReference: {fileID: 0}
+    - target: {fileID: 114351111976135722, guid: 472a6842c981f452d9dcb63bef023a16,
+        type: 2}
+      propertyPath: narration
+      value: What is this place ?
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 472a6842c981f452d9dcb63bef023a16, type: 2}
   m_IsPrefabParent: 0
@@ -32998,7 +33088,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
-  m_SubmitButton: e
+  m_SubmitButton: Submit
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
