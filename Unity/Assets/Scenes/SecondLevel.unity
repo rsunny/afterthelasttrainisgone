@@ -391,19 +391,20 @@ MonoBehaviour:
   m_audioSource: {fileID: 139793250}
   ButtonString: press E to interact
   Interactions:
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 0
+  - isDialogue: 0
     Thoughts:
-    - Thought: I'm Lost
+    - Thought: I'm lost
       showImage: 0
       ThoughtImage: {fileID: 0}
     Dialogs: []
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
     openableDoor: 1
     sceneToLoad: LostAndFound
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
+    changingSceneSentence: 
 --- !u!65 &139793249
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1285,9 +1286,7 @@ MonoBehaviour:
   m_audioSource: {fileID: 483762187}
   ButtonString: press E to interact
   Interactions:
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 0
+  - isDialogue: 0
     Thoughts:
     - Thought: Not again this way
       showImage: 0
@@ -1296,11 +1295,14 @@ MonoBehaviour:
       showImage: 0
       ThoughtImage: {fileID: 0}
     Dialogs: []
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
     openableDoor: 0
     sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
+    changingSceneSentence: 
 --- !u!65 &483762186
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1536,7 +1538,7 @@ Prefab:
     - target: {fileID: 114016943519867018, guid: a039c3d3c66ed4453a800635ccc37b64,
         type: 2}
       propertyPath: narration
-      value: This doesn't looks like a way out
+      value: This doesn't look like a way out
       objectReference: {fileID: 0}
     - target: {fileID: 1929705793074662, guid: a039c3d3c66ed4453a800635ccc37b64, type: 2}
       propertyPath: m_Name
@@ -2660,19 +2662,20 @@ MonoBehaviour:
   m_audioSource: {fileID: 1018176677}
   ButtonString: press E to interact
   Interactions:
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 0
+  - isDialogue: 0
     Thoughts:
     - Thought: It doesn't look like a way out
       showImage: 0
       ThoughtImage: {fileID: 0}
     Dialogs: []
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
     openableDoor: 1
-    sceneToLoad: FightingScene
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
+    sceneToLoad: MainTerminalVictoria
+    changingSceneSentence: 
 --- !u!65 &1018176676
 BoxCollider:
   m_ObjectHideFlags: 0

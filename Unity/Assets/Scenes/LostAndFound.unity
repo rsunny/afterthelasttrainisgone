@@ -6762,7 +6762,7 @@ MonoBehaviour:
   Interactions:
   - isDialogue: 0
     Thoughts:
-    - Thought: It Is closed
+    - Thought: It's closed
       showImage: 0
       ThoughtImage: {fileID: 0}
     - Thought: They are all closed

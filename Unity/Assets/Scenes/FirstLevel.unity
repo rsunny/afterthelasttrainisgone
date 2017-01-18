@@ -4954,6 +4954,16 @@ Prefab:
       propertyPath: Interactions.Array.data[1].Thoughts.Array.data[0].Thought
       value: He's a homeless person !
       objectReference: {fileID: 0}
+    - target: {fileID: 65091617050896086, guid: fcb0a9825de684f8ab14f40440125e16,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 11.823479
+      objectReference: {fileID: 0}
+    - target: {fileID: 65091617050896086, guid: fcb0a9825de684f8ab14f40440125e16,
+        type: 2}
+      propertyPath: m_Center.x
+      value: 8.915447
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fcb0a9825de684f8ab14f40440125e16, type: 2}
   m_IsPrefabParent: 0
