@@ -19,23 +19,27 @@ EditorBuildSettings:
     path: Assets/Scenes/SecondLevel.unity
   - enabled: 1
     path: Assets/Scenes/LostAndFound.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MainTerminalVictoria.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Robotron/Scenes/RobotronFirst.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Robotron/Scenes/Gameplay.unity
   - enabled: 1
+    path: Assets/Scenes/Blockbuster.unity
+  - enabled: 0
     path: Assets/Scenes/FightingScene.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BoxingLevel.unity
   - enabled: 1
+    path: Assets/Scenes/Restourant.unity
+  - enabled: 0
     path: Assets/Scenes/BoxingLevelRoom1.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BoxingLevelRoom2.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BoxingLevelRoom3.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BoxingLevelRoom2-2.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BoxingLevelRoom1-2.unity
