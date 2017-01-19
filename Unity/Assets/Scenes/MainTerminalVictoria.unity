@@ -2605,15 +2605,11 @@ MonoBehaviour:
   m_audioSource: {fileID: 0}
   ButtonString: press E to interact
   Interactions:
-  - isDialogue: 0
-    Thoughts:
-    - Thought: It is closed
-      showImage: 0
-      ThoughtImage: {fileID: 0}
-    - Thought: I don't want to make the guard over there angry
-      showImage: 0
-      ThoughtImage: {fileID: 0}
-    Dialogs: []
+  - isDialogue: 1
+    Thoughts: []
+    Dialogs:
+    - WhoIsSpeaking: 'Guard:'
+      Dialog: You are not allowed to go this way
     changeTheState: 0
     changingStateSentence: 
     stateImage: {fileID: 0}
@@ -17842,27 +17838,7 @@ MonoBehaviour:
   Interactions:
   - isDialogue: 0
     Thoughts:
-    - Thought: Sleeping dog
-      showImage: 0
-      ThoughtImage: {fileID: 0}
-    - Thought: It is better to let him sleep
-      showImage: 0
-      ThoughtImage: {fileID: 0}
-    Dialogs: []
-    changeTheState: 0
-    changingStateSentence: 
-    stateImage: {fileID: 0}
-    timeToDestroyStateCanvas: 0
-    stateChanged: 0
-    openableDoor: 0
-    sceneToLoad: 
-    changingSceneSentence: 
-  - isDialogue: 0
-    Thoughts:
-    - Thought: Sleeping dog
-      showImage: 0
-      ThoughtImage: {fileID: 0}
-    - Thought: It is better to let him sleep
+    - Thought: I don't like this guy
       showImage: 0
       ThoughtImage: {fileID: 0}
     Dialogs: []
@@ -17877,9 +17853,55 @@ MonoBehaviour:
   - isDialogue: 1
     Thoughts: []
     Dialogs:
+    - WhoIsSpeaking: 'Guard:'
+      Dialog: Why are you looking at me?
     - WhoIsSpeaking: 'Arthur:'
-      Dialog: Do you know how to go out little dog?
-    - WhoIsSpeaking: 'Dog:'
+      Dialog: Just wondering if you know hoe to go out from this place
+    - WhoIsSpeaking: 'Guard:'
+      Dialog: It is too late, the station is closed
+    - WhoIsSpeaking: 'Arthur:'
+      Dialog: And that door?
+    - WhoIsSpeaking: 'Guard:'
+      Dialog: That door?
+    - WhoIsSpeaking: 'Guard:'
+      Dialog: That door is the way to the city of Victoria, and you...
+    - WhoIsSpeaking: 'Guard:'
+      Dialog: '... I don''t know who you are'
+    - WhoIsSpeaking: 'Arthur:'
+      Dialog: I am no one, I get lost, and I am looking for a way out...
+    changeTheState: 1
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
+  - isDialogue: 1
+    Thoughts: []
+    Dialogs:
+    - WhoIsSpeaking: 'Guard:'
+      Dialog: Are you still here?
+    - WhoIsSpeaking: 'Arthur:'
+      Dialog: No, just hanging around
+    - WhoIsSpeaking: 'Guard:'
+      Dialog: Go away
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
+  - isDialogue: 1
+    Thoughts: []
+    Dialogs:
+    - WhoIsSpeaking: 'Guard:'
+      Dialog: '...'
+    - WhoIsSpeaking: 'Arthur:'
+      Dialog: Do you know where I can find a gift for a 7  years old girl?
+    - WhoIsSpeaking: 'Guard:'
       Dialog: '...'
     changeTheState: 0
     changingStateSentence: 
@@ -17892,9 +17914,20 @@ MonoBehaviour:
   - isDialogue: 1
     Thoughts: []
     Dialogs:
-    - WhoIsSpeaking: 'Arthur:'
-      Dialog: Do you know how to open that door?
-    - WhoIsSpeaking: 'Dog:'
+    - WhoIsSpeaking: 'Guard:'
+      Dialog: Go Away
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
+  - isDialogue: 1
+    Thoughts: []
+    Dialogs:
+    - WhoIsSpeaking: 'Guard:'
       Dialog: '...'
     changeTheState: 0
     changingStateSentence: 
@@ -17907,27 +17940,8 @@ MonoBehaviour:
   - isDialogue: 1
     Thoughts: []
     Dialogs:
-    - WhoIsSpeaking: 'Arthur:'
-      Dialog: Give me a smile
-    - WhoIsSpeaking: 'Dog:'
-      Dialog: '...'
-    - WhoIsSpeaking: 'Arthur:'
-      Dialog: Useless dog
-    changeTheState: 0
-    changingStateSentence: 
-    stateImage: {fileID: 0}
-    timeToDestroyStateCanvas: 0
-    stateChanged: 0
-    openableDoor: 0
-    sceneToLoad: 
-    changingSceneSentence: 
-  - isDialogue: 1
-    Thoughts: []
-    Dialogs:
-    - WhoIsSpeaking: 'Arthur:'
-      Dialog: The smile is not foryou
-    - WhoIsSpeaking: 'Dog:'
-      Dialog: '...'
+    - WhoIsSpeaking: 'Guard:'
+      Dialog: I will never let you go inside Victoria City
     changeTheState: 0
     changingStateSentence: 
     stateImage: {fileID: 0}
@@ -17945,10 +17959,8 @@ MonoBehaviour:
       showImage: 0
       ThoughtImage: {fileID: 0}
     Dialogs:
-    - WhoIsSpeaking: 'Arthur:'
-      Dialog: Bye dog, I hope to not see you again
-    - WhoIsSpeaking: 'Dog:'
-      Dialog: '...'
+    - WhoIsSpeaking: 'Guard:'
+      Dialog: hope to don't see you again
     changeTheState: 0
     changingStateSentence: 
     stateImage: {fileID: 0}
@@ -19781,7 +19793,7 @@ MonoBehaviour:
     changingSceneSentence: 
   - isDialogue: 0
     Thoughts:
-    - Thought: This could be my way out, but of course
+    - Thought: This could be my way out, but of course it is closed
       showImage: 0
       ThoughtImage: {fileID: 0}
     - Thought: 
@@ -19797,7 +19809,10 @@ MonoBehaviour:
     sceneToLoad: 
     changingSceneSentence: 
   - isDialogue: 0
-    Thoughts: []
+    Thoughts:
+    - Thought: I need to find Harald Pesci
+      showImage: 0
+      ThoughtImage: {fileID: 0}
     Dialogs: []
     changeTheState: 0
     changingStateSentence: 
@@ -19808,7 +19823,10 @@ MonoBehaviour:
     sceneToLoad: 
     changingSceneSentence: 
   - isDialogue: 0
-    Thoughts: []
+    Thoughts:
+    - Thought: You can't just open by yourself?
+      showImage: 0
+      ThoughtImage: {fileID: 0}
     Dialogs: []
     changeTheState: 0
     changingStateSentence: 
@@ -19819,7 +19837,10 @@ MonoBehaviour:
     sceneToLoad: 
     changingSceneSentence: 
   - isDialogue: 0
-    Thoughts: []
+    Thoughts:
+    - Thought: It is closed
+      showImage: 0
+      ThoughtImage: {fileID: 0}
     Dialogs: []
     changeTheState: 0
     changingStateSentence: 
@@ -19830,7 +19851,10 @@ MonoBehaviour:
     sceneToLoad: 
     changingSceneSentence: 
   - isDialogue: 0
-    Thoughts: []
+    Thoughts:
+    - Thought: It is closed
+      showImage: 0
+      ThoughtImage: {fileID: 0}
     Dialogs: []
     changeTheState: 0
     changingStateSentence: 
@@ -19841,7 +19865,10 @@ MonoBehaviour:
     sceneToLoad: 
     changingSceneSentence: 
   - isDialogue: 0
-    Thoughts: []
+    Thoughts:
+    - Thought: I need the key first
+      showImage: 0
+      ThoughtImage: {fileID: 0}
     Dialogs: []
     changeTheState: 0
     changingStateSentence: 
@@ -19852,16 +19879,19 @@ MonoBehaviour:
     sceneToLoad: 
     changingSceneSentence: 
   - isDialogue: 0
-    Thoughts: []
+    Thoughts:
+    - Thought: ' '
+      showImage: 0
+      ThoughtImage: {fileID: 0}
     Dialogs: []
     changeTheState: 0
     changingStateSentence: 
     stateImage: {fileID: 0}
     timeToDestroyStateCanvas: 0
     stateChanged: 0
-    openableDoor: 0
-    sceneToLoad: 
-    changingSceneSentence: 
+    openableDoor: 1
+    sceneToLoad: BoxingLevel1
+    changingSceneSentence: Opening door ...
 --- !u!65 &1819754251
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20485,92 +20515,10 @@ MonoBehaviour:
   Interactions:
   - isDialogue: 0
     Thoughts:
-    - Thought: Sleeping dog
-      showImage: 0
-      ThoughtImage: {fileID: 0}
-    - Thought: It is better to let him sleep
+    - Thought: just two Old guys playing cards
       showImage: 0
       ThoughtImage: {fileID: 0}
     Dialogs: []
-    changeTheState: 0
-    changingStateSentence: 
-    stateImage: {fileID: 0}
-    timeToDestroyStateCanvas: 0
-    stateChanged: 0
-    openableDoor: 0
-    sceneToLoad: 
-    changingSceneSentence: 
-  - isDialogue: 0
-    Thoughts:
-    - Thought: Sleeping dog
-      showImage: 0
-      ThoughtImage: {fileID: 0}
-    - Thought: It is better to let him sleep
-      showImage: 0
-      ThoughtImage: {fileID: 0}
-    Dialogs: []
-    changeTheState: 0
-    changingStateSentence: 
-    stateImage: {fileID: 0}
-    timeToDestroyStateCanvas: 0
-    stateChanged: 0
-    openableDoor: 0
-    sceneToLoad: 
-    changingSceneSentence: 
-  - isDialogue: 1
-    Thoughts: []
-    Dialogs:
-    - WhoIsSpeaking: 'Arthur:'
-      Dialog: Do you know how to go out little dog?
-    - WhoIsSpeaking: 'Dog:'
-      Dialog: '...'
-    changeTheState: 0
-    changingStateSentence: 
-    stateImage: {fileID: 0}
-    timeToDestroyStateCanvas: 0
-    stateChanged: 0
-    openableDoor: 0
-    sceneToLoad: 
-    changingSceneSentence: 
-  - isDialogue: 1
-    Thoughts: []
-    Dialogs:
-    - WhoIsSpeaking: 'Arthur:'
-      Dialog: Do you know how to open that door?
-    - WhoIsSpeaking: 'Dog:'
-      Dialog: '...'
-    changeTheState: 0
-    changingStateSentence: 
-    stateImage: {fileID: 0}
-    timeToDestroyStateCanvas: 0
-    stateChanged: 0
-    openableDoor: 0
-    sceneToLoad: 
-    changingSceneSentence: 
-  - isDialogue: 1
-    Thoughts: []
-    Dialogs:
-    - WhoIsSpeaking: 'Arthur:'
-      Dialog: Give me a smile
-    - WhoIsSpeaking: 'Dog:'
-      Dialog: '...'
-    - WhoIsSpeaking: 'Arthur:'
-      Dialog: Useless dog
-    changeTheState: 0
-    changingStateSentence: 
-    stateImage: {fileID: 0}
-    timeToDestroyStateCanvas: 0
-    stateChanged: 0
-    openableDoor: 0
-    sceneToLoad: 
-    changingSceneSentence: 
-  - isDialogue: 1
-    Thoughts: []
-    Dialogs:
-    - WhoIsSpeaking: 'Arthur:'
-      Dialog: The smile is not foryou
-    - WhoIsSpeaking: 'Dog:'
-      Dialog: '...'
     changeTheState: 0
     changingStateSentence: 
     stateImage: {fileID: 0}
@@ -20588,14 +20536,171 @@ MonoBehaviour:
       showImage: 0
       ThoughtImage: {fileID: 0}
     Dialogs:
+    - WhoIsSpeaking: 'Spike:'
+      Dialog: What are you looking at young boy?
     - WhoIsSpeaking: 'Arthur:'
-      Dialog: Bye dog, I hope to not see you again
-    - WhoIsSpeaking: 'Dog:'
+      Dialog: I need to go out from this place
+    - WhoIsSpeaking: 'Martin:'
+      Dialog: C'mon Spike is your turn
+    - WhoIsSpeaking: 'Spike:'
+      Dialog: Don't you see there is this guy asking for help?
+    - WhoIsSpeaking: 'Martin:'
+      Dialog: I don't care
+    - WhoIsSpeaking: 'Spike:'
+      Dialog: Don't be rude Marty. Unfortunatly boy, it is too late and there are
+        no more train left tonight.
+    - WhoIsSpeaking: 'Martin:'
+      Dialog: Yes it is late, and I need to finish this game and go home. You can
+        try go to the next station, maybe there they can help you.
+    - WhoIsSpeaking: 'Spike:'
+      Dialog: It is possible, but even that way is closed at this time
+    - WhoIsSpeaking: 'Spike:'
+      Dialog: Not now, tomorrow morning.
+    - WhoIsSpeaking: 'Arthur:'
+      Dialog: I can't way until tomorrow, I need to go out now
+    - WhoIsSpeaking: 'Martin:'
+      Dialog: Harald probably has the key, and today is the birthday of his daughter,
+        go and ask him and let us play
+    - WhoIsSpeaking: 'Arthur:'
+      Dialog: Thank you
+    - WhoIsSpeaking: 'Spike:'
+      Dialog: yes, that's true. it is your luky day young boy, looks for Harald Pesci
+        shoul be in the restourant over there.
+    changeTheState: 1
+    changingStateSentence: look fot Harald Pesci
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 2
+    stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
+  - isDialogue: 1
+    Thoughts:
+    - Thought: Sleeping dog
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    - Thought: It is better to let him sleep
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    Dialogs:
+    - WhoIsSpeaking: 'Maritn:'
+      Dialog: Hurry up Spiky
+    - WhoIsSpeaking: 'Spike:'
+      Dialog: '....'
+    changeTheState: 0
+    changingStateSentence: look fot Harald Pesci
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 2
+    stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
+  - isDialogue: 1
+    Thoughts:
+    - Thought: Sleeping dog
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    - Thought: It is better to let him sleep
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    Dialogs:
+    - WhoIsSpeaking: 'Maritn:'
+      Dialog: Are you here again?
+    - WhoIsSpeaking: 'Arthur:'
+      Dialog: Harald would not help me tonight
+    - WhoIsSpeaking: 'Spike:'
+      Dialog: It is not funny to laugh for this things Marty. I have heard that Alice
+        has some problem at school.
+    - WhoIsSpeaking: 'Martin:'
+      Dialog: I don't care. Go on, is your turn
+    - WhoIsSpeaking: 'Arthur:'
       Dialog: '...'
     changeTheState: 0
     changingStateSentence: 
     stateImage: {fileID: 0}
-    timeToDestroyStateCanvas: 0
+    timeToDestroyStateCanvas: 2
+    stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
+  - isDialogue: 1
+    Thoughts:
+    - Thought: Sleeping dog
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    - Thought: It is better to let him sleep
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    Dialogs:
+    - WhoIsSpeaking: 'Maritn:'
+      Dialog: I think that you are cheating
+    - WhoIsSpeaking: 'Spike:'
+      Dialog: I am  not
+    changeTheState: 0
+    changingStateSentence: look fot Harald Pesci
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 2
+    stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
+  - isDialogue: 1
+    Thoughts:
+    - Thought: Sleeping dog
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    - Thought: It is better to let him sleep
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    Dialogs:
+    - WhoIsSpeaking: 'Martin:'
+      Dialog: You again? Let us play
+    - WhoIsSpeaking: 'Arthur:'
+      Dialog: '...'
+    changeTheState: 0
+    changingStateSentence: look fot Harald Pesci
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 2
+    stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
+  - isDialogue: 1
+    Thoughts:
+    - Thought: Sleeping dog
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    - Thought: It is better to let him sleep
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    Dialogs:
+    - WhoIsSpeaking: 'Spike:'
+      Dialog: Have you find somethng for little Alice?
+    - WhoIsSpeaking: 'Arthur:'
+      Dialog: Yes, I have this gift for her now
+    - WhoIsSpeaking: 'Spike:'
+      Dialog: Good job, go give her, she is gonna be happy
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 2
+    stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
+  - isDialogue: 1
+    Thoughts: []
+    Dialogs:
+    - WhoIsSpeaking: 'Spike:'
+      Dialog: Have you found the key?
+    - WhoIsSpeaking: 'Arthur:'
+      Dialog: Yes
+    - WhoIsSpeaking: 'Martin:'
+      Dialog: 'Keep play spikey '
+    changeTheState: 0
+    changingStateSentence: look fot Harald Pesci
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 2
     stateChanged: 0
     openableDoor: 0
     sceneToLoad: 
