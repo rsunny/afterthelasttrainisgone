@@ -6140,106 +6140,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 930883120}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &939611622
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
-        type: 2}
-      propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: d45647b03709c44189965b8256a12377, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &966598472
 GameObject:
   m_ObjectHideFlags: 0
@@ -6993,19 +6893,18 @@ MonoBehaviour:
   m_audioSource: {fileID: 0}
   ButtonString: press E to talk
   Interactions:
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 0
+  - isDialogue: 0
     Thoughts: []
     Dialogs: []
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
     openableDoor: 0
     sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 1
+    changingSceneSentence: 
+  - isDialogue: 1
     Thoughts: []
     Dialogs:
     - WhoIsSpeaking: Guard
@@ -7016,14 +6915,15 @@ MonoBehaviour:
       Dialog: You should think about it, there's good money in boxing !
     - WhoIsSpeaking: Guard
       Dialog: Anyway, spectators are not allowed yet, matches will start later.
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
     openableDoor: 0
     sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
-  - changeTheState: 1
-    stateChanged: 0
-    isDialogue: 1
+    changingSceneSentence: 
+  - isDialogue: 1
     Thoughts: []
     Dialogs:
     - WhoIsSpeaking: Guard
@@ -7040,23 +6940,27 @@ MonoBehaviour:
         !
     - WhoIsSpeaking: Guard
       Dialog: Just enter the room if you want to participate.
+    changeTheState: 1
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
     openableDoor: 0
     sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 1
+    changingSceneSentence: 
+  - isDialogue: 1
     Thoughts: []
     Dialogs:
     - WhoIsSpeaking: Guard
       Dialog: Just enter room door if you want to participate.
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
     openableDoor: 0
     sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
+    changingSceneSentence: 
 --- !u!65 &1037930162
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10356,19 +10260,18 @@ MonoBehaviour:
   m_audioSource: {fileID: 0}
   ButtonString: press E to talk
   Interactions:
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 0
+  - isDialogue: 0
     Thoughts: []
     Dialogs: []
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
     openableDoor: 0
     sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 1
+    changingSceneSentence: 
+  - isDialogue: 1
     Thoughts: []
     Dialogs:
     - WhoIsSpeaking: Arthur
@@ -10380,35 +10283,40 @@ MonoBehaviour:
       Dialog: A competition ? I just want to go home..
     - WhoIsSpeaking: Fighter
       Dialog: Oh I'm so excited !
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
     openableDoor: 0
     sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 1
+    changingSceneSentence: 
+  - isDialogue: 1
     Thoughts: []
     Dialogs:
     - WhoIsSpeaking: Fighter
       Dialog: Are you readyyy to ruuuuumble !
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
     openableDoor: 0
     sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 1
+    changingSceneSentence: 
+  - isDialogue: 1
     Thoughts: []
     Dialogs:
     - WhoIsSpeaking: Fighter
       Dialog: I'm gonna beat you up ! Glory is mine !
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
     openableDoor: 0
     sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
+    changingSceneSentence: 
 --- !u!65 &1398367489
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10768,56 +10676,60 @@ MonoBehaviour:
   m_audioSource: {fileID: 0}
   ButtonString: press E to talk
   Interactions:
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 1
+  - isDialogue: 1
     Thoughts: []
     Dialogs: []
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
     openableDoor: 0
     sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
-  - changeTheState: 1
-    stateChanged: 0
-    isDialogue: 1
+    changingSceneSentence: 
+  - isDialogue: 1
     Thoughts: []
     Dialogs:
     - WhoIsSpeaking: Guard
-      Dialog: You need to pay the tax to wal trough this door.
+      Dialog: You need to pay the tax to walk trough this door.
     - WhoIsSpeaking: Arthur
       Dialog: But I don't have any money..
     - WhoIsSpeaking: Guard
       Dialog: Sorry but I am not paying for you !
+    changeTheState: 1
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
     openableDoor: 0
     sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 1
+    changingSceneSentence: 
+  - isDialogue: 1
     Thoughts: []
     Dialogs:
     - WhoIsSpeaking: Guard
       Dialog: No money, no key !
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
     openableDoor: 0
     sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 1
+    changingSceneSentence: 
+  - isDialogue: 1
     Thoughts: []
     Dialogs:
     - WhoIsSpeaking: Guard
       Dialog: No money, no key !
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
     openableDoor: 0
     sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
+    changingSceneSentence: 
 --- !u!65 &1435354754
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11973,6 +11885,110 @@ SpriteRenderer:
   m_Size: {x: 10, y: 10}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+--- !u!1001 &1698302982
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1627462766440562, guid: 7d09658deaebd4890aba12f94cd7a1a8, type: 2}
+      propertyPath: m_Name
+      value: NewCanvas
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 7d09658deaebd4890aba12f94cd7a1a8, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1704449025
 GameObject:
   m_ObjectHideFlags: 0
@@ -13531,19 +13547,18 @@ MonoBehaviour:
   m_audioSource: {fileID: 0}
   ButtonString: press E to talk
   Interactions:
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 0
+  - isDialogue: 0
     Thoughts: []
     Dialogs: []
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
     openableDoor: 0
     sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 1
+    changingSceneSentence: 
+  - isDialogue: 1
     Thoughts: []
     Dialogs:
     - WhoIsSpeaking: Fighter
@@ -13555,39 +13570,44 @@ MonoBehaviour:
       Dialog: Sounds cool but do you know a way out ?
     - WhoIsSpeaking: Fighter
       Dialog: Way out ? Why ? No way I'm gonna run away !
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
     openableDoor: 0
     sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 1
+    changingSceneSentence: 
+  - isDialogue: 1
     Thoughts: []
     Dialogs:
     - WhoIsSpeaking: Fighter
       Dialog: Left, left, right !
     - WhoIsSpeaking: Fighter
       Dialog: I'm gonna be rich !
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
     openableDoor: 0
     sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 1
+    changingSceneSentence: 
+  - isDialogue: 1
     Thoughts: []
     Dialogs:
     - WhoIsSpeaking: Fighter
       Dialog: Left, left, right !
     - WhoIsSpeaking: Fighter
       Dialog: I'm gonna be rich !
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
     openableDoor: 0
     sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
+    changingSceneSentence: 
 --- !u!65 &1848771768
 BoxCollider:
   m_ObjectHideFlags: 0

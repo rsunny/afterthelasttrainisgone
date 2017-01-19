@@ -92,9 +92,13 @@ public class Move : MonoBehaviour {
 
 	private void MoveFunction (float _h, float _v)
 	{
-		tr.position = tr.position +
-			_h * transform.right * m_currentSpeed * Time.fixedDeltaTime +
-			_v * transform.forward * m_currentSpeed * Time.fixedDeltaTime * vertCoef;
+		float div = 1;
+		if (_h != 0 || _v != 0) {
+			div = (Mathf.Sqrt (_h * _h + _v * _v));
+		}
+			tr.position = tr.position +
+				_h/div * transform.right * m_currentSpeed * Time.fixedDeltaTime +
+				_v/div * transform.forward * m_currentSpeed * Time.fixedDeltaTime * vertCoef;
 
 		//animation
 		Animating(_h,_v);

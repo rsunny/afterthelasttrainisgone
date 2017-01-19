@@ -40,10 +40,10 @@ public class FightManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (m_enemyHealthGO != null) {
-			m_enemyHealth = m_enemyHealthGO.GetComponent<Health> ().m_health;
+			m_enemyHealth = Mathf.Max(m_enemyHealthGO.GetComponent<Health> ().m_health,0);
 		}
 		if (m_playerHealthGO != null) {
-			m_playerHealth = m_playerHealthGO.GetComponent<Health> ().m_health;
+			m_playerHealth = Mathf.Max(m_playerHealthGO.GetComponent<Health> ().m_health,0);
 		}
 		if (m_playerHealth <= 0 && !m_playerLose) {
 			StartCoroutine(PlayerLose ());

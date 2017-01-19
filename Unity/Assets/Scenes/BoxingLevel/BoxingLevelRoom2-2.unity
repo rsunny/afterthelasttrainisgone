@@ -143,19 +143,20 @@ MonoBehaviour:
   m_audioSource: {fileID: 0}
   ButtonString: press E to talk
   Interactions:
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 1
+  - isDialogue: 1
     Thoughts: []
     Dialogs:
     - WhoIsSpeaking: Guard
       Dialog: This is the visitor entrance, there are some boxing matches right now
         ! I'd like to see some but I have to work..
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
     openableDoor: 0
     sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
+    changingSceneSentence: 
 --- !u!65 &22561580
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -658,19 +659,18 @@ MonoBehaviour:
   m_audioSource: {fileID: 0}
   ButtonString: press E to talk
   Interactions:
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 0
+  - isDialogue: 0
     Thoughts: []
     Dialogs: []
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
     openableDoor: 0
     sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
-  - changeTheState: 1
-    stateChanged: 0
-    isDialogue: 1
+    changingSceneSentence: 
+  - isDialogue: 1
     Thoughts: []
     Dialogs:
     - WhoIsSpeaking: Old trainer
@@ -685,23 +685,27 @@ MonoBehaviour:
       Dialog: '... Well, farewell !'
     - WhoIsSpeaking: Old trainer
       Dialog: Have a nice trip kid !
+    changeTheState: 1
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
     openableDoor: 0
     sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 1
+    changingSceneSentence: 
+  - isDialogue: 1
     Thoughts: []
     Dialogs:
     - WhoIsSpeaking: Old trainee
       Dialog: Don't hesitate to fight for me sometime !
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
     openableDoor: 0
     sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
+    changingSceneSentence: 
 --- !u!65 &111730638
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8258,20 +8262,21 @@ MonoBehaviour:
   m_audioSource: {fileID: 0}
   ButtonString: press E to talk
   Interactions:
-  - changeTheState: 0
-    stateChanged: 0
-    isDialogue: 1
+  - isDialogue: 1
     Thoughts: []
     Dialogs:
     - WhoIsSpeaking: Guard
       Dialog: This is the fighter access, but you know that, don't you ?
     - WhoIsSpeaking: Guard
       Dialog: You fought well actually, you should come again !
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
     openableDoor: 0
     sceneToLoad: 
-    needAnObject: 0
-    giveAnObject: 0
-    interactable: 0
+    changingSceneSentence: 
 --- !u!65 &1293081717
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10322,109 +10327,109 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1679817503}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &1694721555
+--- !u!1001 &1698302982
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
         type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
         type: 2}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
         type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
         type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
         type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
         type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
         type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
         type: 2}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
         type: 2}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
         type: 2}
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
         type: 2}
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
         type: 2}
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
         type: 2}
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
         type: 2}
       propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
         type: 2}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
         type: 2}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
         type: 2}
       propertyPath: m_Pivot.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224936990854945880, guid: d45647b03709c44189965b8256a12377,
+    - target: {fileID: 224746772503191148, guid: 7d09658deaebd4890aba12f94cd7a1a8,
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1594291811630020, guid: d45647b03709c44189965b8256a12377, type: 2}
+    - target: {fileID: 1627462766440562, guid: 7d09658deaebd4890aba12f94cd7a1a8, type: 2}
       propertyPath: m_Name
       value: NewCanvas
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: d45647b03709c44189965b8256a12377, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 7d09658deaebd4890aba12f94cd7a1a8, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1718173819
 GameObject:
