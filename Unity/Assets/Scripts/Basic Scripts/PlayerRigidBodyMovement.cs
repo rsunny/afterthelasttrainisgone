@@ -71,7 +71,7 @@ public class PlayerRigidBodyMovement : MonoBehaviour {
         // Tell the animator whether or not the player is walking.
         anim.SetBool ("IsWalking", walking);
 
-		bool walkingR = h > 0;
+		//bool walkingR = h > 0;
 		bool walkingL = h < 0;
 
 		anim.SetBool("WalkingL", walkingL);

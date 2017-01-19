@@ -57,7 +57,7 @@ public class SwitchLights : MonoBehaviour {
 			//dismiss previous text form narration or other colliders
 			CanvasManager.DismissAll();
 			
-			string currentLine = "press E to interact";
+			//string currentLine = "press E to interact";
 
 			if(lightsOn)
 			{
