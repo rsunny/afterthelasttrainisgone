@@ -83,7 +83,7 @@ public class NarrationManager : MonoBehaviour {
 			{
 				if((fromState <= curState /* && fromState < StateManager.maxState*/) || fromState <= 0)
 				{
-					if(firstTime) showNarration();
+					if(firstTime /*&& FirstTimeCheck.firstTime*/) showNarration();
 				}
 			}
 		}

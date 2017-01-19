@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NarrationManager1 : MonoBehaviour {
+public class FirstTimeCheck : MonoBehaviour {
 
+
+	public static bool firstTime = true;
 	// Use this for initialization
-	void Start () {
+	void Awake () {
+		DontDestroyOnLoad(this);
 		
 	}
 	
