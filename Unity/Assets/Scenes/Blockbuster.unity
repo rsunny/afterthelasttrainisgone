@@ -13648,7 +13648,7 @@ Prefab:
     - target: {fileID: 114028911137907264, guid: 6e4179baa58274148992dd33caa798ef,
         type: 2}
       propertyPath: objectToCreate.Array.data[0].fromState
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114028911137907264, guid: 6e4179baa58274148992dd33caa798ef,
         type: 2}

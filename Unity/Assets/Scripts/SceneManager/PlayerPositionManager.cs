@@ -45,9 +45,7 @@ public class PlayerPositionManager : MonoBehaviour {
 
 		for(int _i = 0; _i < StartingPositions.Length ; _i++)
 		{
-				Debug.Log(_i);
-				Debug.Log(previousScene);
-				Debug.Log(StartingPositions[_i].fromScene);
+
 			if (previousScene == StartingPositions[_i].fromScene)
 			{
 				_x = StartingPositions[_i].position.x;
