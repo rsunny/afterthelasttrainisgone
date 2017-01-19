@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872716, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 27603752}
   - component: {fileID: 27603751}
   m_Layer: 0
-  m_Name: RestourantSign (4)
+  m_Name: RestaurantWindow1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -249,12 +249,12 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 27603750}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 170.34, y: 6.02, z: 39.98}
-  m_LocalScale: {x: 1, y: 0.8, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.4133403, y: 1.3866667, z: 0}
+  m_LocalScale: {x: 0.6666667, y: 0.53333336, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_Father: {fileID: 1960598839}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &32195717
 GameObject:
@@ -1675,7 +1675,7 @@ GameObject:
   - component: {fileID: 127311778}
   - component: {fileID: 127311777}
   m_Layer: 0
-  m_Name: RestourantSign (2)
+  m_Name: RestaurantWindow3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4057,7 +4057,7 @@ GameObject:
   - component: {fileID: 341286352}
   - component: {fileID: 341286351}
   m_Layer: 0
-  m_Name: RestourantSign (1)
+  m_Name: RestaurantWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5155,7 +5155,7 @@ Transform:
   - {fileID: 485887127}
   - {fileID: 1136911212}
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &470537268
 GameObject:
@@ -12522,7 +12522,7 @@ Transform:
   m_Children:
   - {fileID: 1910026935}
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1105763687
 GameObject:
@@ -19231,7 +19231,7 @@ GameObject:
   - component: {fileID: 1772949778}
   - component: {fileID: 1772949777}
   m_Layer: 0
-  m_Name: RestourantSign (3)
+  m_Name: RestaurantWindow2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19285,12 +19285,12 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1772949776}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 180.55, y: 6.02, z: 39.98}
-  m_LocalScale: {x: 1, y: 0.8, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.393331, y: 1.3866667, z: 0}
+  m_LocalScale: {x: 0.6666667, y: 0.53333336, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_Father: {fileID: 1960598839}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1791543973
 GameObject:
@@ -21294,6 +21294,8 @@ Transform:
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 599235151}
+  - {fileID: 1772949778}
+  - {fileID: 27603752}
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -23065,7 +23067,7 @@ Transform:
   m_Children:
   - {fileID: 1819754248}
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &2135246227
 GameObject:
