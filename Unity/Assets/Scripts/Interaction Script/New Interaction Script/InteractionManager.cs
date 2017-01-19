@@ -8,6 +8,7 @@ using System;
 
 public class InteractionManager : MonoBehaviour {
 
+	private GameObject playerObject;
 	//SOUND
 	public AudioClip m_doorSound;
 	public AudioSource m_audioSource;
@@ -279,7 +280,7 @@ public class InteractionManager : MonoBehaviour {
 				string sentenceToShow = "opening door...";
 				if(String.IsNullOrEmpty(_curStruct.changingSceneSentence)) sentenceToShow = _curStruct.changingSceneSentence;
 				CanvasManager.ShowChangeState(sentenceToShow, null ,3 );
-
+				playerObject.GetComponent<PlayerManager> ().DisableAction (true);
 
 				StartCoroutine (OpenDoor (_curStruct.sceneToLoad));
 
@@ -408,6 +409,8 @@ public class InteractionManager : MonoBehaviour {
 
 		/*OLD*/
 		//keepTalking = false;
+
+		playerObject = GameObject.Find("Player"); 
 
 		if(transform.parent.GetComponent<SpriteRenderer>() != null)
 		{
