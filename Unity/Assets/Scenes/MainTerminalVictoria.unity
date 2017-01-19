@@ -3411,6 +3411,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 114028911137907264, guid: 6e4179baa58274148992dd33caa798ef,
         type: 2}
+      propertyPath: objectToDestroy.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114028911137907264, guid: 6e4179baa58274148992dd33caa798ef,
+        type: 2}
       propertyPath: oneTimeColliders.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -3451,6 +3456,16 @@ Prefab:
       propertyPath: oneTimeColliders.Array.data[0]
       value: 
       objectReference: {fileID: 1917423001}
+    - target: {fileID: 114028911137907264, guid: 6e4179baa58274148992dd33caa798ef,
+        type: 2}
+      propertyPath: objectToDestroy.Array.data[0].selectedObject
+      value: 
+      objectReference: {fileID: 1038232246}
+    - target: {fileID: 114028911137907264, guid: 6e4179baa58274148992dd33caa798ef,
+        type: 2}
+      propertyPath: objectToDestroy.Array.data[0].fromState
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6e4179baa58274148992dd33caa798ef, type: 2}
   m_IsPrefabParent: 0
@@ -18159,6 +18174,99 @@ MonoBehaviour:
       ThoughtImage: {fileID: 0}
     Dialogs: []
     changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
+  - isDialogue: 1
+    Thoughts: []
+    Dialogs:
+    - WhoIsSpeaking: 'Arthur:'
+      Dialog: Do you know how to go out from here?
+    - WhoIsSpeaking: 'Skater:'
+      Dialog: '...'
+    - WhoIsSpeaking: Arthur
+      Dialog: Can you hear me?
+    - WhoIsSpeaking: 'Skater:'
+      Dialog: yes, freak, I don't know how to go out
+    - WhoIsSpeaking: 'Arthur:'
+      Dialog: '...'
+    changeTheState: 1
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
+  - isDialogue: 1
+    Thoughts:
+    - Thought: A guy with a skate
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    Dialogs:
+    - WhoIsSpeaking: 'Arthur:'
+      Dialog: Do you know how to go out from here?
+    - WhoIsSpeaking: 'Skater:'
+      Dialog: '...'
+    - WhoIsSpeaking: Arthur
+      Dialog: Can you hear me?
+    - WhoIsSpeaking: 'Skater:'
+      Dialog: yes, freak, I don't know how to go out
+    - WhoIsSpeaking: 'Skater:'
+      Dialog: '...'
+    changeTheState: 1
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
+  - isDialogue: 1
+    Thoughts:
+    - Thought: A guy with a skate
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    Dialogs:
+    - WhoIsSpeaking: 'Arthur:'
+      Dialog: Do you know how to go out from here?
+    - WhoIsSpeaking: 'Skater:'
+      Dialog: '...'
+    - WhoIsSpeaking: Arthur
+      Dialog: Can you hear me?
+    - WhoIsSpeaking: 'Skater:'
+      Dialog: yes, freak, I don't know how to go out
+    - WhoIsSpeaking: 'Skater:'
+      Dialog: '...'
+    changeTheState: 1
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
+  - isDialogue: 1
+    Thoughts:
+    - Thought: A guy with a skate
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    Dialogs:
+    - WhoIsSpeaking: 'Arthur:'
+      Dialog: Do you know how to go out from here?
+    - WhoIsSpeaking: 'Skater:'
+      Dialog: '...'
+    - WhoIsSpeaking: Arthur
+      Dialog: Can you hear me?
+    - WhoIsSpeaking: 'Skater:'
+      Dialog: yes, freak, I don't know how to go out
+    - WhoIsSpeaking: 'Skater:'
+      Dialog: '...'
+    changeTheState: 1
     changingStateSentence: 
     stateImage: {fileID: 0}
     timeToDestroyStateCanvas: 0

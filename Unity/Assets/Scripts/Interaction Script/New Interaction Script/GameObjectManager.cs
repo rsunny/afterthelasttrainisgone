@@ -28,7 +28,8 @@ public class GameObjectManager : MonoBehaviour {
 
 		for( int _i = 0; _i < objectToCreate.Length; _i++)
 		{
-			if(objectToCreate[_i].fromState >= StateManager.currentState)
+			Debug.Log ("create object from state: " + objectToCreate[_i].fromState + " currentState : " + StateManager.currentState );
+			if(objectToCreate[_i].fromState <= StateManager.currentState)
 			{
 				objectToCreate[_i].selectedObject.SetActive(true);
 			}
@@ -37,11 +38,11 @@ public class GameObjectManager : MonoBehaviour {
 
 		for( int _i = 0; _i < objectToDestroy.Length; _i++)
 		{
-			if(objectToDestroy[_i].fromState >= StateManager.currentState)
+			if(objectToDestroy[_i].fromState <= StateManager.currentState)
 			{
-				objectToDestroy[_i].selectedObject.SetActive(true);
+				objectToDestroy[_i].selectedObject.SetActive(false);
 			}
-			else objectToDestroy[_i].selectedObject.SetActive(false);
+			else objectToDestroy[_i].selectedObject.SetActive(true);
 		}
 
 		if(!FirstTimeCheck.firstTime)

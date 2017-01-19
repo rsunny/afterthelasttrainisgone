@@ -2614,22 +2614,8 @@ MonoBehaviour:
   Interactions:
   - isDialogue: 0
     Thoughts:
-    - Thought: It doesn't look like a way out
-      showImage: 0
-      ThoughtImage: {fileID: 0}
-    Dialogs: []
-    changeTheState: 1
-    changingStateSentence: 
-    stateImage: {fileID: 0}
-    timeToDestroyStateCanvas: 0
-    stateChanged: 0
-    openableDoor: 0
-    sceneToLoad: MainTerminalVictoria
-    changingSceneSentence: Opening door...
-  - isDialogue: 0
-    Thoughts:
     - Thought: ' '
-      showImage: 0
+      showImage: 1
       ThoughtImage: {fileID: 0}
     Dialogs: []
     changeTheState: 0
