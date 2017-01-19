@@ -7572,7 +7572,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 495698633}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 3.73, z: 0}
+  m_LocalPosition: {x: 0, y: 3.45, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1585273618}
@@ -25483,6 +25483,14 @@ Prefab:
         type: 2}
       propertyPath: narration
       value: What is this place ?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467470527561448, guid: 472a6842c981f452d9dcb63bef023a16, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -3.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467470527561448, guid: 472a6842c981f452d9dcb63bef023a16, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -11.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 472a6842c981f452d9dcb63bef023a16, type: 2}
