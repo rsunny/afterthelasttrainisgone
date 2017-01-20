@@ -33,7 +33,7 @@ public class GameObjectManager : MonoBehaviour {
 			{
 				objectToCreate[_i].selectedObject.SetActive(true);
 			}
-			else objectToCreate[_i].selectedObject.SetActive(false);
+			//else objectToCreate[_i].selectedObject.SetActive(false);
 		}
 
 		for( int _i = 0; _i < objectToDestroy.Length; _i++)
@@ -42,7 +42,7 @@ public class GameObjectManager : MonoBehaviour {
 			{
 				objectToDestroy[_i].selectedObject.SetActive(false);
 			}
-			else objectToDestroy[_i].selectedObject.SetActive(true);
+			//else objectToDestroy[_i].selectedObject.SetActive(true);
 		}
 
 		if(!FirstTimeCheck.firstTime)

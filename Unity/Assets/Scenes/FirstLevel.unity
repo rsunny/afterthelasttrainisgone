@@ -6684,7 +6684,35 @@ MonoBehaviour:
   m_doorSound: {fileID: 0}
   m_audioSource: {fileID: 0}
   ButtonString: press E to interact
-  Interactions: []
+  Interactions:
+  - isDialogue: 0
+    Thoughts:
+    - Thought: Clear Cola
+      showImage: 1
+      ThoughtImage: {fileID: 0}
+    Dialogs: []
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
+  - isDialogue: 0
+    Thoughts:
+    - Thought: I need to take the train now
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    Dialogs: []
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
 --- !u!65 &435053362
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9720,7 +9748,35 @@ MonoBehaviour:
   m_doorSound: {fileID: 0}
   m_audioSource: {fileID: 0}
   ButtonString: press E to interact
-  Interactions: []
+  Interactions:
+  - isDialogue: 0
+    Thoughts:
+    - Thought: I don't like this
+      showImage: 1
+      ThoughtImage: {fileID: 0}
+    Dialogs: []
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
+  - isDialogue: 0
+    Thoughts:
+    - Thought: I need to take the train
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    Dialogs: []
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
 --- !u!65 &624186830
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10174,7 +10230,21 @@ MonoBehaviour:
   m_doorSound: {fileID: 0}
   m_audioSource: {fileID: 0}
   ButtonString: press E to interact
-  Interactions: []
+  Interactions:
+  - isDialogue: 0
+    Thoughts:
+    - Thought: 'Nice '
+      showImage: 1
+      ThoughtImage: {fileID: 0}
+    Dialogs: []
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
 --- !u!65 &659906350
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11441,7 +11511,35 @@ MonoBehaviour:
   m_doorSound: {fileID: 0}
   m_audioSource: {fileID: 0}
   ButtonString: press E to interact
-  Interactions: []
+  Interactions:
+  - isDialogue: 0
+    Thoughts:
+    - Thought: Something for hair
+      showImage: 1
+      ThoughtImage: {fileID: 0}
+    Dialogs: []
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
+  - isDialogue: 0
+    Thoughts:
+    - Thought: I have no time for this now
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    Dialogs: []
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
 --- !u!65 &723707931
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15188,7 +15286,35 @@ MonoBehaviour:
   m_doorSound: {fileID: 0}
   m_audioSource: {fileID: 0}
   ButtonString: press E to interact
-  Interactions: []
+  Interactions:
+  - isDialogue: 0
+    Thoughts:
+    - Thought: The map of the tube station, O know it
+      showImage: 1
+      ThoughtImage: {fileID: 0}
+    Dialogs: []
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
+  - isDialogue: 0
+    Thoughts:
+    - Thought: I need to take the train and hurry
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    Dialogs: []
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
 --- !u!65 &917275839
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17783,7 +17909,35 @@ MonoBehaviour:
   m_doorSound: {fileID: 0}
   m_audioSource: {fileID: 0}
   ButtonString: press E to interact
-  Interactions: []
+  Interactions:
+  - isDialogue: 0
+    Thoughts:
+    - Thought: It is impossible to see the name of the station
+      showImage: 1
+      ThoughtImage: {fileID: 0}
+    Dialogs: []
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
+  - isDialogue: 0
+    Thoughts:
+    - Thought: I don't have time for this, I have to take train
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    Dialogs: []
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
 --- !u!65 &1095864340
 BoxCollider:
   m_ObjectHideFlags: 0
