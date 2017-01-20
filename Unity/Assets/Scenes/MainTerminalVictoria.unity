@@ -32,13 +32,13 @@ RenderSettings:
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
-  m_DefaultReflectionMode: 0
+  m_DefaultReflectionMode: 1
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -70,8 +70,8 @@ LightmapSettings:
     m_FinalGather: 0
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 256
-    m_ReflectionCompression: 2
-    m_StationaryBakeMode: 1
+    m_ReflectionCompression: 1
+    m_StationaryBakeMode: 0
   m_LightingDataAsset: {fileID: 0}
   m_RuntimeCPUUsage: 25
   m_ShadowMaskMode: 0
@@ -861,7 +861,7 @@ Transform:
   m_Children:
   - {fileID: 1458727658}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &57232041
 GameObject:
@@ -1734,7 +1734,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &148081710
 GameObject:
@@ -3370,13 +3370,13 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4444870125104868, guid: 6e4179baa58274148992dd33caa798ef, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114028911137907264, guid: 6e4179baa58274148992dd33caa798ef,
         type: 2}
       propertyPath: oneTimeColliders.Array.data[0]
       value: 
-      objectReference: {fileID: 1917423001}
+      objectReference: {fileID: 0}
     - target: {fileID: 114028911137907264, guid: 6e4179baa58274148992dd33caa798ef,
         type: 2}
       propertyPath: objectToDestroy.Array.data[0].selectedObject
@@ -4116,7 +4116,7 @@ Transform:
   m_LocalScale: {x: 2, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &342117140
 GameObject:
@@ -5155,7 +5155,7 @@ Transform:
   - {fileID: 485887127}
   - {fileID: 1136911212}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &470537268
 GameObject:
@@ -5627,7 +5627,7 @@ Transform:
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &491495180
 GameObject:
@@ -6146,7 +6146,7 @@ Transform:
   - {fileID: 1328516395}
   - {fileID: 1048865512}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &541363859
 GameObject:
@@ -6555,7 +6555,7 @@ Transform:
   m_Children:
   - {fileID: 1020326169}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &576153060
 GameObject:
@@ -8152,7 +8152,7 @@ Transform:
   m_Children:
   - {fileID: 762218134}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &692454960
 GameObject:
@@ -8580,7 +8580,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &712564740
 GameObject:
@@ -11683,7 +11683,7 @@ Transform:
   m_Children:
   - {fileID: 1647174588}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1041652041
 GameObject:
@@ -12273,7 +12273,7 @@ Transform:
   m_Children:
   - {fileID: 1011064930}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1089942633
 GameObject:
@@ -12435,7 +12435,7 @@ Transform:
   m_Children:
   - {fileID: 677185044}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1097579017
 GameObject:
@@ -12522,7 +12522,7 @@ Transform:
   m_Children:
   - {fileID: 1910026935}
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1105763687
 GameObject:
@@ -12837,7 +12837,7 @@ Transform:
   m_Children:
   - {fileID: 1306980623}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1124040404
 GameObject:
@@ -13486,7 +13486,7 @@ Transform:
   m_Children:
   - {fileID: 226358206}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1240334745
 GameObject:
@@ -13865,7 +13865,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: -90}
 --- !u!154 &1262993157
 TerrainCollider:
@@ -14153,7 +14153,7 @@ Transform:
   m_Children:
   - {fileID: 1481524754}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 10, y: 30, z: 0}
 --- !u!1 &1276485382
 GameObject:
@@ -16067,7 +16067,7 @@ Transform:
   - {fileID: 1299145566}
   - {fileID: 677668199}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1417166473
 GameObject:
@@ -17960,7 +17960,26 @@ MonoBehaviour:
       ThoughtImage: {fileID: 0}
     Dialogs:
     - WhoIsSpeaking: 'Guard:'
-      Dialog: hope to don't see you again
+      Dialog: hope not to see you again
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
+  - isDialogue: 1
+    Thoughts:
+    - Thought: Sleeping dog
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    - Thought: It is better to let him sleep
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    Dialogs:
+    - WhoIsSpeaking: 'Guard:'
+      Dialog: hope not to see you again
     changeTheState: 0
     changingStateSentence: 
     stateImage: {fileID: 0}
@@ -18260,7 +18279,7 @@ Transform:
   m_Children:
   - {fileID: 253570126}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1660626168
 GameObject:
@@ -18525,7 +18544,7 @@ Transform:
   m_Children:
   - {fileID: 1635691190}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1690961321 stripped
 Transform:
@@ -19889,8 +19908,22 @@ MonoBehaviour:
     stateImage: {fileID: 0}
     timeToDestroyStateCanvas: 0
     stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
+  - isDialogue: 0
+    Thoughts:
+    - Thought: ' '
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    Dialogs: []
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
     openableDoor: 1
-    sceneToLoad: BoxingLevel1
+    sceneToLoad: BoxingLevelRoom1
     changingSceneSentence: Opening door ...
 --- !u!65 &1819754251
 BoxCollider:
@@ -20096,7 +20129,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4442800343597576, guid: 2e5995b29eb22e54fb304bf2d61b602a, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1801031330022486, guid: 2e5995b29eb22e54fb304bf2d61b602a, type: 2}
       propertyPath: m_Name
@@ -20694,6 +20727,23 @@ MonoBehaviour:
     - WhoIsSpeaking: 'Spike:'
       Dialog: Have you found the key?
     - WhoIsSpeaking: 'Arthur:'
+      Dialog: Not yet
+    - WhoIsSpeaking: 'Martin:'
+      Dialog: 'Keep play spikey '
+    changeTheState: 0
+    changingStateSentence: look fot Harald Pesci
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 2
+    stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
+  - isDialogue: 1
+    Thoughts: []
+    Dialogs:
+    - WhoIsSpeaking: 'Spike:'
+      Dialog: Have you found the key?
+    - WhoIsSpeaking: 'Arthur:'
       Dialog: Yes
     - WhoIsSpeaking: 'Martin:'
       Dialog: 'Keep play spikey '
@@ -20718,59 +20768,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 15.51259, y: 7.3928275, z: 6.5976067}
   m_Center: {x: -1.4544592, y: 3.1964138, z: -0.021421432}
---- !u!1 &1917423001
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1917423004}
-  - component: {fileID: 1917423003}
-  - component: {fileID: 1917423002}
-  m_Layer: 0
-  m_Name: SetInitialStateCollider
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1917423002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1917423001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 730dd3890267f43fa9755b0f6e56b5e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!65 &1917423003
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1917423001}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!4 &1917423004
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1917423001}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.2, y: 2.8, z: 24.8}
-  m_LocalScale: {x: 0.6, y: 6, z: 12}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1920135076
 Prefab:
   m_ObjectHideFlags: 0
@@ -20813,7 +20810,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4566590266552736, guid: 94e1e8563ddbb4f4580d69800e460ec4, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114414934684367188, guid: 94e1e8563ddbb4f4580d69800e460ec4,
         type: 2}
@@ -20868,7 +20865,7 @@ Prefab:
     - target: {fileID: 114414934684367188, guid: 94e1e8563ddbb4f4580d69800e460ec4,
         type: 2}
       propertyPath: StartingPositions.Array.data[1].position.z
-      value: 24.8
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 114414934684367188, guid: 94e1e8563ddbb4f4580d69800e460ec4,
         type: 2}
@@ -21297,7 +21294,7 @@ Transform:
   - {fileID: 1772949778}
   - {fileID: 27603752}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1961235194
 GameObject:
@@ -21611,7 +21608,7 @@ Transform:
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1990592146
 GameObject:
@@ -21928,7 +21925,7 @@ Transform:
   - {fileID: 1124040405}
   - {fileID: 606149573}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2045271959
 GameObject:
@@ -23067,7 +23064,7 @@ Transform:
   m_Children:
   - {fileID: 1819754248}
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &2135246227
 GameObject:
