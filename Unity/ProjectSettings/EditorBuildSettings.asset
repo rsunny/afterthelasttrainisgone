@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Menu.unity
   - enabled: 0
     path: Assets/Scenes/Level0.unity
@@ -21,17 +21,19 @@ EditorBuildSettings:
     path: Assets/Scenes/LostAndFound.unity
   - enabled: 1
     path: Assets/Scenes/MainTerminalVictoria.unity
+  - enabled: 1
+    path: Assets/Scenes/Restaurant.unity
+  - enabled: 1
+    path: Assets/Scenes/Blockbuster.unity
   - enabled: 0
     path: Assets/Robotron/Scenes/RobotronFirst.unity
   - enabled: 0
     path: Assets/Robotron/Scenes/Gameplay.unity
-  - enabled: 1
-    path: Assets/Scenes/Blockbuster.unity
   - enabled: 0
     path: Assets/Scenes/FightingScene.unity
   - enabled: 0
     path: Assets/Scenes/BoxingLevel.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Restourant.unity
   - enabled: 0
     path: Assets/Scenes/BoxingLevelRoom1.unity
@@ -43,3 +45,13 @@ EditorBuildSettings:
     path: Assets/Scenes/BoxingLevelRoom2-2.unity
   - enabled: 0
     path: Assets/Scenes/BoxingLevelRoom1-2.unity
+  - enabled: 1
+    path: Assets/Scenes/BoxingLevel/BoxingLevelRoom1.unity
+  - enabled: 1
+    path: Assets/Scenes/BoxingLevel/BoxingLevelRoom1-2.unity
+  - enabled: 1
+    path: Assets/Scenes/BoxingLevel/BoxingLevelRoom2.unity
+  - enabled: 1
+    path: Assets/Scenes/BoxingLevel/BoxingLevelRoom2-2.unity
+  - enabled: 1
+    path: Assets/Scenes/BoxingLevel/BoxingLevelRoom3.unity
