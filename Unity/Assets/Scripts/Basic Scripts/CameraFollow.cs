@@ -15,7 +15,7 @@ public class CameraFollow : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		target = GameObject.Find("Player").transform;
+		//target = GameObject.Find("Player").transform;
 		//offset viene stabilito all'inizio come distanza tra camera e player
 		offset = transform.position - target.position;
 	}

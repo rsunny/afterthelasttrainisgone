@@ -13606,7 +13606,7 @@ Prefab:
     - target: {fileID: 114028911137907264, guid: 6e4179baa58274148992dd33caa798ef,
         type: 2}
       propertyPath: objectToDestroy.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4444870125104868, guid: 6e4179baa58274148992dd33caa798ef, type: 2}
       propertyPath: m_LocalPosition.x
