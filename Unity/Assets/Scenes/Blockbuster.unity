@@ -19849,6 +19849,20 @@ MonoBehaviour:
     openableDoor: 0
     sceneToLoad: 
     changingSceneSentence: 
+  - isDialogue: 0
+    Thoughts:
+    - Thought: Clara is nice, but I need to go out now
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    Dialogs: []
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
 --- !u!65 &1580460031
 BoxCollider:
   m_ObjectHideFlags: 0
