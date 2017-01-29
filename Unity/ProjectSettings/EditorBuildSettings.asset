@@ -46,6 +46,8 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/BoxingLevelRoom1-2.unity
   - enabled: 1
+    path: Assets/Scenes/WC.unity
+  - enabled: 1
     path: Assets/Scenes/BoxingLevel/BoxingLevelRoom1.unity
   - enabled: 1
     path: Assets/Scenes/BoxingLevel/BoxingLevelRoom1-2.unity
