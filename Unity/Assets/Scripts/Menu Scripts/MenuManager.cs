@@ -80,11 +80,14 @@ public class MenuManager : Singleton<MenuManager> {
 	}
 
 	public void SwitchToAbout() {
+        title.SetActive(true);
 		SwitchMenuTo (eMenuScreen.About);
 	}
 
-	public void SwitchToSettings() {
-		SwitchMenuTo (eMenuScreen.Settings);
+	public void SwitchToSettings()
+    {
+        title.SetActive(true);
+        SwitchMenuTo (eMenuScreen.Settings);
 	}
 
 	public void Play() {
@@ -94,8 +97,10 @@ public class MenuManager : Singleton<MenuManager> {
         ManageGame.setHealth(100);
         ManageGame.setSceneName("Menu");
         ManageGame.setState(1);
-		SceneManager.LoadScene ("FirstLevel");
-	}
+        title.SetActive(false);
+        SceneManager.LoadScene("FirstLevel");
+    }
+
 
     public void Load()
     {
