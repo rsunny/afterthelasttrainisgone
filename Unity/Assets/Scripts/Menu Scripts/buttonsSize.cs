@@ -87,4 +87,5 @@ public class buttonsSize : MonoBehaviour {
         exit.SetActive(true);
         exitbig.SetActive(false);
     }
+
 }
