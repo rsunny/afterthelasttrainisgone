@@ -50,8 +50,11 @@ public class MenuManager : Singleton<MenuManager> {
 				m_splashscreen.SetActive(true);
 			break;
 		case eMenuScreen.MainMenu:
-			if (m_mainmenu!=null)
-				m_mainmenu.SetActive(true);
+                if (m_mainmenu != null)
+                {
+                    m_mainmenu.SetActive(true);
+
+                }
 			break;
 		case eMenuScreen.Settings:
 			if (m_settings!=null) 
