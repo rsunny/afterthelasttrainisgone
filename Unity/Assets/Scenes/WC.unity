@@ -546,6 +546,20 @@ MonoBehaviour:
     openableDoor: 0
     sceneToLoad: 
     changingSceneSentence: 
+  - isDialogue: 0
+    Thoughts:
+    - Thought: I am beatiful
+      showImage: 0
+      ThoughtImage: {fileID: 0}
+    Dialogs: []
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
 --- !u!65 &270166732
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -556,8 +570,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.3558373, y: 15.261236, z: 1.9601746}
-  m_Center: {x: 0.30706424, y: -7.1306176, z: -0.48008728}
+  m_Size: {x: 5.3558373, y: 17.300001, z: 2.7705994}
+  m_Center: {x: 0.30706424, y: -6.111235, z: -0.8852997}
 --- !u!1 &325326668
 GameObject:
   m_ObjectHideFlags: 0
@@ -1248,7 +1262,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 751228614}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.028571, y: -0.72857106, z: 0}
+  m_LocalPosition: {x: 1.08, y: 1.48, z: -0.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1810483940}
