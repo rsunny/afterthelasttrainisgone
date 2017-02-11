@@ -2616,7 +2616,7 @@ MonoBehaviour:
   - isDialogue: 0
     Thoughts:
     - Thought: ' '
-      showImage: 1
+      showImage: 0
       ThoughtImage: {fileID: 0}
     Dialogs: []
     changeTheState: 0

@@ -534,7 +534,7 @@ MonoBehaviour:
   Interactions:
   - isDialogue: 0
     Thoughts:
-    - Thought: I am beatiful
+    - Thought: I am beautiful
       showImage: 0
       ThoughtImage: {fileID: 0}
     Dialogs: []
