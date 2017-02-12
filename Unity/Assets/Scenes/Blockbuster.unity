@@ -3510,7 +3510,7 @@ MonoBehaviour:
     - Thought: I love this one
       showImage: 1
       ThoughtImage: {fileID: 21300000, guid: b21cf16fe4d97417eade7c89a1bfea94, type: 3}
-    - Thought: Cartoons and basketball player
+    - Thought: Cartoons and basketball players
       showImage: 1
       ThoughtImage: {fileID: 21300000, guid: b21cf16fe4d97417eade7c89a1bfea94, type: 3}
     Dialogs: []
@@ -6637,7 +6637,7 @@ MonoBehaviour:
   Interactions:
   - isDialogue: 0
     Thoughts:
-    - Thought: is there still people who rent this movies?
+    - Thought: is there still people who rent these movies?
       showImage: 0
       ThoughtImage: {fileID: 0}
     Dialogs: []
@@ -6773,7 +6773,7 @@ MonoBehaviour:
   Interactions:
   - isDialogue: 0
     Thoughts:
-    - Thought: There are still people that see VHS?
+    - Thought: There are still people who watch VHS?
       showImage: 0
       ThoughtImage: {fileID: 0}
     Dialogs: []
@@ -12742,7 +12742,7 @@ MonoBehaviour:
     - WhoIsSpeaking: Arthur
       Dialog: Can you hear me?
     - WhoIsSpeaking: 'Skater:'
-      Dialog: yes, freak, I don't know how to go out
+      Dialog: Yes freak, I don't know how to go out
     - WhoIsSpeaking: 'Arthur:'
       Dialog: '...'
     changeTheState: 0
@@ -12766,7 +12766,7 @@ MonoBehaviour:
     - WhoIsSpeaking: Arthur
       Dialog: Can you hear me?
     - WhoIsSpeaking: 'Skater:'
-      Dialog: yes, freak, I don't know how to go out
+      Dialog: Yes freak, I don't know how to go out
     - WhoIsSpeaking: 'Skater:'
       Dialog: '...'
     changeTheState: 0
@@ -12785,21 +12785,21 @@ MonoBehaviour:
     - WhoIsSpeaking: 'Arthur:'
       Dialog: Tell me
     - WhoIsSpeaking: 'Skater:'
-      Dialog: You looks old. How old are you?
+      Dialog: You look old. How old are you?
     - WhoIsSpeaking: 'Arthur:'
       Dialog: I am 25.
     - WhoIsSpeaking: 'Skater:'
       Dialog: Perfect... I need to ask you a favour
     - WhoIsSpeaking: 'Skater:'
-      Dialog: I want to rent a movie, but unfortunatly I'm underage for "DIe Hard"
+      Dialog: I want to rent a movie, but unfortunatly I'm underaged for "Die Hard"
     - WhoIsSpeaking: 'Arthur:'
-      Dialog: So you want me to rent it for you
+      Dialog: So you want me to rent it for you ?
     - WhoIsSpeaking: 'Skater:'
-      Dialog: yes, please. i will not call you freak anymore after that
+      Dialog: Yes, please. I will not call you freak anymore after that
     - WhoIsSpeaking: 'Skater:'
-      Dialog: Take this and remember, Die Hard
+      Dialog: Take this and remember, "Die Hard"
     changeTheState: 1
-    changingStateSentence: 'You get money '
+    changingStateSentence: 'You''ve got money '
     stateImage: {fileID: 0}
     timeToDestroyStateCanvas: 2
     stateChanged: 0
@@ -12830,7 +12830,7 @@ MonoBehaviour:
     - WhoIsSpeaking: 'Arthur:'
       Dialog: Here it is
     - WhoIsSpeaking: 'Skater:'
-      Dialog: thak you freak, you are the best
+      Dialog: Thank you freak, you are the best !
     changeTheState: 1
     changingStateSentence: You give the movie to the skater guy
     stateImage: {fileID: 21300000, guid: b59df4b32c81643f298bb6440127ffb9, type: 3}
@@ -12846,7 +12846,7 @@ MonoBehaviour:
       ThoughtImage: {fileID: 0}
     Dialogs:
     - WhoIsSpeaking: 'Skater:'
-      Dialog: I would love this movie
+      Dialog: I will love this movie
     changeTheState: 0
     changingStateSentence: 
     stateImage: {fileID: 0}
@@ -13261,7 +13261,7 @@ MonoBehaviour:
     changingSceneSentence: 
   - isDialogue: 0
     Thoughts:
-    - Thought: This poster have already helped me
+    - Thought: This poster has already helped me
       showImage: 1
       ThoughtImage: {fileID: 0}
     Dialogs: []
@@ -19723,11 +19723,11 @@ MonoBehaviour:
     Thoughts: []
     Dialogs:
     - WhoIsSpeaking: 'Clara:'
-      Dialog: Hello, i'm Calra, may I help you?
+      Dialog: Hello, I'm Calra, may I help you?
     - WhoIsSpeaking: 'Arthur:'
       Dialog: No, thank you...
     - WhoIsSpeaking: 'Clara:'
-      Dialog: What kind of movie do you like?
+      Dialog: Which kind of movie do you like?
     - WhoIsSpeaking: 'Arthur:'
       Dialog: '... any kind'
     - WhoIsSpeaking: 'Clara:'
@@ -19766,17 +19766,17 @@ MonoBehaviour:
     Thoughts: []
     Dialogs:
     - WhoIsSpeaking: 'Clara:'
-      Dialog: Have you consider the today special offer?
+      Dialog: Did you consider the today special offer?
     - WhoIsSpeaking: 'Arthur:'
       Dialog: Yes, for a gift. How it is?
     - WhoIsSpeaking: 'Clara:'
-      Dialog: It is for a girl?
+      Dialog: Is it for a girl?
     - WhoIsSpeaking: 'Arthur:'
       Dialog: Yes
     - WhoIsSpeaking: 'Clara:'
       Dialog: Then she is going to love it... is she your girlfriend?
     - WhoIsSpeaking: 'Arthur:'
-      Dialog: No ... she is the son of a person I know
+      Dialog: No ... she is the daughter of a person I know
     - WhoIsSpeaking: 'Clara:'
       Dialog: Better then
     changeTheState: 0
@@ -19793,12 +19793,12 @@ MonoBehaviour:
     - WhoIsSpeaking: 'Arthur:'
       Dialog: May I rent the movie Die Hard and get the one with the special offer?
     - WhoIsSpeaking: 'Clara:'
-      Dialog: Yes, sure, nice choice, I have already told you is my favourite movie
+      Dialog: Yes, sure, nice choice, I have already told you it is my favourite movie
         :)
     - WhoIsSpeaking: 'Arthur:'
       Dialog: Thank you
     - WhoIsSpeaking: 'Clara:'
-      Dialog: You are welcome and come back to visit us
+      Dialog: You are welcome. Come back to visit us !
     changeTheState: 1
     changingStateSentence: 'You have recived the movie '
     stateImage: {fileID: 21300000, guid: ade2f0e576fa74b5dbc30331cfd1781b, type: 3}

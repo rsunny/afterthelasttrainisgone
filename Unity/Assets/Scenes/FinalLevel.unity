@@ -19000,7 +19000,7 @@ MonoBehaviour:
   Interactions:
   - isDialogue: 0
     Thoughts:
-    - Thought: A strange dark charcther
+    - Thought: A strange dark character
       showImage: 0
       ThoughtImage: {fileID: 0}
     Dialogs: []
@@ -19030,13 +19030,13 @@ MonoBehaviour:
     - WhoIsSpeaking: 'Arthur:'
       Dialog: It is unfair
     - WhoIsSpeaking: 'Dark man:'
-      Dialog: But there is no point even in waste your time ...
+      Dialog: I'm not gonna make you waste your time..
     - WhoIsSpeaking: 'Dark man:'
-      Dialog: at the end of this room there is the train that will bring you home
+      Dialog: At the end of this room there is the train that will bring you home
     - WhoIsSpeaking: 'Arthur:'
       Dialog: Thank you
     - WhoIsSpeaking: 'Dark man:'
-      Dialog: it will leave soon, but we have some time, I will be glad to talk a
+      Dialog: It will leave soon, but we have some time, I will be glad to talk a
         little bit more with you
     changeTheState: 1
     changingStateSentence: You can take the train now
@@ -19055,18 +19055,19 @@ MonoBehaviour:
     - WhoIsSpeaking: 'Artthur:'
       Dialog: What are you doing here?
     - WhoIsSpeaking: 'Dark man:'
-      Dialog: I am private Detective, it is better to say that I am trying to be....
+      Dialog: I am a private Detective. Actually, it is better to say that I am trying
+        to be one....
     - WhoIsSpeaking: 'Detective:'
-      Dialog: I came here every night, I need to think...
+      Dialog: I come here every night, I need to think...
     - WhoIsSpeaking: 'Arthur:'
       Dialog: Think about what?
     - WhoIsSpeaking: 'Detective:'
-      Dialog: About what were my faults and what was God's one
+      Dialog: About what were my faults and what was God's ones
     - WhoIsSpeaking: 'Arthur:'
       Dialog: I don't understand
     - WhoIsSpeaking: 'Detective:'
-      Dialog: You should, you are here for a reason, and this reason partaially depends
-        on your choice and partially on fate...
+      Dialog: You should, you are here for a reason, and this reason partially depends
+        on your choices and partially on fate...
     - WhoIsSpeaking: 'Arthur:'
       Dialog: '...'
     - WhoIsSpeaking: 'Detective:'
@@ -19076,9 +19077,9 @@ MonoBehaviour:
     - WhoIsSpeaking: 'Detective:'
       Dialog: You think you have, but I know at the end you will take that train
     - WhoIsSpeaking: 'Detective:'
-      Dialog: Can you do me a favour?
+      Dialog: Can you do me a favor?
     - WhoIsSpeaking: 'Detective:'
-      Dialog: Help me find a black tulip, around here, there should be some
+      Dialog: Help me find a black tulip. Around here, there should be some
     changeTheState: 1
     changingStateSentence: Find a Black tulip
     stateImage: {fileID: 0}
@@ -19132,7 +19133,7 @@ MonoBehaviour:
     - WhoIsSpeaking: 'Arthur:'
       Dialog: '...'
     - WhoIsSpeaking: 'Detective:'
-      Dialog: Goodby stranger, I hope you will find what are you looking for
+      Dialog: Goodby stranger, I hope you will find what you are looking for
     - WhoIsSpeaking: 'Arthur:'
       Dialog: Thank you, goodbye
     - WhoIsSpeaking: 'Detective:'
@@ -19152,7 +19153,7 @@ MonoBehaviour:
       ThoughtImage: {fileID: 0}
     Dialogs:
     - WhoIsSpeaking: 'Detective:'
-      Dialog: Go or or you will lose the train
+      Dialog: Go or you will lose the train
     changeTheState: 1
     changingStateSentence: 
     stateImage: {fileID: 0}
