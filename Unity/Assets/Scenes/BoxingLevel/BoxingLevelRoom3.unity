@@ -624,6 +624,89 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 98302739}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &123098370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 123098373}
+  - component: {fileID: 123098372}
+  - component: {fileID: 123098371}
+  m_Layer: 0
+  m_Name: Trainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &123098371
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 123098370}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.104164, y: 11.958614, z: 2.961914}
+  m_Center: {x: 0.3376007, y: 0.061636567, z: 0.22229767}
+--- !u!212 &123098372
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 123098370}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 5ac42166499f9a24db21c00e5b4b0d84, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 9, y: 14}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+--- !u!4 &123098373
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 123098370}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 178.57, y: 3.0188322, z: 108.26}
+  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 1}
+  m_Children:
+  - {fileID: 934040799}
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &129103410
 GameObject:
   m_ObjectHideFlags: 0
@@ -1265,7 +1348,7 @@ Transform:
   - {fileID: 1850613731}
   - {fileID: 1845759230}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &216860519
 GameObject:
@@ -2809,6 +2892,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1148441492390754, guid: e56e36882ce5bf342888f60177842f88, type: 2}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e56e36882ce5bf342888f60177842f88, type: 2}
   m_IsPrefabParent: 0
@@ -3367,7 +3454,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &563576739
 GameObject:
@@ -6158,6 +6245,108 @@ SpriteRenderer:
   m_Size: {x: 15, y: 15}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+--- !u!1 &934040798
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1661332592705268, guid: fcb0a9825de684f8ab14f40440125e16,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 934040799}
+  - component: {fileID: 934040801}
+  - component: {fileID: 934040800}
+  m_Layer: 0
+  m_Name: InteractionCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &934040799
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4747515123318396, guid: fcb0a9825de684f8ab14f40440125e16,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 934040798}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.4375, y: 0.4375, z: 1}
+  m_Children: []
+  m_Father: {fileID: 123098373}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &934040800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 934040798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 084107186a19345c895dda45f215a216, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_doorSound: {fileID: 0}
+  m_audioSource: {fileID: 0}
+  ButtonString: press E to talk
+  Interactions:
+  - isDialogue: 0
+    Thoughts: []
+    Dialogs: []
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
+  - isDialogue: 1
+    Thoughts: []
+    Dialogs:
+    - WhoIsSpeaking: Old trainer
+      Dialog: Come on ! Beat him, beat him !
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
+    openableDoor: 0
+    sceneToLoad: 
+    changingSceneSentence: 
+  - isDialogue: 1
+    Thoughts: []
+    Dialogs:
+    - WhoIsSpeaking: Old trainer
+      Dialog: HAHAHAHAHA yon won, you won, I'll have money !!
+    - WhoIsSpeaking: Old Trainer
+      Dialog: Money money money !
+    - WhoIsSpeaking: Old Trainer
+      Dialog: Meet me afterward and I'll give your part !
+    changeTheState: 0
+    changingStateSentence: 
+    stateImage: {fileID: 0}
+    timeToDestroyStateCanvas: 0
+    stateChanged: 0
+    openableDoor: 1
+    sceneToLoad: BoxingLevelRoom2-2
+    changingSceneSentence: 
+--- !u!65 &934040801
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 65607984022133784, guid: fcb0a9825de684f8ab14f40440125e16,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 934040798}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20.553877, y: 26.602604, z: 5.3027115}
+  m_Center: {x: 1.028324, y: -0.095573165, z: -0.28580856}
 --- !u!1 &938533666
 GameObject:
   m_ObjectHideFlags: 0
@@ -8336,89 +8525,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1163060066}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1188184467
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1188184470}
-  - component: {fileID: 1188184469}
-  - component: {fileID: 1188184468}
-  m_Layer: 0
-  m_Name: Trainer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &1188184468
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1188184467}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.104164, y: 11.958614, z: 2.961914}
-  m_Center: {x: 0.3376007, y: 0.061636567, z: 0.22229767}
---- !u!212 &1188184469
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1188184467}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5ac42166499f9a24db21c00e5b4b0d84, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 9, y: 14}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
---- !u!4 &1188184470
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1188184467}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 178.57, y: 3.0188322, z: 108.26}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 1}
-  m_Children:
-  - {fileID: 1589891060}
-  m_Father: {fileID: 0}
-  m_RootOrder: 19
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1194565019
 GameObject:
   m_ObjectHideFlags: 0
@@ -10824,108 +10930,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 0}
---- !u!1 &1589891059
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1661332592705268, guid: fcb0a9825de684f8ab14f40440125e16,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1589891060}
-  - component: {fileID: 1589891062}
-  - component: {fileID: 1589891061}
-  m_Layer: 0
-  m_Name: InteractionCollider
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1589891060
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4747515123318396, guid: fcb0a9825de684f8ab14f40440125e16,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1589891059}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4375, y: 0.4375, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1188184470}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1589891061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114909425450789318, guid: fcb0a9825de684f8ab14f40440125e16,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1589891059}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 084107186a19345c895dda45f215a216, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_doorSound: {fileID: 0}
-  m_audioSource: {fileID: 0}
-  ButtonString: press E to talk
-  Interactions:
-  - isDialogue: 0
-    Thoughts: []
-    Dialogs: []
-    changeTheState: 0
-    changingStateSentence: 
-    stateImage: {fileID: 0}
-    timeToDestroyStateCanvas: 0
-    stateChanged: 0
-    openableDoor: 0
-    sceneToLoad: 
-    changingSceneSentence: 
-  - isDialogue: 1
-    Thoughts: []
-    Dialogs:
-    - WhoIsSpeaking: Old trainer
-      Dialog: Come on ! Beat him, beat him !
-    changeTheState: 1
-    changingStateSentence: 
-    stateImage: {fileID: 0}
-    timeToDestroyStateCanvas: 0
-    stateChanged: 0
-    openableDoor: 0
-    sceneToLoad: 
-    changingSceneSentence: 
-  - isDialogue: 1
-    Thoughts: []
-    Dialogs:
-    - WhoIsSpeaking: Old trainer
-      Dialog: HAHAHAHAHA yon won, you won, I'll have money !!
-    - WhoIsSpeaking: Old Trainer
-      Dialog: Money money money !
-    - WhoIsSpeaking: Old Trainer
-      Dialog: Meet me afterward and I'll give your part !
-    changeTheState: 0
-    changingStateSentence: 
-    stateImage: {fileID: 0}
-    timeToDestroyStateCanvas: 0
-    stateChanged: 0
-    openableDoor: 1
-    sceneToLoad: BoxingLevelRoom2-2
-    changingSceneSentence: 
---- !u!65 &1589891062
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 65607984022133784, guid: fcb0a9825de684f8ab14f40440125e16,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1589891059}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 20.553877, y: 26.602604, z: 5.3027115}
-  m_Center: {x: 1.028324, y: -0.095573165, z: -0.28580856}
 --- !u!1 &1594467741
 GameObject:
   m_ObjectHideFlags: 0
