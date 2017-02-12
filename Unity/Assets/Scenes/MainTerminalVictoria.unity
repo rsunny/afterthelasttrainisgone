@@ -3051,7 +3051,7 @@ MonoBehaviour:
     - Thought: This is an old timetable from the summer of 1997
       showImage: 0
       ThoughtImage: {fileID: 0}
-    - Thought: It lloks like they didn't change it in a while
+    - Thought: It looks like they didn't change it in a while
       showImage: 0
       ThoughtImage: {fileID: 0}
     Dialogs: []
@@ -11552,7 +11552,7 @@ MonoBehaviour:
     - Thought: A real Blockbuster
       showImage: 0
       ThoughtImage: {fileID: 0}
-    - Thought: I thought this place were exitnct
+    - Thought: I thought these places were extinct
       showImage: 0
       ThoughtImage: {fileID: 0}
     Dialogs: []
@@ -15416,7 +15416,7 @@ MonoBehaviour:
   Interactions:
   - isDialogue: 0
     Thoughts:
-    - Thought: I don't need to but any newspaper
+    - Thought: I don't need to buy any newspaper
       showImage: 0
       ThoughtImage: {fileID: 0}
     - Thought: I just want to go out
@@ -16446,7 +16446,7 @@ MonoBehaviour:
     changingSceneSentence: 
   - isDialogue: 0
     Thoughts:
-    - Thought: You can't just open by yourself?
+    - Thought: Can't you just open by yourself?
       showImage: 0
       ThoughtImage: {fileID: 0}
     Dialogs: []
@@ -16919,7 +16919,7 @@ MonoBehaviour:
   Interactions:
   - isDialogue: 0
     Thoughts:
-    - Thought: I don't recognize any of this station..
+    - Thought: I don't recognize any of these stations..
       showImage: 1
       ThoughtImage: {fileID: 0}
     - Thought: I'm tired, I want to go out...
@@ -18264,7 +18264,7 @@ MonoBehaviour:
     - WhoIsSpeaking: 'Guard:'
       Dialog: Why are you looking at me?
     - WhoIsSpeaking: 'Arthur:'
-      Dialog: Just wondering if you know hoe to go out from this place
+      Dialog: Just wondering if you know how to go out from this place
     - WhoIsSpeaking: 'Guard:'
       Dialog: It is too late, the station is closed
     - WhoIsSpeaking: 'Arthur:'
@@ -18276,7 +18276,7 @@ MonoBehaviour:
     - WhoIsSpeaking: 'Guard:'
       Dialog: '... I don''t know who you are'
     - WhoIsSpeaking: 'Arthur:'
-      Dialog: I am no one, I get lost, and I am looking for a way out...
+      Dialog: I am no one, I got lost, and I am looking for a way out...
     changeTheState: 0
     changingStateSentence: 
     stateImage: {fileID: 0}
@@ -18308,7 +18308,7 @@ MonoBehaviour:
     - WhoIsSpeaking: 'Guard:'
       Dialog: '...'
     - WhoIsSpeaking: 'Arthur:'
-      Dialog: Do you know where I can find a gift for a 7  years old girl?
+      Dialog: Do you know where I can find a gift for a 7 years old girl?
     - WhoIsSpeaking: 'Guard:'
       Dialog: '...'
     changeTheState: 0
@@ -18368,7 +18368,7 @@ MonoBehaviour:
       ThoughtImage: {fileID: 0}
     Dialogs:
     - WhoIsSpeaking: 'Guard:'
-      Dialog: hope not to see you again
+      Dialog: Hope not to see you again
     changeTheState: 0
     changingStateSentence: 
     stateImage: {fileID: 0}
@@ -18387,7 +18387,7 @@ MonoBehaviour:
       ThoughtImage: {fileID: 0}
     Dialogs:
     - WhoIsSpeaking: 'Guard:'
-      Dialog: hope not to see you again
+      Dialog: Hope not to see you again
     changeTheState: 0
     changingStateSentence: 
     stateImage: {fileID: 0}
@@ -18570,7 +18570,7 @@ MonoBehaviour:
     - WhoIsSpeaking: Arthur
       Dialog: Can you hear me?
     - WhoIsSpeaking: 'Skater:'
-      Dialog: yes, freak, I don't know how to go out
+      Dialog: Yes freak, I don't know how to go out
     - WhoIsSpeaking: 'Arthur:'
       Dialog: '...'
     changeTheState: 0
@@ -18594,7 +18594,7 @@ MonoBehaviour:
     - WhoIsSpeaking: 'Arthur:'
       Dialog: Why are you down here at this time?
     - WhoIsSpeaking: 'Skater:'
-      Dialog: I can ask ypu the same question
+      Dialog: I can ask you the same question
     changeTheState: 1
     changingStateSentence: 
     stateImage: {fileID: 0}
@@ -20251,7 +20251,7 @@ MonoBehaviour:
     changingSceneSentence: 
   - isDialogue: 0
     Thoughts:
-    - Thought: You can't just open by yourself?
+    - Thought: Can't you just open by yourself?
       showImage: 0
       ThoughtImage: {fileID: 0}
     Dialogs: []
@@ -20956,7 +20956,7 @@ MonoBehaviour:
   Interactions:
   - isDialogue: 0
     Thoughts:
-    - Thought: just two Old guys playing cards
+    - Thought: Just two old guys playing cards
       showImage: 0
       ThoughtImage: {fileID: 0}
     Dialogs: []
@@ -20978,11 +20978,11 @@ MonoBehaviour:
       ThoughtImage: {fileID: 0}
     Dialogs:
     - WhoIsSpeaking: 'Spike:'
-      Dialog: What are you looking at young boy?
+      Dialog: What are you looking at son?
     - WhoIsSpeaking: 'Arthur:'
       Dialog: I need to go out from this place
     - WhoIsSpeaking: 'Martin:'
-      Dialog: C'mon Spike is your turn
+      Dialog: C'mon Spike it's your turn
     - WhoIsSpeaking: 'Spike:'
       Dialog: Don't you see there is this guy asking for help?
     - WhoIsSpeaking: 'Martin:'
@@ -20992,9 +20992,9 @@ MonoBehaviour:
         no more train left tonight.
     - WhoIsSpeaking: 'Martin:'
       Dialog: Yes it is late, and I need to finish this game and go home. You can
-        try go to the next station, maybe there they can help you.
+        try to go to the next station, maybe they can help you there.
     - WhoIsSpeaking: 'Spike:'
-      Dialog: It is possible, but even that way is closed at this time
+      Dialog: It is possible, but even that way it is closed at this time
     - WhoIsSpeaking: 'Spike:'
       Dialog: Not now, tomorrow morning.
     - WhoIsSpeaking: 'Arthur:'
@@ -21005,10 +21005,10 @@ MonoBehaviour:
     - WhoIsSpeaking: 'Arthur:'
       Dialog: Thank you
     - WhoIsSpeaking: 'Spike:'
-      Dialog: yes, that's true. it is your luky day young boy, looks for Harald Pesci
-        shoul be in the restourant over there.
+      Dialog: Yes, that's true. it is your lucky day young boy ! Look for Harald Pesci,
+        he should be in the restaurant over there.
     changeTheState: 1
-    changingStateSentence: look fot Harald Pesci
+    changingStateSentence: Look fot Harald Pesci
     stateImage: {fileID: 0}
     timeToDestroyStateCanvas: 2
     stateChanged: 0
@@ -21029,7 +21029,7 @@ MonoBehaviour:
     - WhoIsSpeaking: 'Spike:'
       Dialog: '....'
     changeTheState: 0
-    changingStateSentence: look fot Harald Pesci
+    changingStateSentence: Look fot Harald Pesci
     stateImage: {fileID: 0}
     timeToDestroyStateCanvas: 2
     stateChanged: 0
@@ -21050,10 +21050,10 @@ MonoBehaviour:
     - WhoIsSpeaking: 'Arthur:'
       Dialog: Harald would not help me tonight
     - WhoIsSpeaking: 'Spike:'
-      Dialog: It is not funny to laugh for this things Marty. I have heard that Alice
-        has some problem at school.
+      Dialog: It is not okay to make fun of him Marty. I have heard that Alice has
+        some problem at school.
     - WhoIsSpeaking: 'Martin:'
-      Dialog: I don't care. Go on, is your turn
+      Dialog: I don't care. Go on, it is your turn
     - WhoIsSpeaking: 'Arthur:'
       Dialog: '...'
     changeTheState: 0
@@ -21076,7 +21076,7 @@ MonoBehaviour:
     - WhoIsSpeaking: 'Maritn:'
       Dialog: I think that you are cheating
     - WhoIsSpeaking: 'Spike:'
-      Dialog: I am  not
+      Dialog: I am not
     changeTheState: 0
     changingStateSentence: look fot Harald Pesci
     stateImage: {fileID: 0}
@@ -21116,7 +21116,7 @@ MonoBehaviour:
       ThoughtImage: {fileID: 0}
     Dialogs:
     - WhoIsSpeaking: 'Spike:'
-      Dialog: Have you find somethng for little Alice?
+      Dialog: Have you find something for little Alice?
     - WhoIsSpeaking: 'Arthur:'
       Dialog: Yes, I have this gift for her now
     - WhoIsSpeaking: 'Spike:'
@@ -21137,7 +21137,7 @@ MonoBehaviour:
     - WhoIsSpeaking: 'Arthur:'
       Dialog: Not yet
     - WhoIsSpeaking: 'Martin:'
-      Dialog: 'Keep play spikey '
+      Dialog: 'Keep playing Spiky '
     changeTheState: 0
     changingStateSentence: look fot Harald Pesci
     stateImage: {fileID: 0}
@@ -21154,7 +21154,7 @@ MonoBehaviour:
     - WhoIsSpeaking: 'Arthur:'
       Dialog: Yes
     - WhoIsSpeaking: 'Martin:'
-      Dialog: 'Keep play spikey '
+      Dialog: 'Keep playing spikey '
     changeTheState: 0
     changingStateSentence: look fot Harald Pesci
     stateImage: {fileID: 0}
