@@ -110,7 +110,6 @@ public class MenuManager : Singleton<MenuManager> {
 	public void Play()
     {
         leveldeactivate();
-        Debug.Log("In play");
 		MusicManager.Instance.StopAll ();
 		MusicManager.Instance.PlayMusic ("GameplayMusic");
         ManageGame.setHealth(100);
@@ -123,7 +122,6 @@ public class MenuManager : Singleton<MenuManager> {
     {
         leveldeactivate();
         levelactivate();
-        Debug.Log("In level");
     }
 
     public void levelSelect(int i)
@@ -146,15 +144,10 @@ public class MenuManager : Singleton<MenuManager> {
             StartCoroutine(loadScreen());
             StartCoroutine(loadScreen());
             ManageGame.Load();
-            Debug.Log("In Load");
-            Debug.Log(ManageGame.getHealth());
-            Debug.Log(ManageGame.getSceneName());
-            Debug.Log(ManageGame.getState());
             SceneManager.LoadScene(ManageGame.getSceneName());
         }
         else
         {
-            Debug.Log("Load Fail");
             StartCoroutine(loadFailScreen());
         }
     }
@@ -176,7 +169,6 @@ public class MenuManager : Singleton<MenuManager> {
 
         leveldeactivate();
         load.SetActive(true);
-        Debug.Log("Iam here in loadscreen");
         yield return new WaitForSeconds(3);
         load.SetActive(false);
         title.SetActive(true);

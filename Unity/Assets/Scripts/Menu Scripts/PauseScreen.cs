@@ -21,10 +21,6 @@ public class PauseScreen : MonoBehaviour {
         DontDestroyOnLoad(dummypause);
         loadScreenFail.SetActive(false);
         PausePanel.SetActive(false);
-        Debug.Log("In puase screen");
-        Debug.Log(ManageGame.getHealth());
-        Debug.Log(ManageGame.getSceneName());
-        Debug.Log(ManageGame.getState());
     }
 
     // Update is called once per frame
@@ -32,7 +28,6 @@ public class PauseScreen : MonoBehaviour {
     void Update () {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Debug.Log("In escape");
             Time.timeScale = 0;
             PausePanel.SetActive(true);
             loadScreenFail.SetActive(false);
@@ -42,10 +37,6 @@ public class PauseScreen : MonoBehaviour {
             ManageGame.setHealth(90);
             ManageGame.setSceneName("FirstLevel");
             ManageGame.setState(1);
-            Debug.Log("In collison");
-            Debug.Log(ManageGame.getHealth());
-            Debug.Log(ManageGame.getSceneName());
-            Debug.Log(ManageGame.getState());
             ManageGame.setSceneName("SecondLevel");
             ManageGame.Save();
         }
@@ -71,15 +62,10 @@ public class PauseScreen : MonoBehaviour {
         if (File.Exists(Application.persistentDataPath + "/FileName.dat"))
         {
             ManageGame.Load();
-            Debug.Log("In Load");
-            Debug.Log(ManageGame.getHealth());
-            Debug.Log(ManageGame.getSceneName());
-            Debug.Log(ManageGame.getState());
             SceneManager.LoadScene(ManageGame.getSceneName());
         }
         else
         {
-            Debug.Log("Load Fail");
             StartCoroutine(loadFailScreen());
         }
     }

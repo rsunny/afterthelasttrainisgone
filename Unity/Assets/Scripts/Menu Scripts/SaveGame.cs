@@ -18,11 +18,7 @@ public class SaveGame : MonoBehaviour {
     {
         ManageGame.setHealth(90);
         ManageGame.setSceneName("FirstLevel");
-        ManageGame.setState(1);
-        Debug.Log("In collison");
-        Debug.Log(ManageGame.getHealth());
-        Debug.Log(ManageGame.getSceneName());
-        Debug.Log(ManageGame.getState());
+        ManageGame.setState(0);
         ManageGame.setSceneName("SecondLevel");
         ManageGame.Save();
     }
