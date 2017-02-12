@@ -19,9 +19,19 @@ public class MenuManager : Singleton<MenuManager> {
 
 	private static bool m_has_shown_splashscreen = false;
 
+    private const int idx = 4;
     private GameObject loadScreenFail;
     private GameObject load;
     private GameObject title;
+
+    public GameObject[] levels = new GameObject[idx];
+    public GameObject[] levelsBig = new GameObject[idx];
+    public GameObject[] levelsButtons = new GameObject[idx];
+
+    public Button levelButton;
+    public GameObject gamename;
+
+    private string[] levelname = { "FirstLevel", "MainTerminalVictoria", "FinalLevel" };
 
     void Start () {
         loadScreenFail = GameObject.Find("LoadFail");
@@ -29,7 +39,8 @@ public class MenuManager : Singleton<MenuManager> {
 
         load = GameObject.Find("Load");
         load.SetActive(false);
-
+        leveldeactivate();
+        levelactivate();
         title = GameObject.Find("gameName");
 
         if (!m_has_shown_splashscreen && m_start_with_splashscreen) {
@@ -42,8 +53,11 @@ public class MenuManager : Singleton<MenuManager> {
 		MusicManager.Instance.PlayMusic ("MenuMusic");
 	}
 	
-	public void SwitchMenuTo(eMenuScreen screen) {
-		ClearScreens ();
+	public void SwitchMenuTo(eMenuScreen screen)
+    {
+        leveldeactivate();
+        levelactivate();
+        ClearScreens ();
 		switch (screen) {
 		case eMenuScreen.SplashScreen:
 			if (m_splashscreen != null)
@@ -93,17 +107,34 @@ public class MenuManager : Singleton<MenuManager> {
         SwitchMenuTo (eMenuScreen.Settings);
 	}
 
-	public void Play() {
+	public void Play()
+    {
+        leveldeactivate();
         Debug.Log("In play");
 		MusicManager.Instance.StopAll ();
 		MusicManager.Instance.PlayMusic ("GameplayMusic");
         ManageGame.setHealth(100);
         ManageGame.setSceneName("Menu");
-        ManageGame.setState(1);
-        title.SetActive(false);
+        ManageGame.setState(0);
         SceneManager.LoadScene("FirstLevel");
     }
 
+    public void level()
+    {
+        leveldeactivate();
+        levelactivate();
+        Debug.Log("In level");
+    }
+
+    public void levelSelect(int i)
+    {
+        MusicManager.Instance.StopAll();
+        MusicManager.Instance.PlayMusic("GameplayMusic");
+        ManageGame.setHealth(100);
+        ManageGame.setSceneName(levelname[i]);
+        ManageGame.setState(1);
+        SceneManager.LoadScene(levelname[i]);
+    }
 
     public void Load()
     {
@@ -129,31 +160,53 @@ public class MenuManager : Singleton<MenuManager> {
     }
 
     private IEnumerator loadFailScreen(){
-
-        title.SetActive(false);
-        loadScreenFail.SetActive(true);
         
+        loadScreenFail.SetActive(true);
+        leveldeactivate();
+
         yield return new WaitForSeconds(3);
 
         loadScreenFail.SetActive(false);
         title.SetActive(true);
+        levelactivate();
     }
 
     private IEnumerator loadScreen()
     {
 
-        title.SetActive(false);
+        leveldeactivate();
         load.SetActive(true);
         Debug.Log("Iam here in loadscreen");
         yield return new WaitForSeconds(3);
-
         load.SetActive(false);
         title.SetActive(true);
+        levelactivate();
     }
 
     public void Exit()
     {
         Application.Quit();
+    }
+
+    public void levelactivate()
+    {
+        for(int i = 0; i < idx; i++)
+        {
+            levels[i].SetActive(true);
+            levelsButtons[i].SetActive(true);
+        }
+
+    }
+
+    public void leveldeactivate()
+    {
+        gamename.SetActive(true);
+        for (int i = 0; i < idx; i++)
+        {
+            levels[i].SetActive(false);
+            levelsBig[i].SetActive(false);
+            levelsButtons[i].SetActive(false);
+        }
     }
 
 }

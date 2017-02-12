@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 3b2c86a78a9d06a43bb106380a3d901d
+timeCreated: 1486910500
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Trattatello
+  fontNames:
+  - Trattatello
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

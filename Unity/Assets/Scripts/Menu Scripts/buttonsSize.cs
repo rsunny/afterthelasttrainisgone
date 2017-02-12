@@ -19,6 +19,12 @@ public class buttonsSize : MonoBehaviour {
     public GameObject exit;
     public GameObject exitbig;
 
+    private const int idx = 4;
+
+    public GameObject[] level = new GameObject[idx];
+    public GameObject[] levelBig = new GameObject[idx];
+
+
     void Start()
     {
         newgamebig.SetActive(false);
@@ -86,6 +92,18 @@ public class buttonsSize : MonoBehaviour {
     {
         exit.SetActive(true);
         exitbig.SetActive(false);
+    }
+
+    public void levelenter(int i)
+    {
+        level[i].SetActive(false);
+        levelBig[i].SetActive(true);
+    }
+
+    public void levelexit(int i)
+    {
+        level[i].SetActive(true);
+        levelBig[i].SetActive(false);
     }
 
 }
