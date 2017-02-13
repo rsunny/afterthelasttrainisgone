@@ -17,7 +17,7 @@ public class PauseScreen : MonoBehaviour {
         dummypause = GameObject.Find("DummyPause");
         PausePanel = GameObject.Find("PauseScreen");
         loadScreenFail = GameObject.Find("LoadFailPause");
-        Debug.Log(dummypause);
+        ////Debug.Log(dummypause);
         DontDestroyOnLoad(dummypause);
         loadScreenFail.SetActive(false);
         PausePanel.SetActive(false);
@@ -26,35 +26,24 @@ public class PauseScreen : MonoBehaviour {
     // Update is called once per frame
 
     void Update () {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        string name = SceneManager.GetActiveScene().name;
+        if (name != "Menu" && Input.GetKeyDown(KeyCode.Escape))
         {
             Time.timeScale = 0;
             PausePanel.SetActive(true);
             loadScreenFail.SetActive(false);
         }
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            ManageGame.setHealth(90);
-            ManageGame.setSceneName("FirstLevel");
-            ManageGame.setState(1);
-            ManageGame.setSceneName("SecondLevel");
-            ManageGame.Save();
-        }
     }
 
-   public void resume()
+    public void save()
+    {
+        ManageGame.Save();
+    }
+
+    public void resume()
     {
         Time.timeScale = 1;
         PausePanel.SetActive(false);
-    }
-
-
-    public void Play()
-    {
-        ManageGame.setHealth(100);
-        ManageGame.setSceneName("Menu");
-        ManageGame.setState(1);
-        SceneManager.LoadScene("FirstLevel");
     }
 
     public void Load()
@@ -63,6 +52,7 @@ public class PauseScreen : MonoBehaviour {
         {
             ManageGame.Load();
             SceneManager.LoadScene(ManageGame.getSceneName());
+            resume();
         }
         else
         {

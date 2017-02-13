@@ -37,7 +37,6 @@ public class SplashScreenManager : MonoBehaviour {
                     fade = 1;
                 } 
                 clr.a = fade;
-                Debug.Log(clr);
                 imgs[i].color = clr;
             }
 
@@ -51,10 +50,8 @@ public class SplashScreenManager : MonoBehaviour {
                 yield return new WaitForSeconds(fadedelta);
                 fade -= fadedelta;
                 clr.a = fade;
-                Debug.Log(clr);
                 imgs[i].color = clr;
             }
-            //img = screens[i].transform.GetChild(0).GetComponent<Image>;
             
 			screens [i].SetActive(false);
 

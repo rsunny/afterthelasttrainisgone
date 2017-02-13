@@ -39,8 +39,10 @@ namespace POLIMIGameCollective {
 			{
 				if (pitchVariance != 0) music_list[name].pitch = 1 + Random.Range(-pitchVariance, pitchVariance);
 
-				if (!music_list [name].isPlaying)
-					music_list[name].Play();
+                if (!music_list[name].isPlaying)
+                {
+                    music_list[name].Play();
+                }
 
 			} else Debug.LogWarning("No sound of name " + name + " exists");
 		}

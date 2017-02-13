@@ -4,6 +4,7 @@ using System;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public static class ManageGame {
     private static string savedName;
@@ -54,9 +55,15 @@ public static class ManageGame {
 
     public static void Save()
     {
-        Debug.Log("In Save");
+        ////Debug.Log("In Save");
+        savedName = SceneManager.GetActiveScene().name;
+        if (savedName != "Menu")
+        {
+            GameObject player = GameObject.Find("Player");
+            savedPosition = player.transform.position;
+        }
         BinaryFormatter bf = new BinaryFormatter();
-        Debug.Log(Application.persistentDataPath + "/FileName.dat");
+        ////Debug.Log(Application.persistentDataPath + "/FileName.dat");
         FileStream file = File.Open(Application.persistentDataPath + "/FileName.dat", FileMode.Create);
         GameStatistics newData = new GameStatistics();
         newData.health = savedHealth;
@@ -65,7 +72,7 @@ public static class ManageGame {
         newData.position_x = (int)savedPosition.x;
         newData.position_y = (int)savedPosition.y;
         newData.position_z = (int)savedPosition.z;
-        Debug.Log(newData);
+        ////Debug.Log(newData);
         bf.Serialize(file, newData);
         file.Close();
     }
@@ -75,11 +82,11 @@ public static class ManageGame {
 
         if (File.Exists(Application.persistentDataPath + "/FileName.dat"))
         {
-            Debug.Log("In ManageGames Load");
+            //Debug.Log("In ManageGames Load");
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file = File.Open(Application.persistentDataPath + "/FileName.dat", FileMode.Open);
             GameStatistics newData = (GameStatistics)bf.Deserialize(file);
-            Debug.Log(newData);
+            //Debug.Log(newData);
             file.Close();
             ManageGame.setHealth(newData.health);
             ManageGame.setSceneName(newData.scene_name);

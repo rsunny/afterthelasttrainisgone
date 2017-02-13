@@ -11,11 +11,6 @@ public class SaveGame : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
-
-    void OnTriggerEnter(Collider collideObj)
-    {
         ManageGame.setHealth(90);
         ManageGame.setSceneName("FirstLevel");
         ManageGame.setState(0);
